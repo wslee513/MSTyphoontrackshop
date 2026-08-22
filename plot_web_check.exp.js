@@ -627,6 +627,18 @@ playBtn.addEventListener('click', () => {
 
 resetBtn.addEventListener('click', () => stopPlayback('reset'));
 
+const nowBtn = document.getElementById('now-btn');
+nowBtn.addEventListener('click', () => {
+  playback.playing = false;
+  cancelAnimationFrame(playback.timer);
+  const nowMs = Date.now();
+  const span = playback.tEnd - playback.tStart;
+  if (span <= 0) return;
+  playback.clock = Math.max(playback.tStart, Math.min(playback.tEnd, nowMs));
+  renderPlayback();
+  updatePlayBtn();
+});
+
 playSlider.addEventListener('input', () => {
   playback.playing = false;
   cancelAnimationFrame(playback.timer);

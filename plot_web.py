@@ -342,6 +342,7 @@ HTML_TEMPLATE = r"""<!DOCTYPE html>
     <button id="play-btn" type="button">▶ 播放</button>
     <button id="reset-btn" type="button">↺ 重設</button>
     <button id="next-hour-btn" type="button">1H ▶</button>
+    <button id="now-btn" type="button">📍 現在時間</button>
   </div>
   <input type="range" id="play-slider" min="0" max="1000" step="1" value="1000">
   <div class="play-time" id="play-time"></div>
@@ -1213,6 +1214,18 @@ function nudgeClock(dh) {
 }
 prevHourBtn.addEventListener('click', () => nudgeClock(-1));
 nextHourBtn.addEventListener('click', () => nudgeClock(1));
+
+const nowBtn = document.getElementById('now-btn');
+nowBtn.addEventListener('click', () => {
+  playback.playing = false;
+  cancelAnimationFrame(playback.timer);
+  const nowMs = Date.now();
+  const span = playback.tEnd - playback.tStart;
+  if (span <= 0) return;
+  playback.clock = Math.max(playback.tStart, Math.min(playback.tEnd, nowMs));
+  renderPlayback();
+  updatePlayBtn();
+});
 
 playSlider.addEventListener('input', () => {
   playback.playing = false;
