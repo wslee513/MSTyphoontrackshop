@@ -42,8 +42,8 @@ function fcTimeAbs(info, fc) {
 }
 
 function windKtToRadius(kt) {
-  if (kt == null) return 120;
-  if (kt < 34) return 120;
+  if (kt == null) return 0;
+  if (kt < 34) return 0;
   if (kt < 45) return 150;
   if (kt < 55) return 180;
   if (kt < 65) return 200;
@@ -216,7 +216,7 @@ function drawForecast(t, grp, selIdx, upto) {
         `時間：${escapeHtml(fcTimeLTC(info, fc))}<br>` +
         `位置：${fc.lat.toFixed(1)}°N, ${fc.lon.toFixed(1)}°E<br>` +
         `風速：${windStr}${grade ? `（${grade}）` : ''}${tdLine}<br>` +
-        `七級暴風半徑：${radius} km</div>`;
+        `${radius > 0 ? `七級暴風半徑：${radius} km</div>` : '</div>'}`;
 
       const mk = L.circleMarker([fc.lat, fc.lon], {
         radius: fc.tau === 0 ? 6 : 4.5,
