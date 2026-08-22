@@ -962,8 +962,8 @@ function buildQuadTimeline(t) {
     const cwaFcs = cwaAg.forecasts || [];
     cwaFcs.forEach(fc => {
       const tau = fc.tau || 0;
-      const tauH = Math.round(tau / 3600000);
-      const tAbs = tm + tau;
+      const tauH = tau;
+      const tAbs = tm + tau * 3600000;
       const key = (Math.round(fc.lat * 10) / 10).toFixed(1) + ',' + (Math.round(fc.lon * 10) / 10).toFixed(1);
       let r7Entry = null, r10Entry = null, r7avgVal = null, r10avgVal = null;
       if (tau === 0) {
