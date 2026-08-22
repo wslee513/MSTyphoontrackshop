@@ -498,6 +498,8 @@ function renderPlayback() {
       const quad = quadAt(playback.quads[i] || [], T);
       const r7 = (quad && quad.r7) || circleRadii(windKtToRadius(pos.wind));
       const r10 = (quad && quad.r10) || circleRadii(windKtToRadius10(pos.wind));
+      const r7avg = (quad && quad.r7avg) || null;
+      const r10avg = (quad && quad.r10avg) || null;
       if (!playback.markers[i]) {
         playback.markers[i] = {
           m: L.circleMarker([pos.lat, pos.lon], {
@@ -519,12 +521,12 @@ function renderPlayback() {
       const pts7 = quadrantCirclePoints(pos.lat, pos.lon, r7);
       playback.markers[i].cU.setLatLngs(pts7);
       playback.markers[i].c.setLatLngs(pts7);
-      const r7n = northRadius(r7);
-      if (r7n) {
+      const r7label = (r7avg && r7avg > 0) ? r7avg : northRadius(r7);
+      if (r7label) {
         if (!playback.markers[i].cL) {
-          playback.markers[i].cL = addRadiusLabel(radiusLabelGrp, pos.lat, pos.lon, r7n, 'r7');
+          playback.markers[i].cL = addRadiusLabel(radiusLabelGrp, pos.lat, pos.lon, r7label, 'r7');
         } else {
-          updateRadiusLabel(playback.markers[i].cL, pos.lat, pos.lon, r7n);
+          updateRadiusLabel(playback.markers[i].cL, pos.lat, pos.lon, r7label);
         }
       }
       if (anyRadius(r10)) {
@@ -538,12 +540,12 @@ function renderPlayback() {
         const pts10 = quadrantCirclePoints(pos.lat, pos.lon, r10);
         playback.markers[i].c10U.setLatLngs(pts10);
         playback.markers[i].c10.setLatLngs(pts10);
-        const r10n = northRadius(r10);
-        if (r10n) {
+        const r10label = (r10avg && r10avg > 0) ? r10avg : northRadius(r10);
+        if (r10label) {
           if (!playback.markers[i].c10L) {
-            playback.markers[i].c10L = addRadiusLabel(radiusLabelGrp, pos.lat, pos.lon, r10n, 'r10');
+            playback.markers[i].c10L = addRadiusLabel(radiusLabelGrp, pos.lat, pos.lon, r10label, 'r10');
           } else {
-            updateRadiusLabel(playback.markers[i].c10L, pos.lat, pos.lon, r10n);
+            updateRadiusLabel(playback.markers[i].c10L, pos.lat, pos.lon, r10label);
           }
         }
       } else if (playback.markers[i].c10) {

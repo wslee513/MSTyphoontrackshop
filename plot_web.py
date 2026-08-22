@@ -226,6 +226,13 @@ HTML_TEMPLATE = r"""<!DOCTYPE html>
     flex: 1; font-size: 13px; padding: 4px 0; cursor: pointer;
     font-family: "Microsoft JhengHei", "Noto Sans TC", sans-serif;
   }
+  .now-btn {
+    display: block; width: 100%; font-size: 12px; padding: 3px 0; margin: 4px 0 2px;
+    cursor: pointer; box-sizing: border-box;
+    font-family: "Microsoft JhengHei", "Noto Sans TC", sans-serif;
+    background: #f0f4ff; border: 1px solid #7986CB; border-radius: 4px; color: #333;
+  }
+  .now-btn:hover { background: #dce4ff; }
   #play-slider { width: 100%; box-sizing: border-box; margin: 2px 0; }
   .play-time { font-size: 12px; color: #444; text-align: center; }
   .hint { font-size: 11px; color: #999; margin-top: 6px; }
@@ -316,6 +323,7 @@ HTML_TEMPLATE = r"""<!DOCTYPE html>
       padding: 8px 10px;
     }
     .play-controls button { font-size: 12px; }
+    .now-btn { font-size: 11px; }
     #brand { padding: 5px 10px 5px 6px; gap: 7px; border-radius: 10px; }
     .brand-ico { width: 26px; height: 26px; font-size: 15px; }
     .brand-name { font-size: 15px; letter-spacing: 1px; }
@@ -342,8 +350,8 @@ HTML_TEMPLATE = r"""<!DOCTYPE html>
     <button id="play-btn" type="button">▶ 播放</button>
     <button id="reset-btn" type="button">↺ 重設</button>
     <button id="next-hour-btn" type="button">1H ▶</button>
-    <button id="now-btn" type="button">📍 現在時間</button>
   </div>
+  <button id="now-btn" type="button" class="now-btn">📍 現在時間</button>
   <input type="range" id="play-slider" min="0" max="1000" step="1" value="1000">
   <div class="play-time" id="play-time"></div>
   <div class="pin-controls">
@@ -1059,12 +1067,12 @@ function renderPlayback() {
       const pts7 = quadrantCirclePoints(pos.lat, pos.lon, r7);
       playback.markers[i].cU.setLatLngs(pts7);
       playback.markers[i].c.setLatLngs(pts7);
-      const r7n = northRadius(r7);
-      if (r7n) {
+      const r7label = (r7avg && r7avg > 0) ? r7avg : northRadius(r7);
+      if (r7label) {
         if (!playback.markers[i].cL) {
-          playback.markers[i].cL = addRadiusLabel(radiusLabelGrp, pos.lat, pos.lon, r7n, 'r7');
+          playback.markers[i].cL = addRadiusLabel(radiusLabelGrp, pos.lat, pos.lon, r7label, 'r7');
         } else {
-          updateRadiusLabel(playback.markers[i].cL, pos.lat, pos.lon, r7n);
+          updateRadiusLabel(playback.markers[i].cL, pos.lat, pos.lon, r7label);
         }
       }
       if (r7avg && r7avg > 0) {
@@ -1093,12 +1101,12 @@ function renderPlayback() {
         const pts10 = quadrantCirclePoints(pos.lat, pos.lon, r10);
         playback.markers[i].c10U.setLatLngs(pts10);
         playback.markers[i].c10.setLatLngs(pts10);
-        const r10n = northRadius(r10);
-        if (r10n) {
+        const r10label = (r10avg && r10avg > 0) ? r10avg : northRadius(r10);
+        if (r10label) {
           if (!playback.markers[i].c10L) {
-            playback.markers[i].c10L = addRadiusLabel(radiusLabelGrp, pos.lat, pos.lon, r10n, 'r10');
+            playback.markers[i].c10L = addRadiusLabel(radiusLabelGrp, pos.lat, pos.lon, r10label, 'r10');
           } else {
-            updateRadiusLabel(playback.markers[i].c10L, pos.lat, pos.lon, r10n);
+            updateRadiusLabel(playback.markers[i].c10L, pos.lat, pos.lon, r10label);
           }
         }
         if (r10avg && r10avg > 0) {
@@ -1264,16 +1272,16 @@ function drawPins() {
     const label = `${DATA.typhoons[p.i].storm_name_cn} ${utcMsToLTC(p.t)}`;
     if (anyRadius(p.r7)) {
       polyWithHalo(pinsGrp, quadrantCirclePoints(p.lat, p.lon, p.r7), CWA_COLOR, 1.5, 0.7, CWA_COLOR, 0.05, true);
-      const rn = northRadius(p.r7);
-      if (rn) addRadiusLabel(pinLabelGrp, p.lat, p.lon, rn, 'r7');
+      const rn7 = (p.r7avg && p.r7avg > 0) ? p.r7avg : northRadius(p.r7);
+      if (rn7) addRadiusLabel(pinLabelGrp, p.lat, p.lon, rn7, 'r7');
     }
     if (p.r7avg && p.r7avg > 0) {
       polyWithHalo(pinsGrp, quadrantCirclePoints(p.lat, p.lon, circleRadii(p.r7avg)), CWA_COLOR, 1.2, 0.7, CWA_COLOR, 0);
     }
     if (anyRadius(p.r10)) {
       polyWithHalo(pinsGrp, quadrantCirclePoints(p.lat, p.lon, p.r10), '#FF8C00', 1, 0.7, '#FF8C00', 0, true);
-      const rn = northRadius(p.r10);
-      if (rn) addRadiusLabel(pinLabelGrp, p.lat, p.lon, rn, 'r10');
+      const rn10 = (p.r10avg && p.r10avg > 0) ? p.r10avg : northRadius(p.r10);
+      if (rn10) addRadiusLabel(pinLabelGrp, p.lat, p.lon, rn10, 'r10');
     }
     if (p.r10avg && p.r10avg > 0) {
       polyWithHalo(pinsGrp, quadrantCirclePoints(p.lat, p.lon, circleRadii(p.r10avg)), '#FF8C00', 1, 0.7, '#FF8C00', 0);
