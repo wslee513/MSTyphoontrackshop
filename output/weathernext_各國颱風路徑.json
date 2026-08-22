@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-22 19:20:11 UTC",
+ "generated_at": "2026-08-22 20:20:12 UTC",
  "source": "Open-Meteo Google WeatherNext 2 Ensemble Mean (free API)",
  "api": "https://ensemble-api.open-meteo.com/v1/ensemble",
  "model": "google_weathernext2_ensemble_mean",
@@ -139,76 +139,66 @@
   },
   {
    "storm_name": "?",
-   "forecast_time_utc": "2026-08-22 20:00:00 UTC",
+   "forecast_time_utc": "2026-08-23 02:00:00 UTC",
    "points": [
     {
      "tau": 0,
-     "lat": 27.1,
-     "lon": 123.2,
-     "time_utc": "2026-08-22T18:00",
-     "wind_kt_10m": 21.9,
-     "wind_kt_100m": 25.6,
-     "pressure_hpa": 1003.3,
-     "temp_c": 28.0
+     "lat": 28.0,
+     "lon": 121.5,
+     "time_utc": "2026-08-23T00:00",
+     "wind_kt_10m": 12.5,
+     "wind_kt_100m": 14.2,
+     "pressure_hpa": 1004.0,
+     "temp_c": 28.3
     },
     {
      "tau": 6,
-     "lat": 28.0,
-     "lon": 122.0,
-     "time_utc": "2026-08-23T00:00",
-     "wind_kt_10m": 18.0,
-     "wind_kt_100m": 20.5,
-     "pressure_hpa": 1004.4,
-     "temp_c": 28.4
+     "lat": 28.3,
+     "lon": 120.2,
+     "time_utc": "2026-08-23T06:00",
+     "wind_kt_10m": 7.6,
+     "wind_kt_100m": 11.9,
+     "pressure_hpa": 1003.9,
+     "temp_c": 26.8
     },
     {
      "tau": 12,
      "lat": 28.6,
-     "lon": 120.7,
-     "time_utc": "2026-08-23T06:00",
-     "wind_kt_10m": 8.2,
-     "wind_kt_100m": 13.2,
-     "pressure_hpa": 1005.3,
-     "temp_c": 25.2
+     "lon": 119.0,
+     "time_utc": "2026-08-23T12:00",
+     "wind_kt_10m": 5.0,
+     "wind_kt_100m": 9.1,
+     "pressure_hpa": 1005.0,
+     "temp_c": 24.5
     }
    ]
   },
   {
    "storm_name": "?",
-   "forecast_time_utc": "2026-08-22 20:00:00 UTC",
+   "forecast_time_utc": "2026-08-23 02:00:00 UTC",
    "points": [
     {
      "tau": 0,
-     "lat": 12.3,
-     "lon": 134.8,
-     "time_utc": "2026-08-22T18:00",
-     "wind_kt_10m": 11.7,
-     "wind_kt_100m": 13.8,
-     "pressure_hpa": 1002.9,
-     "temp_c": 27.1
+     "lat": 12.7,
+     "lon": 135.0,
+     "time_utc": "2026-08-23T00:00",
+     "wind_kt_10m": 14.0,
+     "wind_kt_100m": 16.2,
+     "pressure_hpa": 1004.2,
+     "temp_c": 27.4
     },
     {
      "tau": 6,
-     "lat": 12.8,
-     "lon": 134.8,
-     "time_utc": "2026-08-23T00:00",
-     "wind_kt_10m": 17.2,
-     "wind_kt_100m": 20.1,
-     "pressure_hpa": 1004.8,
+     "lat": 13.1,
+     "lon": 135.2,
+     "time_utc": "2026-08-23T06:00",
+     "wind_kt_10m": 18.5,
+     "wind_kt_100m": 21.8,
+     "pressure_hpa": 1002.4,
      "temp_c": 27.3
     },
     {
      "tau": 12,
-     "lat": 13.2,
-     "lon": 135.1,
-     "time_utc": "2026-08-23T06:00",
-     "wind_kt_10m": 17.9,
-     "wind_kt_100m": 20.9,
-     "pressure_hpa": 1002.9,
-     "temp_c": 27.3
-    },
-    {
-     "tau": 18,
      "lat": 13.5,
      "lon": 135.6,
      "time_utc": "2026-08-23T12:00",
@@ -218,44 +208,54 @@
      "temp_c": 27.6
     },
     {
-     "tau": 24,
-     "lat": 13.9,
-     "lon": 136.3,
+     "tau": 18,
+     "lat": 13.8,
+     "lon": 136.2,
      "time_utc": "2026-08-23T18:00",
-     "wind_kt_10m": 16.7,
-     "wind_kt_100m": 19.4,
-     "pressure_hpa": 1003.3,
+     "wind_kt_10m": 19.0,
+     "wind_kt_100m": 22.1,
+     "pressure_hpa": 1003.4,
      "temp_c": 27.4
     },
     {
+     "tau": 24,
+     "lat": 14.3,
+     "lon": 136.7,
+     "time_utc": "2026-08-24T00:00",
+     "wind_kt_10m": 18.3,
+     "wind_kt_100m": 21.4,
+     "pressure_hpa": 1006.5,
+     "temp_c": 27.8
+    },
+    {
      "tau": 36,
-     "lat": 15.2,
-     "lon": 137.8,
-     "time_utc": "2026-08-24T06:00",
-     "wind_kt_10m": 16.1,
-     "wind_kt_100m": 18.7,
-     "pressure_hpa": 1004.3,
-     "temp_c": 27.9
+     "lat": 16.0,
+     "lon": 138.2,
+     "time_utc": "2026-08-24T12:00",
+     "wind_kt_10m": 13.0,
+     "wind_kt_100m": 14.8,
+     "pressure_hpa": 1007.3,
+     "temp_c": 28.1
     },
     {
      "tau": 48,
-     "lat": 17.1,
-     "lon": 139.0,
-     "time_utc": "2026-08-24T18:00",
-     "wind_kt_10m": 14.0,
-     "wind_kt_100m": 15.9,
-     "pressure_hpa": 1006.2,
-     "temp_c": 28.0
+     "lat": 18.1,
+     "lon": 138.3,
+     "time_utc": "2026-08-25T00:00",
+     "wind_kt_10m": 9.5,
+     "wind_kt_100m": 10.8,
+     "pressure_hpa": 1008.4,
+     "temp_c": 28.5
     },
     {
      "tau": 72,
-     "lat": 20.9,
-     "lon": 137.6,
-     "time_utc": "2026-08-25T18:00",
-     "wind_kt_10m": 11.1,
-     "wind_kt_100m": 12.2,
-     "pressure_hpa": 1007.6,
-     "temp_c": 28.3
+     "lat": 22.2,
+     "lon": 135.6,
+     "time_utc": "2026-08-26T00:00",
+     "wind_kt_10m": 8.4,
+     "wind_kt_100m": 9.3,
+     "pressure_hpa": 1008.7,
+     "temp_c": 28.6
     }
    ]
   }
