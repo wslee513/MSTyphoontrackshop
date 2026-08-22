@@ -1154,14 +1154,6 @@ function renderPlayback() {
         playback.markers[i].c10AvgU = null;
         playback.markers[i].c10Avg = null;
       }
-        if (playback.markers[i].c10AvgU) playbackGrp.removeLayer(playback.markers[i].c10AvgU);
-        if (playback.markers[i].c10Avg) playbackGrp.removeLayer(playback.markers[i].c10Avg);
-        playback.markers[i].c10U = null;
-        playback.markers[i].c10 = null;
-        playback.markers[i].c10L = null;
-        playback.markers[i].c10AvgU = null;
-        playback.markers[i].c10Avg = null;
-      }
     }
   });
   const span = playback.tEnd - playback.tStart;

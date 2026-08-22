@@ -539,6 +539,7 @@ function renderPlayback() {
         };
       }
       playback.markers[i].m.setLatLng([pos.lat, pos.lon]);
+      const hasQuad7 = anyRadius(r7);
       const pts7 = quadrantCirclePoints(pos.lat, pos.lon, r7);
       playback.markers[i].cU.setLatLngs(pts7);
       playback.markers[i].c.setLatLngs(pts7);
@@ -550,7 +551,8 @@ function renderPlayback() {
           updateRadiusLabel(playback.markers[i].cL, pos.lat, pos.lon, r7label);
         }
       }
-      if (anyRadius(r10)) {
+      const hasQuad10 = anyRadius(r10);
+      if (hasQuad10) {
         if (!playback.markers[i].c10) {
           playback.markers[i].c10U = L.polygon([], { color: '#ffffff', weight: 4, opacity: 0.9, fill: false }).addTo(playbackGrp);
           playback.markers[i].c10 = L.polygon([], {
@@ -561,18 +563,9 @@ function renderPlayback() {
         const pts10 = quadrantCirclePoints(pos.lat, pos.lon, r10);
         playback.markers[i].c10U.setLatLngs(pts10);
         playback.markers[i].c10.setLatLngs(pts10);
-        const r10label = (r10avg && r10avg > 0) ? r10avg : northRadius(r10);
-        if (r10label) {
-          if (!playback.markers[i].c10L) {
-            playback.markers[i].c10L = addRadiusLabel(radiusLabelGrp, pos.lat, pos.lon, r10label, 'r10');
-          } else {
-            updateRadiusLabel(playback.markers[i].c10L, pos.lat, pos.lon, r10label);
-          }
-        }
       } else if (playback.markers[i].c10) {
         playbackGrp.removeLayer(playback.markers[i].c10U);
         playbackGrp.removeLayer(playback.markers[i].c10);
-        if (playback.markers[i].c10L) radiusLabelGrp.removeLayer(playback.markers[i].c10L);
         playback.markers[i].c10U = null;
         playback.markers[i].c10 = null;
         playback.markers[i].c10L = null;
