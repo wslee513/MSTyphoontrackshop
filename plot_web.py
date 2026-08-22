@@ -948,18 +948,37 @@ function buildQuadTimeline(t) {
   const r10q = latest['_cwa_an_radius10_quad_map'] || {};
   const r7avg = latest['_cwa_an_radius7_map'] || {};
   const r10avg = latest['_cwa_an_radius10_map'] || {};
+  const fcR7 = latest['_cwa_fc_radius7_map_by_tau'] || {};
+  const fcR10 = latest['_cwa_fc_radius10_map_by_tau'] || {};
   const out = [];
   (t.entries || []).forEach(e => {
     const tm = parseUtcMs(e.forecast_time_utc);
     if (tm == null) return;
-    let cwa0 = null;
+    let cwaAg = null;
     for (const ag of (e.data.agencies || [])) {
-      const f = (ag.forecasts || []).find(fc => fc.tau === 0);
-      if (f && ag.agency === 'CWA') { cwa0 = f; break; }
+      if (ag.agency === 'CWA') { cwaAg = ag; break; }
     }
-    if (!cwa0) return;
-    const key = (Math.round(cwa0.lat * 10) / 10).toFixed(1) + ',' + (Math.round(cwa0.lon * 10) / 10).toFixed(1);
-    out.push({ t: tm, r7: r7q[key] || null, r10: r10q[key] || null, r7avg: r7avg[key] || null, r10avg: r10avg[key] || null });
+    if (!cwaAg) return;
+    const cwaFcs = cwaAg.forecasts || [];
+    cwaFcs.forEach(fc => {
+      const tau = fc.tau || 0;
+      const tauH = Math.round(tau / 3600000);
+      const tAbs = tm + tau;
+      const key = (Math.round(fc.lat * 10) / 10).toFixed(1) + ',' + (Math.round(fc.lon * 10) / 10).toFixed(1);
+      let r7Entry = null, r10Entry = null, r7avgVal = null, r10avgVal = null;
+      if (tau === 0) {
+        r7Entry = r7q[key] || null;
+        r10Entry = r10q[key] || null;
+        r7avgVal = r7avg[key] || null;
+        r10avgVal = r10avg[key] || null;
+      } else {
+        const fr7 = fcR7[String(tauH)] || fcR7[String(tau)];
+        const fr10 = fcR10[String(tauH)] || fcR10[String(tau)];
+        if (fr7 != null) r7avgVal = fr7;
+        if (fr10 != null) r10avgVal = fr10;
+      }
+      out.push({ t: tAbs, r7: r7Entry, r10: r10Entry, r7avg: r7avgVal, r10avg: r10avgVal });
+    });
   });
   return out.sort((a, b) => a.t - b.t);
 }
