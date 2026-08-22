@@ -1,0 +1,4 @@
+__pycache__/
+output_backup_*/
+*.pyc
+config.json

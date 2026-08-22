@@ -1,0 +1,607 @@
+{
+ "typhoons": [
+  {
+   "storm_name": "DOLPHIN",
+   "forecast_time_utc": "2026-08-05 22:00:39 UTC",
+   "agencies": [
+    {
+     "agency": "HKO",
+     "forecasts": [
+      {
+       "tau": 0,
+       "datetime_z": "051800",
+       "lat": 26.3,
+       "lon": 135.1,
+       "wind_kt": 84
+      },
+      {
+       "tau": 24,
+       "lat": 26.9,
+       "lon": 130.3,
+       "wind_kt": 84
+      },
+      {
+       "tau": 48,
+       "lat": 27.2,
+       "lon": 126.4,
+       "wind_kt": 89
+      },
+      {
+       "tau": 72,
+       "lat": 27.6,
+       "lon": 123.7,
+       "wind_kt": 84
+      },
+      {
+       "tau": 96,
+       "lat": 28.4,
+       "lon": 121,
+       "wind_kt": 78
+      },
+      {
+       "tau": 120,
+       "lat": 30.3,
+       "lon": 117.8,
+       "wind_kt": 46
+      }
+     ]
+    },
+    {
+     "agency": "JTWC",
+     "forecasts": [
+      {
+       "tau": 0,
+       "datetime_z": "051800",
+       "lat": 26.3,
+       "lon": 135,
+       "wind_kt": 80
+      },
+      {
+       "tau": 24,
+       "lat": 26.9,
+       "lon": 130.3,
+       "wind_kt": 80
+      },
+      {
+       "tau": 48,
+       "lat": 27.1,
+       "lon": 126.3,
+       "wind_kt": 80
+      },
+      {
+       "tau": 72,
+       "lat": 27.3,
+       "lon": 123.5,
+       "wind_kt": 75
+      },
+      {
+       "tau": 96,
+       "lat": 27.9,
+       "lon": 120.9,
+       "wind_kt": 60
+      },
+      {
+       "tau": 120,
+       "lat": 29.3,
+       "lon": 118.6,
+       "wind_kt": 35
+      }
+     ]
+    },
+    {
+     "agency": "JMA",
+     "forecasts": [
+      {
+       "tau": 0,
+       "datetime_z": "051800",
+       "lat": 26.3,
+       "lon": 135.1,
+       "wind_kt": 80
+      },
+      {
+       "tau": 24,
+       "lat": 26.8,
+       "lon": 130.2,
+       "wind_kt": 80
+      },
+      {
+       "tau": 48,
+       "lat": 26.8,
+       "lon": 126.1,
+       "wind_kt": 80
+      },
+      {
+       "tau": 72,
+       "lat": 27,
+       "lon": 123.6,
+       "wind_kt": 70
+      },
+      {
+       "tau": 96,
+       "lat": 27.8,
+       "lon": 120.7,
+       "wind_kt": 60
+      },
+      {
+       "tau": 120,
+       "lat": 29.3,
+       "lon": 118,
+       "wind_kt": 35
+      }
+     ]
+    },
+    {
+     "agency": "NMC",
+     "forecasts": [
+      {
+       "tau": 0,
+       "datetime_z": "051800",
+       "lat": 26.2,
+       "lon": 135.2,
+       "wind_kt": 82
+      },
+      {
+       "tau": 24,
+       "lat": 26.8,
+       "lon": 130.6,
+       "wind_kt": 93
+      },
+      {
+       "tau": 48,
+       "lat": 27,
+       "lon": 126.9,
+       "wind_kt": 93
+      },
+      {
+       "tau": 72,
+       "lat": 27.4,
+       "lon": 123.5,
+       "wind_kt": 87
+      },
+      {
+       "tau": 96,
+       "lat": 28,
+       "lon": 121.4,
+       "wind_kt": 82
+      },
+      {
+       "tau": 120,
+       "lat": 29.4,
+       "lon": 118.2,
+       "wind_kt": 45
+      }
+     ]
+    },
+    {
+     "agency": "CWA",
+     "forecasts": [
+      {
+       "tau": 0,
+       "datetime_z": "051800",
+       "lat": 26.3,
+       "lon": 135,
+       "wind_kt": 84
+      },
+      {
+       "tau": 24,
+       "lat": 26.9,
+       "lon": 130.2,
+       "wind_kt": 87
+      },
+      {
+       "tau": 48,
+       "lat": 27.2,
+       "lon": 126.6,
+       "wind_kt": 87
+      },
+      {
+       "tau": 72,
+       "lat": 27.3,
+       "lon": 123.5,
+       "wind_kt": 74
+      },
+      {
+       "tau": 96,
+       "lat": 28.1,
+       "lon": 121.1,
+       "wind_kt": 64
+      },
+      {
+       "tau": 120,
+       "lat": 29.4,
+       "lon": 118.8,
+       "wind_kt": 45
+      }
+     ]
+    },
+    {
+     "agency": "KMA",
+     "forecasts": [
+      {
+       "tau": 0,
+       "datetime_z": "051800",
+       "lat": 26.3,
+       "lon": 135.1,
+       "wind_kt": 84
+      },
+      {
+       "tau": 24,
+       "lat": 26.7,
+       "lon": 130.4,
+       "wind_kt": 84
+      },
+      {
+       "tau": 48,
+       "lat": 27.1,
+       "lon": 126.7,
+       "wind_kt": 84
+      },
+      {
+       "tau": 72,
+       "lat": 27.3,
+       "lon": 123.5,
+       "wind_kt": 78
+      },
+      {
+       "tau": 96,
+       "lat": 28,
+       "lon": 121.5,
+       "wind_kt": 72
+      },
+      {
+       "tau": 120,
+       "lat": 29.3,
+       "lon": 118.4,
+       "wind_kt": 39
+      }
+     ]
+    }
+   ],
+   "_fetch_name": "DOLPHIN_2026",
+   "_storm_name_cn": "白海豚",
+   "_max_wind_ms": 43,
+   "_cwa_fc_mws_map": {
+    "26.5,133.7": 43,
+    "26.7,132.5": 45,
+    "26.8,131.4": 45,
+    "26.9,130.2": 45,
+    "27.1,128.2": 45,
+    "27.2,126.6": 45,
+    "27.3,123.5": 38,
+    "28.1,121.1": 33,
+    "29.4,118.8": 23
+   },
+   "_cwa_fc_mws_map_by_tau": {
+    "6": 43,
+    "12": 45,
+    "18": 45,
+    "24": 45,
+    "36": 45,
+    "48": 45,
+    "72": 38,
+    "96": 33,
+    "120": 23
+   }
+  },
+  {
+   "storm_name": "KUJIRA",
+   "forecast_time_utc": "2026-08-05 22:03:04 UTC",
+   "agencies": [
+    {
+     "agency": "HKO",
+     "forecasts": [
+      {
+       "tau": 0,
+       "datetime_z": "051800",
+       "lat": 17.7,
+       "lon": 120.1,
+       "wind_kt": 40
+      }
+     ]
+    },
+    {
+     "agency": "JTWC",
+     "forecasts": [
+      {
+       "tau": 0,
+       "datetime_z": "051800",
+       "lat": 17.7,
+       "lon": 120.2,
+       "wind_kt": 35
+      },
+      {
+       "tau": 24,
+       "lat": 17.2,
+       "lon": 126.7,
+       "wind_kt": 25
+      }
+     ]
+    },
+    {
+     "agency": "JMA",
+     "forecasts": [
+      {
+       "tau": 0,
+       "datetime_z": "051800",
+       "lat": 18.1,
+       "lon": 120.1,
+       "wind_kt": 35
+      },
+      {
+       "tau": 24,
+       "lat": 16.9,
+       "lon": 121.6,
+       "wind_kt": null
+      }
+     ]
+    },
+    {
+     "agency": "NMC",
+     "forecasts": [
+      {
+       "tau": 0,
+       "datetime_z": "051800",
+       "lat": 17.8,
+       "lon": 120.1,
+       "wind_kt": 35
+      }
+     ]
+    },
+    {
+     "agency": "CWA",
+     "forecasts": [
+      {
+       "tau": 0,
+       "datetime_z": "051800",
+       "lat": 17.7,
+       "lon": 120.1,
+       "wind_kt": 39
+      }
+     ]
+    },
+    {
+     "agency": "KMA",
+     "forecasts": [
+      {
+       "tau": 0,
+       "datetime_z": "051800",
+       "lat": 17.8,
+       "lon": 120.1,
+       "wind_kt": 35
+      }
+     ]
+    },
+    {
+     "agency": "PAGASA",
+     "forecasts": [
+      {
+       "tau": 0,
+       "datetime_z": "051800",
+       "lat": 17.7,
+       "lon": 120.4,
+       "wind_kt": 35
+      },
+      {
+       "tau": 24,
+       "lat": 16.4,
+       "lon": 125.3,
+       "wind_kt": null
+      }
+     ]
+    }
+   ],
+   "_fetch_name": "KUJIRA_2026",
+   "_storm_name_cn": "鯨魚",
+   "_max_wind_ms": 20,
+   "_cwa_fc_mws_map": {
+    "17.5,120.8": 18,
+    "17.1,121.5": 15,
+    "16.6,124.3": 10
+   },
+   "_cwa_fc_mws_map_by_tau": {
+    "6": 18,
+    "12": 15,
+    "18": 10
+   }
+  },
+  {
+   "storm_name": "CHAN-HOM",
+   "forecast_time_utc": "2026-08-05 22:03:29 UTC",
+   "agencies": [
+    {
+     "agency": "JMA",
+     "forecasts": [
+      {
+       "tau": 0,
+       "datetime_z": "051800",
+       "lat": 23.4,
+       "lon": 165.8,
+       "wind_kt": 35
+      },
+      {
+       "tau": 24,
+       "lat": 28.1,
+       "lon": 161.6,
+       "wind_kt": 45
+      },
+      {
+       "tau": 48,
+       "lat": 31.4,
+       "lon": 157.9,
+       "wind_kt": 40
+      },
+      {
+       "tau": 72,
+       "lat": 34.2,
+       "lon": 153.2,
+       "wind_kt": 40
+      },
+      {
+       "tau": 96,
+       "lat": 35.8,
+       "lon": 149.2,
+       "wind_kt": 40
+      },
+      {
+       "tau": 120,
+       "lat": 38.5,
+       "lon": 145.5,
+       "wind_kt": 40
+      }
+     ]
+    },
+    {
+     "agency": "NMC",
+     "forecasts": [
+      {
+       "tau": 0,
+       "datetime_z": "051800",
+       "lat": 23.8,
+       "lon": 165.4,
+       "wind_kt": 35
+      },
+      {
+       "tau": 24,
+       "lat": 28.4,
+       "lon": 161.9,
+       "wind_kt": 39
+      },
+      {
+       "tau": 48,
+       "lat": 31.4,
+       "lon": 158.2,
+       "wind_kt": 35
+      },
+      {
+       "tau": 72,
+       "lat": 34.4,
+       "lon": 152.2,
+       "wind_kt": 35
+      },
+      {
+       "tau": 96,
+       "lat": 36.2,
+       "lon": 149.6,
+       "wind_kt": 35
+      },
+      {
+       "tau": 120,
+       "lat": 41.9,
+       "lon": 147.1,
+       "wind_kt": 35
+      }
+     ]
+    },
+    {
+     "agency": "CWA",
+     "forecasts": [
+      {
+       "tau": 0,
+       "datetime_z": "051800",
+       "lat": 23.5,
+       "lon": 165.8,
+       "wind_kt": 35
+      },
+      {
+       "tau": 24,
+       "lat": 28.4,
+       "lon": 162.2,
+       "wind_kt": 39
+      },
+      {
+       "tau": 48,
+       "lat": 31.4,
+       "lon": 158.2,
+       "wind_kt": 39
+      },
+      {
+       "tau": 72,
+       "lat": 34,
+       "lon": 153,
+       "wind_kt": 39
+      },
+      {
+       "tau": 96,
+       "lat": 36,
+       "lon": 149.9,
+       "wind_kt": 39
+      },
+      {
+       "tau": 120,
+       "lat": 38.6,
+       "lon": 147.9,
+       "wind_kt": 35
+      }
+     ]
+    },
+    {
+     "agency": "KMA",
+     "forecasts": [
+      {
+       "tau": 0,
+       "datetime_z": "051800",
+       "lat": 23.4,
+       "lon": 165.8,
+       "wind_kt": 35
+      },
+      {
+       "tau": 24,
+       "lat": 28.2,
+       "lon": 161.9,
+       "wind_kt": 47
+      },
+      {
+       "tau": 48,
+       "lat": 31.3,
+       "lon": 158.3,
+       "wind_kt": 45
+      },
+      {
+       "tau": 72,
+       "lat": 34,
+       "lon": 152.7,
+       "wind_kt": 45
+      },
+      {
+       "tau": 96,
+       "lat": 35.8,
+       "lon": 149.8,
+       "wind_kt": 45
+      },
+      {
+       "tau": 120,
+       "lat": 39.1,
+       "lon": 147.1,
+       "wind_kt": 41
+      }
+     ]
+    }
+   ],
+   "_fetch_name": "CHAN-HOM_2026",
+   "_storm_name_cn": "昌鴻",
+   "_max_wind_ms": 18,
+   "_cwa_fc_mws_map": {
+    "25.3,164.9": 20,
+    "26.5,164.0": 20,
+    "27.5,163.1": 20,
+    "28.4,162.2": 20,
+    "30.0,160.3": 20,
+    "31.4,158.2": 20,
+    "34.0,153.0": 20,
+    "36.0,149.9": 20,
+    "38.6,147.9": 18
+   },
+   "_cwa_fc_mws_map_by_tau": {
+    "6": 20,
+    "12": 20,
+    "18": 20,
+    "24": 20,
+    "36": 20,
+    "48": 20,
+    "72": 20,
+    "96": 20,
+    "120": 18
+   }
+  }
+ ]
+}
