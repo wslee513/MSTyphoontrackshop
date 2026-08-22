@@ -1083,6 +1083,7 @@ function renderPlayback() {
         };
       }
       playback.markers[i].m.setLatLng([pos.lat, pos.lon]);
+      const hasQuad7 = anyRadius(r7);
       const pts7 = quadrantCirclePoints(pos.lat, pos.lon, r7);
       playback.markers[i].cU.setLatLngs(pts7);
       playback.markers[i].c.setLatLngs(pts7);
@@ -1094,7 +1095,7 @@ function renderPlayback() {
           updateRadiusLabel(playback.markers[i].cL, pos.lat, pos.lon, r7label);
         }
       }
-      if (r7avg && r7avg > 0) {
+      if (!hasQuad7 && r7avg && r7avg > 0) {
         const avgCircle = quadrantCirclePoints(pos.lat, pos.lon, circleRadii(r7avg));
         if (!playback.markers[i].cAvgU) {
           playback.markers[i].cAvgU = L.polygon(avgCircle, { color: '#ffffff', weight: 3, opacity: 0.9, fill: false }).addTo(playbackGrp);
@@ -1109,7 +1110,8 @@ function renderPlayback() {
         playback.markers[i].cAvgU = null;
         playback.markers[i].cAvg = null;
       }
-      if (anyRadius(r10)) {
+      const hasQuad10 = anyRadius(r10);
+      if (hasQuad10) {
         if (!playback.markers[i].c10) {
           playback.markers[i].c10U = L.polygon([], { color: '#ffffff', weight: 4, opacity: 0.9, fill: false, dashArray: '8 4' }).addTo(playbackGrp);
           playback.markers[i].c10 = L.polygon([], {
@@ -1120,33 +1122,38 @@ function renderPlayback() {
         const pts10 = quadrantCirclePoints(pos.lat, pos.lon, r10);
         playback.markers[i].c10U.setLatLngs(pts10);
         playback.markers[i].c10.setLatLngs(pts10);
-        const r10label = (r10avg && r10avg > 0) ? r10avg : northRadius(r10);
-        if (r10label) {
-          if (!playback.markers[i].c10L) {
-            playback.markers[i].c10L = addRadiusLabel(radiusLabelGrp, pos.lat, pos.lon, r10label, 'r10');
-          } else {
-            updateRadiusLabel(playback.markers[i].c10L, pos.lat, pos.lon, r10label);
-          }
-        }
-        if (r10avg && r10avg > 0) {
-          const avgCircle10 = quadrantCirclePoints(pos.lat, pos.lon, circleRadii(r10avg));
-          if (!playback.markers[i].c10AvgU) {
-            playback.markers[i].c10AvgU = L.polygon(avgCircle10, { color: '#ffffff', weight: 3, opacity: 0.9, fill: false }).addTo(playbackGrp);
-            playback.markers[i].c10Avg = L.polygon(avgCircle10, { color: '#FF8C00', weight: 1, opacity: 0.7, fill: false }).addTo(playbackGrp);
-          } else {
-            playback.markers[i].c10AvgU.setLatLngs(avgCircle10);
-            playback.markers[i].c10Avg.setLatLngs(avgCircle10);
-          }
-        } else if (playback.markers[i].c10Avg) {
-          playbackGrp.removeLayer(playback.markers[i].c10AvgU);
-          playbackGrp.removeLayer(playback.markers[i].c10Avg);
-          playback.markers[i].c10AvgU = null;
-          playback.markers[i].c10Avg = null;
-        }
       } else if (playback.markers[i].c10) {
         playbackGrp.removeLayer(playback.markers[i].c10U);
         playbackGrp.removeLayer(playback.markers[i].c10);
-        if (playback.markers[i].c10L) radiusLabelGrp.removeLayer(playback.markers[i].c10L);
+        playback.markers[i].c10U = null;
+        playback.markers[i].c10 = null;
+      }
+      const r10label = (r10avg && r10avg > 0) ? r10avg : (hasQuad10 ? northRadius(r10) : null);
+      if (r10label) {
+        if (!playback.markers[i].c10L) {
+          playback.markers[i].c10L = addRadiusLabel(radiusLabelGrp, pos.lat, pos.lon, r10label, 'r10');
+        } else {
+          updateRadiusLabel(playback.markers[i].c10L, pos.lat, pos.lon, r10label);
+        }
+      } else if (playback.markers[i].c10L) {
+        radiusLabelGrp.removeLayer(playback.markers[i].c10L);
+        playback.markers[i].c10L = null;
+      }
+      if (!hasQuad10 && r10avg && r10avg > 0) {
+        const avgCircle10 = quadrantCirclePoints(pos.lat, pos.lon, circleRadii(r10avg));
+        if (!playback.markers[i].c10AvgU) {
+          playback.markers[i].c10AvgU = L.polygon(avgCircle10, { color: '#ffffff', weight: 3, opacity: 0.9, fill: false }).addTo(playbackGrp);
+          playback.markers[i].c10Avg = L.polygon(avgCircle10, { color: '#FF8C00', weight: 1, opacity: 0.7, fill: false }).addTo(playbackGrp);
+        } else {
+          playback.markers[i].c10AvgU.setLatLngs(avgCircle10);
+          playback.markers[i].c10Avg.setLatLngs(avgCircle10);
+        }
+      } else if (playback.markers[i].c10Avg) {
+        playbackGrp.removeLayer(playback.markers[i].c10AvgU);
+        playbackGrp.removeLayer(playback.markers[i].c10Avg);
+        playback.markers[i].c10AvgU = null;
+        playback.markers[i].c10Avg = null;
+      }
         if (playback.markers[i].c10AvgU) playbackGrp.removeLayer(playback.markers[i].c10AvgU);
         if (playback.markers[i].c10Avg) playbackGrp.removeLayer(playback.markers[i].c10Avg);
         playback.markers[i].c10U = null;
