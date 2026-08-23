@@ -563,6 +563,7 @@ function trackIcon(ch) {
 const map = L.map('map', { zoomControl: false });
 const radiusLabelGrp = L.layerGroup().addTo(map);
 const pinLabelGrp = L.layerGroup().addTo(map);
+const staticRadiusGrp = L.layerGroup().addTo(map);
 const baseLayers = {
   'Google 地圖': L.tileLayer('https://{s}.google.com/vt/lyrs=m&hl=zh-TW&x={x}&y={y}&z={z}', {
     subdomains: ['mt0', 'mt1', 'mt2', 'mt3'],
@@ -890,6 +891,7 @@ const playback = {
 const playbackGrp = L.layerGroup().addTo(map);
 const pinsGrp = L.layerGroup().addTo(map);
 overlays['固定風圈標註'] = pinsGrp;
+overlays['暴風半徑（最新）'] = staticRadiusGrp;
 
 function buildTimeline(t, info) {
   const base = parseUtcMs(info.forecast_time_utc);
@@ -1084,7 +1086,7 @@ function renderPlayback() {
       }
       playback.markers[i].m.setLatLng([pos.lat, pos.lon]);
       const hasQuad7 = anyRadius(r7);
-      const pts7 = quadrantCirclePoints(pos.lat, pos.lon, r7);
+      const pts7 = hasQuad7 ? quadrantCirclePoints(pos.lat, pos.lon, r7) : [];
       playback.markers[i].cU.setLatLngs(pts7);
       playback.markers[i].c.setLatLngs(pts7);
       const r7label = (r7avg && r7avg > 0) ? r7avg : northRadius(r7);
@@ -1161,9 +1163,32 @@ function renderPlayback() {
   playTime.textContent = span > 0 ? utcMsToLTC(T) : '--';
 }
 
+function drawStormRadiiStatic(i) {
+  const T = playback.tEnd;
+  const pos = posAt(playback.timelines[i] || [], T);
+  if (!pos) return;
+  const quad = quadAt(playback.quads[i] || [], T);
+  const r7 = (quad && quad.r7) || null;
+  const r10 = (quad && quad.r10) || null;
+  const r7avg = (quad && quad.r7avg != null) ? quad.r7avg : windKtToRadius(pos.wind);
+  const r10avg = (quad && quad.r10avg != null) ? quad.r10avg : windKtToRadius10(pos.wind);
+  if (anyRadius(r7)) {
+    polyWithHalo(staticRadiusGrp, quadrantCirclePoints(pos.lat, pos.lon, r7), CWA_COLOR, 1.2, 0.7, CWA_COLOR, 0, true);
+  } else if (r7avg && r7avg > 0) {
+    polyWithHalo(staticRadiusGrp, quadrantCirclePoints(pos.lat, pos.lon, circleRadii(r7avg)), CWA_COLOR, 1.2, 0.7, CWA_COLOR, 0, false);
+  }
+  if (anyRadius(r10)) {
+    polyWithHalo(staticRadiusGrp, quadrantCirclePoints(pos.lat, pos.lon, r10), '#FF8C00', 1, 0.7, '#FF8C00', 0, true);
+  } else if (r10avg && r10avg > 0) {
+    polyWithHalo(staticRadiusGrp, quadrantCirclePoints(pos.lat, pos.lon, circleRadii(r10avg)), '#FF8C00', 1, 0.7, '#FF8C00', 0, false);
+  }
+}
+
 function renderFull() {
   DATA.typhoons.forEach((t, i) => drawForecast(t, typhoonState[i].fcGrp, typhoonState[i].lastIdx));
   clearMarkers();
+  staticRadiusGrp.clearLayers();
+  DATA.typhoons.forEach((t, i) => drawStormRadiiStatic(i));
 }
 
 let lastFrameTs = null;
