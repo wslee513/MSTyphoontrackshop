@@ -386,7 +386,7 @@ HTML_TEMPLATE = r"""<!DOCTYPE html>
     <h4>各國路徑開關</h4>
     <p>右側面板「各國路徑」可逐一勾選，開關各機構的預報路徑線。</p>
     <h4>WeatherNext AI 預報</h4>
-    <p>青綠色虛線為 Google WeatherNext 2 AI 模型（透過 Open-Meteo 免費 API）沿預報軌跡各點的風速／海平面氣壓／氣溫預報；由 fetch_weathernext.py 產生，可於圖層控制開關，點擊圓點查看細節。</p>
+    <p>暫時停用。原本的 fetch_weathernext.py 是沿各國預報路徑取點去問 Open-Meteo 免費 API 的風速／氣壓／氣溫，路徑與 CWA 重疊、並非 Google 自身的預測路徑，故先移除。待改用能取得 Google WeatherNext 2 自身熱帶氣旋預測路徑的資料來源後再加回。</p>
     <h4>ECMWF 模式預報</h4>
     <p>深靛實線為 ECMWF Open Data 的 HRES 決定性預報，淺靛虛線為 ENS 系集平均（51 個成員平均）；由 fetch_ecmwf.py 從 ECMWF 官方 BUFR 熱帶氣旋路徑產品解碼（CC-BY-4.0），點擊圓點查看各時段位置、最大風速與中心氣壓。圖層控制中每顆颱風有「XX ECMWF HRES」與「XX ECMWF ENS」可分別開關。</p>
     <h4>圖層控制</h4>
@@ -563,7 +563,6 @@ function trackIcon(ch) {
 const map = L.map('map', { zoomControl: false });
 const radiusLabelGrp = L.layerGroup().addTo(map);
 const pinLabelGrp = L.layerGroup().addTo(map);
-const staticRadiusGrp = L.layerGroup().addTo(map);
 const baseLayers = {
   'Google 地圖': L.tileLayer('https://{s}.google.com/vt/lyrs=m&hl=zh-TW&x={x}&y={y}&z={z}', {
     subdomains: ['mt0', 'mt1', 'mt2', 'mt3'],
@@ -707,39 +706,6 @@ function drawHistorical(t, grp) {
   }
 }
 
-const WN_COLOR = '#00897B';
-function drawWeatherNext(t, grp) {
-  grp.clearLayers();
-  const pts = (t.weathernext || []).filter(p => p.lat != null && p.lon != null);
-  if (!pts.length) return;
-  if (pts.length >= 2) {
-    L.polyline(pts.map(p => [p.lat, p.lon]), {
-      color: WN_COLOR, weight: 2, opacity: 0.9, dashArray: '4,4',
-    }).addTo(grp);
-  }
-  pts.forEach(p => {
-    const timeStr = p.time_utc || '?';
-    const windStr = p.wind_kt_10m != null ? `${ktToMsStr(p.wind_kt_10m)}` : '?';
-    const pressStr = p.pressure_hpa != null ? `${p.pressure_hpa} hPa` : '?';
-    const tempStr = p.temp_c != null ? `${p.temp_c} °C` : '?';
-    const mk = L.circleMarker([p.lat, p.lon], {
-      radius: 4.5,
-      color: '#ffffff', weight: 1,
-      fillColor: WN_COLOR, fillOpacity: 0.95,
-    }).addTo(grp);
-    mk.bindTooltip(`WeatherNext ${escapeHtml(utcToLTC(p.time_utc))} ${windStr}`);
-    mk.bindPopup(
-      `<div class="popup">` +
-      `<b>Google WeatherNext 2 AI</b><br>` +
-      `時間：${escapeHtml(timeStr)} UTC<br>` +
-      `位置：${p.lat.toFixed(1)}°N, ${p.lon.toFixed(1)}°E<br>` +
-      `10m 風速：${windStr}<br>` +
-      `海平面氣壓：${pressStr}<br>` +
-      `氣溫：${tempStr}</div>`
-    );
-  });
-}
-
 const ECMWF_COLOR = '#4527A0';
 const ECMWF_ENS_COLOR = '#7986CB';
 function drawECMWF(t, hresGrp, ensGrp) {
@@ -798,12 +764,10 @@ DATA.typhoons.forEach((t, i) => {
   const name = `${t.storm_name_cn} ${t.storm_name}`;
   const fcGrp = L.layerGroup().addTo(map);
   const histGrp = L.layerGroup().addTo(map);
-  const wnGrp = L.layerGroup().addTo(map);
   const ecmwfHresGrp = L.layerGroup().addTo(map);
   const ecmwfEnsGrp = L.layerGroup().addTo(map);
   overlays[name] = fcGrp;
   overlays[`${name} 歷史軌跡`] = histGrp;
-  overlays[`${name} WeatherNext`] = wnGrp;
   overlays[`${name} ECMWF HRES`] = ecmwfHresGrp;
   overlays[`${name} ECMWF ENS`] = ecmwfEnsGrp;
 
@@ -843,7 +807,6 @@ DATA.typhoons.forEach((t, i) => {
 
   drawHistorical(t, histGrp);
   drawForecast(t, fcGrp, typhoonState[i].lastIdx);
-  drawWeatherNext(t, wnGrp);
   drawECMWF(t, ecmwfHresGrp, ecmwfEnsGrp);
 });
 
@@ -891,7 +854,6 @@ const playback = {
 const playbackGrp = L.layerGroup().addTo(map);
 const pinsGrp = L.layerGroup().addTo(map);
 overlays['固定風圈標註'] = pinsGrp;
-overlays['暴風半徑（最新）'] = staticRadiusGrp;
 
 function buildTimeline(t, info) {
   const base = parseUtcMs(info.forecast_time_utc);
@@ -926,11 +888,13 @@ function buildTimeline(t, info) {
 }
 
 function rebuildTimelines() {
-  playback.timelines = DATA.typhoons.map((t, i) => {
+  playback.timelines = [];
+  playback.quads = [];
+  DATA.typhoons.forEach((t, i) => {
     const info = selectedInfo(t, typhoonState[i].lastIdx);
-    return buildTimeline(t, info);
+    playback.timelines.push(buildTimeline(t, info));
+    playback.quads.push(buildQuadTimeline(info, t.latest || {}));
   });
-  playback.quads = DATA.typhoons.map(t => buildQuadTimeline(t));
   playback.tStart = Infinity;
   playback.tEnd = -Infinity;
   playback.timelines.forEach(tl => {
@@ -944,28 +908,21 @@ function rebuildTimelines() {
 
 // CWA analysis 4-quadrant radii keyed by position; build a time-sorted list so
 // the playback marker can morph the quadrant circle as it moves along the track.
-function buildQuadTimeline(t) {
-  const latest = t.latest || {};
+function buildQuadTimeline(info, latest) {
   const r7q = latest['_cwa_an_radius7_quad_map'] || {};
   const r10q = latest['_cwa_an_radius10_quad_map'] || {};
   const r7avg = latest['_cwa_an_radius7_map'] || {};
   const r10avg = latest['_cwa_an_radius10_map'] || {};
   const fcR7 = latest['_cwa_fc_radius7_map_by_tau'] || {};
   const fcR10 = latest['_cwa_fc_radius10_map_by_tau'] || {};
+  const base = parseUtcMs(info.forecast_time_utc);
   const out = [];
-  (t.entries || []).forEach(e => {
-    const tm = parseUtcMs(e.forecast_time_utc);
-    if (tm == null) return;
-    let cwaAg = null;
-    for (const ag of (e.data.agencies || [])) {
-      if (ag.agency === 'CWA') { cwaAg = ag; break; }
-    }
-    if (!cwaAg) return;
-    const cwaFcs = cwaAg.forecasts || [];
-    cwaFcs.forEach(fc => {
+  if (base == null) return out;
+  for (const ag of (info.agencies || [])) {
+    if (ag.agency !== 'CWA') continue;
+    (ag.forecasts || []).forEach(fc => {
       const tau = fc.tau || 0;
-      const tauH = tau;
-      const tAbs = tm + tau * 3600000;
+      const tAbs = base + tau * 3600000;
       const key = (Math.round(fc.lat * 10) / 10).toFixed(1) + ',' + (Math.round(fc.lon * 10) / 10).toFixed(1);
       let r7Entry = null, r10Entry = null, r7avgVal = null, r10avgVal = null;
       if (tau === 0) {
@@ -974,14 +931,14 @@ function buildQuadTimeline(t) {
         r7avgVal = r7avg[key] || null;
         r10avgVal = r10avg[key] || null;
       } else {
-        const fr7 = fcR7[String(tauH)] || fcR7[String(tau)];
-        const fr10 = fcR10[String(tauH)] || fcR10[String(tau)];
+        const fr7 = fcR7[String(tau)];
+        const fr10 = fcR10[String(tau)];
         if (fr7 != null) r7avgVal = fr7;
         if (fr10 != null) r10avgVal = fr10;
       }
       out.push({ t: tAbs, r7: r7Entry, r10: r10Entry, r7avg: r7avgVal, r10avg: r10avgVal });
     });
-  });
+  }
   return out.sort((a, b) => a.t - b.t);
 }
 
@@ -1163,32 +1120,10 @@ function renderPlayback() {
   playTime.textContent = span > 0 ? utcMsToLTC(T) : '--';
 }
 
-function drawStormRadiiStatic(i) {
-  const T = playback.tEnd;
-  const pos = posAt(playback.timelines[i] || [], T);
-  if (!pos) return;
-  const quad = quadAt(playback.quads[i] || [], T);
-  const r7 = (quad && quad.r7) || null;
-  const r10 = (quad && quad.r10) || null;
-  const r7avg = (quad && quad.r7avg != null) ? quad.r7avg : windKtToRadius(pos.wind);
-  const r10avg = (quad && quad.r10avg != null) ? quad.r10avg : windKtToRadius10(pos.wind);
-  if (anyRadius(r7)) {
-    polyWithHalo(staticRadiusGrp, quadrantCirclePoints(pos.lat, pos.lon, r7), CWA_COLOR, 1.2, 0.7, CWA_COLOR, 0, true);
-  } else if (r7avg && r7avg > 0) {
-    polyWithHalo(staticRadiusGrp, quadrantCirclePoints(pos.lat, pos.lon, circleRadii(r7avg)), CWA_COLOR, 1.2, 0.7, CWA_COLOR, 0, false);
-  }
-  if (anyRadius(r10)) {
-    polyWithHalo(staticRadiusGrp, quadrantCirclePoints(pos.lat, pos.lon, r10), '#FF8C00', 1, 0.7, '#FF8C00', 0, true);
-  } else if (r10avg && r10avg > 0) {
-    polyWithHalo(staticRadiusGrp, quadrantCirclePoints(pos.lat, pos.lon, circleRadii(r10avg)), '#FF8C00', 1, 0.7, '#FF8C00', 0, false);
-  }
-}
-
 function renderFull() {
   DATA.typhoons.forEach((t, i) => drawForecast(t, typhoonState[i].fcGrp, typhoonState[i].lastIdx));
   clearMarkers();
-  staticRadiusGrp.clearLayers();
-  DATA.typhoons.forEach((t, i) => drawStormRadiiStatic(i));
+  renderPlayback();
 }
 
 let lastFrameTs = null;
@@ -1411,9 +1346,6 @@ legend.onAdd = function () {
   h += '<div class="legend-note">播放時：移動標記旁的四象限虛線多邊形為 CWA 分析七級/十級風圈，實線圓為平均半徑</div>';
   h += '<div class="legend-note">📌 固定風圈標註：時間軸選定時間後按「固定此時間風圈」留在圖上</div>';
   h += '<div class="legend-note">灰色虛線：歷史實際軌跡（✕ 起點 / ★ 最新）</div>';
-  if (DATA.weathernext && Object.keys(DATA.weathernext).length) {
-    h += '<div class="legend-note">青綠色虛線：Google WeatherNext 2 AI 預報（風速/氣壓/氣溫）</div>';
-  }
   if (DATA.ecmwf_run) {
     h += `<div class="legend-note">ECMWF（Run ${escapeHtml(DATA.ecmwf_run)}）：深靛實線＝HRES 決定性、淺靛虛線＝ENS 系集平均（51 成員），可分別開關</div>`;
   }
