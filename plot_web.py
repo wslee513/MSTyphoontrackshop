@@ -1057,10 +1057,10 @@ function renderPlayback() {
     const pos = posAt(playback.timelines[i] || [], T);
     if (pos) {
       const quad = quadAt(playback.quads[i] || [], T);
-      const r7 = (quad && quad.r7) || circleRadii(windKtToRadius(pos.wind));
-      const r10 = (quad && quad.r10) || circleRadii(windKtToRadius10(pos.wind));
-      const r7avg = (quad && quad.r7avg) || null;
-      const r10avg = (quad && quad.r10avg) || null;
+      const r7 = (quad && quad.r7) || null;
+      const r10 = (quad && quad.r10) || null;
+      const r7avg = (quad && quad.r7avg != null) ? quad.r7avg : windKtToRadius(pos.wind);
+      const r10avg = (quad && quad.r10avg != null) ? quad.r10avg : windKtToRadius10(pos.wind);
       if (!playback.markers[i]) {
         playback.markers[i] = {
           m: L.circleMarker([pos.lat, pos.lon], {
@@ -1273,10 +1273,10 @@ function pinCurrentTime() {
     if (!pos) return;
     if (pins.some(p => p.i === i && Math.round(p.t) === key)) return;
     const quad = quadAt(playback.quads[i] || [], T);
-    const r7 = (quad && quad.r7) || circleRadii(windKtToRadius(pos.wind));
-    const r10 = (quad && quad.r10) || circleRadii(windKtToRadius10(pos.wind));
-    const r7avg = (quad && quad.r7avg) || null;
-    const r10avg = (quad && quad.r10avg) || null;
+    const r7 = (quad && quad.r7) || null;
+    const r10 = (quad && quad.r10) || null;
+    const r7avg = (quad && quad.r7avg != null) ? quad.r7avg : windKtToRadius(pos.wind);
+    const r10avg = (quad && quad.r10avg != null) ? quad.r10avg : windKtToRadius10(pos.wind);
     pins.push({ t: T, i, lat: pos.lat, lon: pos.lon, r7, r10, r7avg, r10avg });
   });
   drawPins();
