@@ -1,0 +1,228 @@
+[2026/08/24 19:24:57.68] Scheduled update started...
+[1/5] Fetch typhoon data...
+Auto-detected from CWA: TD24(TD24), SAUDEL(沙德爾), NARRA(紫檀), ATSANI(閃電)
+
+==================================================
+Processing: TD24_2026
+==================================================
+Fetching: https://www.typhoon2000.ph/multi/log.php?name=TD24_2026
+No log.php data for TD24_2026, trying TXT fallback...
+Fetching: https://www.typhoon2000.ph/multi/data/TD24.TXT
+TXT fallback failed: 404 Client Error: Not Found for url: https://www.typhoon2000.ph/multi/data/TD24.TXT
+No usable data from TXT, trying CWA-only for TD...
+CWA-only TD entry built successfully.
+
+==================================================
+Processing: SAUDEL_2026
+==================================================
+Fetching: https://www.typhoon2000.ph/multi/log.php?name=SAUDEL_2026
+Found 22 time entries (oldest -> newest)
+Latest entry index: 22
+
+Agencies found: 7
+
+Storm: SAUDEL
+Time:  2026-08-24 06:00:00 UTC
+
+  [HKO]
+    NOW (240600): 24.5N 134.8E  100KT
+    + 24H:        26.5N 130.2E  105KT
+    + 48H:        28.0N 126.5E  89KT
+    + 72H:        27.5N 124.1E  84KT
+    + 96H:        26.6N 119.9E  76KT
+    +120H:        25.4N 116.3E  49KT
+
+  [JTWC]
+    NOW (240600): 24.5N 134.7E  105KT
+    + 24H:        26.6N 129.9E  100KT
+    + 48H:        28.0N 126.3E  90KT
+    + 72H:        27.8N 123.7E  80KT
+    + 96H:        27.0N 120.2E  60KT
+    +120H:        26.1N 116.1E  30KT
+
+  [JMA]
+    NOW (240600): 24.5N 134.8E  90KT
+    + 24H:        26.4N 130.1E  85KT
+    + 48H:        27.6N 126.3E  75KT
+    + 72H:        27.0N 123.5E  70KT
+    + 96H:        25.5N 118.9E  50KT
+    +120H:        25.6N 115.3E  ---KT
+
+  [NMC]
+    NOW (240600): 24.5N 134.9E  101KT
+    + 24H:        26.3N 130.3E  101KT
+    + 48H:        27.5N 126.1E  93KT
+    + 72H:        26.8N 122.4E  82KT
+    + 96H:        25.9N 119.4E  74KT
+    +120H:        24.6N 115.5E  35KT
+
+  [CWA]
+    NOW (240600): 24.5N 134.8E  99KT
+    + 24H:        26.5N 130.1E  99KT
+    + 48H:        27.8N 126.6E  87KT
+    + 72H:        27.2N 123.7E  78KT
+    + 96H:        26.1N 119.5E  58KT
+    +120H:        24.9N 116.1E  35KT
+
+  [KMA]
+    NOW (240600): 24.5N 134.9E  95KT
+    + 24H:        26.3N 130.0E  91KT
+    + 48H:        27.2N 126.7E  76KT
+    + 72H:        26.8N 123.7E  72KT
+    + 96H:        25.3N 119.3E  56KT
+    +120H:        25.3N 115.2E  29KT
+
+  [PAGASA]
+    NOW (240600): 24.5N 134.8E  90KT
+    + 24H:        26.2N 130.0E  85KT
+    + 48H:        27.6N 126.2E  75KT
+    + 72H:        27.3N 122.8E  65KT
+    + 96H:        26.8N 118.5E  60KT
+    +120H:        26.7N 115.8E  35KT
+
+==================================================
+Processing: NARRA_2026
+==================================================
+Fetching: https://www.typhoon2000.ph/multi/log.php?name=NARRA_2026
+Found 10 time entries (oldest -> newest)
+Latest entry index: 10
+
+Agencies found: 6
+
+Storm: NARRA
+Time:  2026-08-24 06:00:00 UTC
+
+  [HKO]
+    NOW (240600): 20.1N 107.4E  40KT
+    + 24H:        19.7N 108.2E  46KT
+    + 48H:        21.4N 109.9E  35KT
+    + 72H:        22.6N 110.1E  22KT
+
+  [JTWC]
+    NOW (240600): 19.9N 107.3E  40KT
+    + 24H:        19.7N 108.4E  35KT
+    + 48H:        21.6N 109.8E  25KT
+
+  [JMA]
+    NOW (240600): 20.3N 107.5E  40KT
+    + 24H:        19.8N 108.2E  35KT
+    + 48H:        21.5N 109.7E  ---KT
+
+  [NMC]
+    NOW (240600): 20.0N 107.4E  45KT
+    + 24H:        19.9N 108.4E  45KT
+    + 48H:        21.4N 109.7E  35KT
+
+  [CWA]
+    NOW (240600): 20.2N 107.5E  35KT
+    + 24H:        20.5N 109.0E  35KT
+    + 48H:        21.7N 109.4E  19KT
+
+  [KMA]
+    NOW (240600): 20.2N 107.4E  47KT
+    + 24H:        20.2N 108.6E  47KT
+    + 48H:        21.8N 109.7E  29KT
+
+==================================================
+Processing: ATSANI_2026
+==================================================
+Fetching: https://www.typhoon2000.ph/multi/log.php?name=ATSANI_2026
+Found 2 time entries (oldest -> newest)
+Latest entry index: 2
+
+Agencies found: 6
+
+Storm: ATSANI
+Time:  2026-08-24 06:00:00 UTC
+
+  [HKO]
+    NOW (240600): 16.1N 138.0E  30KT
+    + 24H:        19.8N 137.6E  24KT
+
+  [JTWC]
+    NOW (240600): 16.1N 138.1E  30KT
+    + 24H:        19.9N 138.0E  25KT
+
+  [JMA]
+    NOW (240600): 16.1N 138.1E  35KT
+    + 24H:        20.0N 137.6E  ---KT
+
+  [NMC]
+    NOW (240600): 16.0N 138.1E  35KT
+    + 24H:        19.9N 137.7E  29KT
+
+  [CWA]
+    NOW (240600): 16.0N 138.1E  35KT
+    + 24H:        20.1N 137.4E  23KT
+
+  [KMA]
+    NOW (240600): 16.1N 138.1E  35KT
+
+Saved: output\各國颱風路徑.json
+Saved: output\各國颱風路徑_all.json
+[2/5] Fetch WeatherNext...
+== ? ==
+  tau=  0 (24.8,118.5) -> 2026-08-24T06:00 風8.7kn 壓998.9hPa
+  tau=  6 (25.1,117.7) -> 2026-08-24T12:00 風1.9kn 壓1002.4hPa
+  tau= 12 (25.1,116.8) -> 2026-08-24T18:00 風2.3kn 壓1002.9hPa
+== SAUDEL ==
+  tau=  0 (24.5,134.8) -> 2026-08-24T06:00 風25.8kn 壓970.9hPa
+  tau= 24 (26.5,130.1) -> 2026-08-25T06:00 風9.7kn 壓970.1hPa
+  tau= 48 (27.8,126.6) -> 2026-08-26T06:00 風17.5kn 壓976.0hPa
+  tau= 72 (27.2,123.7) -> 2026-08-27T06:00 風28.0kn 壓988.8hPa
+  tau= 96 (26.1,119.5) -> 2026-08-28T06:00 風1.4kn 壓996.1hPa
+  tau=120 (24.9,116.1) -> 2026-08-29T06:00 風4.7kn 壓999.0hPa
+== NARRA ==
+  tau=  0 (20.2,107.5) -> 2026-08-24T06:00 風18.2kn 壓994.7hPa
+  tau= 24 (20.5,109.0) -> 2026-08-25T06:00 風5.6kn 壓998.4hPa
+  tau= 48 (21.7,109.4) -> 2026-08-26T06:00 風3.1kn 壓999.6hPa
+  tau= 72 (22.6,110.1) -> 2026-08-27T06:00 風3.3kn 壓1002.3hPa
+== ATSANI ==
+  tau=  0 (16.0,138.1) -> 2026-08-24T06:00 風10.2kn 壓1001.5hPa
+  tau= 24 (20.1,137.4) -> 2026-08-25T06:00 風4.9kn 壓1006.1hPa
+Saved: output\weathernext_各國颱風路徑.json
+[3/5] Fetch ECMWF...
+Traceback (most recent call last):
+  File "D:\Web_typhoontrack\fetch_ecmwf.py", line 35, in <module>
+    import eccodes
+  File "C:\Users\ManySplendid_16\AppData\Roaming\Python\Python314\site-packages\eccodes\__init__.py", line 13, in <module>
+    from .eccodes import *  # noqa
+    ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ManySplendid_16\AppData\Roaming\Python\Python314\site-packages\eccodes\eccodes.py", line 12, in <module>
+    from gribapi import (
+    ...<8 lines>...
+    )
+  File "C:\Users\ManySplendid_16\AppData\Roaming\Python\Python314\site-packages\gribapi\__init__.py", line 13, in <module>
+    from .gribapi import *  # noqa
+    ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ManySplendid_16\AppData\Roaming\Python\Python314\site-packages\gribapi\gribapi.py", line 34, in <module>
+    from gribapi.errors import GribInternalError
+  File "C:\Users\ManySplendid_16\AppData\Roaming\Python\Python314\site-packages\gribapi\errors.py", line 16, in <module>
+    from .bindings import ENC, ffi, lib
+  File "C:\Users\ManySplendid_16\AppData\Roaming\Python\Python314\site-packages\gribapi\bindings.py", line 102, in <module>
+    library_path = find_binary_libs("eccodes")
+  File "C:\Users\ManySplendid_16\AppData\Roaming\Python\Python314\site-packages\gribapi\bindings.py", line 97, in find_binary_libs
+    foundlib = findlibs.find(name)
+  File "C:\Users\ManySplendid_16\AppData\Roaming\Python\Python314\site-packages\findlibs\__init__.py", line 302, in find
+    if result := source(lib_name, pkg_name):
+                 ~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ManySplendid_16\AppData\Roaming\Python\Python314\site-packages\findlibs\__init__.py", line 202, in _find_in_config_paths
+    paths = _get_paths_from_config()
+  File "C:\Users\ManySplendid_16\AppData\Roaming\Python\Python314\site-packages\findlibs\__init__.py", line 185, in _get_paths_from_config
+    raise ValueError(
+    ...<4 lines>...
+    )
+ValueError: Don't use relative paths in the config file (C:\Users\ManySplendid_16\.findlibs), offending paths are: [WindowsPath('C')]
+[WARN] ECMWF fetch failed, continuing...
+[4/5] Generate web page...
+Saved: output\各國颱風路徑.html (331,408 bytes)
+Open it directly in a browser (no server needed).
+Hint: add a free Stadia Maps API key to config.json (stadia_api_key) to enable the Stamen 地形圖 basemap.
+[5/5] Deploy to GitHub...
+[main 44337b4] Auto update 2026-08-24 19:25
+ 4 files changed, 3 insertions(+), 3 deletions(-)
+ create mode 100644 _run2.log
+To https://github.com/wslee513/MSTyphoontrackshop.git
+   e8c769c..44337b4  main -> main
+
+[2026/08/24 19:25:29.75] Done.
