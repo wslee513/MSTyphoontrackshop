@@ -966,17 +966,14 @@ function quadAt(qt, T) {
   if (T >= qt[qt.length - 1].t) return qt[qt.length - 1];
   for (let i = 0; i < qt.length - 1; i++) {
     const a = qt[i], b = qt[i + 1];
-    if (T >= a.t && T <= b.t) {
-      const f = (T - a.t) / (b.t - a.t);
-      const mix = (x, y) => (x == null ? y : y == null ? x : Math.round(x + (y - x) * f));
-      const lerpQ = (qa, qb) => {
-        if (!qa && !qb) return null;
-        const out = {};
-        ['NE', 'SE', 'SW', 'NW'].forEach(k => out[k] = mix(qa ? qa[k] : null, qb ? qb[k] : null));
-        return out;
+    if (T >= a.t && T < b.t) {
+      // 不內插：暴風半徑只在 CWA 有資料的時間點改變，區間內沿用前一個資料點（階梯式）
+      return {
+        r7: a.r7 || null,
+        r10: a.r10 || null,
+        r7avg: a.r7avg != null ? a.r7avg : null,
+        r10avg: a.r10avg != null ? a.r10avg : null,
       };
-      const mixAvg = (va, vb) => (va == null ? vb : vb == null ? va : Math.round(va + (vb - va) * f));
-      return { r7: lerpQ(a.r7, b.r7), r10: lerpQ(a.r10, b.r10), r7avg: mixAvg(a.r7avg, b.r7avg), r10avg: mixAvg(a.r10avg, b.r10avg) };
     }
   }
   return null;
