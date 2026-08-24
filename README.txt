@@ -70,15 +70,16 @@ Usage
 
 3. 產生網頁地圖 (Generate Leaflet web map)
     python plot_web.py
-    讀取最新 JSON、歷史資料與 WeatherNext AI 預報，產生 output/各國颱風路徑.html
+    讀取最新 JSON 與歷史資料，產生 output/各國颱風路徑.html
     （資料內嵌，不需伺服器，直接在瀏覽器雙擊開啟即可）。內含各國路徑、
     CWA 七級暴風半徑圈（依風速估算）、歷史軌跡、每顆颱風的歷史 entry 下拉選單，
-    以及 WeatherNext AI 預報軌跡（青綠色虛線，風速/氣壓/氣溫）與 ECMWF 模式
-    預報軌跡（深靛 HRES 實線、淺靛 ENS 系集平均虛線）。底圖提供
+    以及 ECMWF 模式預報軌跡（深靛 HRES 實線、淺靛 ENS 系集平均虛線）。
+    （WeatherNext 圖層目前暫時停用，見功能 10。）底圖提供
     Google 地圖、Esri 衛星圖與 Stamen 地形圖（需 stadia_api_key）三種，
     圖磚與 Leaflet 庫來自網路，需網路連線。
-    注意：只有存在 output/weathernext_各國颱風路徑.json（由 fetch_weathernext.py
-    產生）時，WeatherNext 圖層才會出現；沒有該檔時網頁照常運作。
+    注意：output/weathernext_各國颱風路徑.json 仍由 fetch_weathernext.py 產生，
+    但 plot_web.py 目前暫不將其繪製到網頁（見功能 10）；ECMWF 圖層則只有存在
+    output/ecmwf_各國颱風路徑.json 時才會出現。
     ECMWF 圖層同理，只有存在 output/ecmwf_各國颱風路徑.json 時才會出現。
 
     可選參數（教材網頁用）：
@@ -91,8 +92,9 @@ Usage
 4. 一鍵更新網頁 (One-click update for latest data)
     update_typhoon_web.bat
     依序執行 fetch（步驟 1）→ fetch_weathernext（步驟 1b）→ fetch_ecmwf
-    （步驟 1c）→ 產生網頁（步驟 3），維持最新颱風資訊並附上 WeatherNext AI 與
-    ECMWF 模式預報。ECMWF 步驟若失敗（如無相符颱風）只警告、不中斷。
+    （步驟 1c）→ 產生網頁（步驟 3），維持最新颱風資訊並附上 ECMWF 模式預報
+    （WeatherNext 仍會抓取但網頁暫不繪製，見功能 10）。ECMWF 步驟若失敗
+    （如無相符颱風）只警告、不中斷。
     直接雙擊執行；由工作排程器定時執行時加參數 nopause：
         update_typhoon_web.bat nopause
     檔案以 CP950 (Big5) + CRLF 編碼，若以其他編碼重新儲存需還原。
@@ -166,10 +168,12 @@ Features
    四象限風圈 (QuadrantRadii, NE/SE/SW/NW):
    - CWA 分析資料 (AnalysisData.Fix) 的 Circle15ms/Circle25ms 內含四象限半徑
    - 僅「分析/歷史」位置有象限資料；預報 Fix (ForecastData.Fix) 只有單一半徑
-   - 網頁版 (plot_web.py) 在「時間播放」時，移動標記的風圈會以四象限多邊形
-     呈現 CWA 分析半徑（紅＝七級、橘＝十級），沿歷史軌跡隨動畫平滑變化；
-     無象限資料的時段/時點回退為依風速估算的圓形風圈（紅＝七級、橘＝十級）
-   - 靜態畫面不畫四象限風圈，只隨動畫播放出現
+    - 網頁版 (plot_web.py) 在「時間播放」時，移動標記的風圈會以四象限多邊形
+      呈現 CWA 分析半徑（紅＝七級、橘＝十級），沿歷史軌跡隨動畫平滑移動；
+      無象限資料的時段/時點回退為依風速估算的圓形風圈（紅＝七級、橘＝十級）
+    - 靜態畫面不畫四象限風圈，只隨動畫播放出現；注意：四邊形風圈的「位置/形狀」
+      沿軌跡平滑移動，但 CWA 半徑「大小」為階躍式（不插值），只在 CWA 指定發布
+      時次跳變，不會在兩次之間平滑變化
 
 3. 歷史軌跡 (Historical Track)
    - 以灰色虛線繪製過去所有 forecast time 的實際位置
@@ -214,9 +218,11 @@ Features
    - 「各國路徑」可逐一勾選開關各機構（CWA、JTWC、JMA、HKO 等）的路徑顯示
    - 臺灣 100km 海域線：與 PNG 相同，由 plot_typhoon.py 的計算邏輯（Natural
      Earth + shapely/pyproj）在產生 HTML 時算出並內嵌，圖層控制可開關；
-     需 show_taiwan_100km_buffer: true（且本機裝有 shapely/pyproj 與
-     Natural Earth 資料）
-   - 暴風半徑：靜態檢視不畫風圈（避免遮住 CWA 路徑、擋住滑鼠選取），改在 CWA
+      需 show_taiwan_100km_buffer: true（且本機裝有 shapely/pyproj 與
+      Natural Earth 資料）
+    - 經緯度線（Graticule）：5° 間距的灰虛線經緯網格，圖層控制可開關（預設開啟），
+      僅供參考、不互動（滑鼠事件穿透）。
+    - 暴風半徑：靜態檢視不畫風圈（避免遮住 CWA 路徑、擋住滑鼠選取），改在 CWA
      預報點的快顯視窗中顯示七級/十級半徑（點擊路徑點查看）；風圈只在時間播放
      （CWA 分析四象限）與「📌 固定此時間風圈」（紅色七級、橘色十級，帶白色外框，
      深色底圖下仍清晰可見）時出現；風圈頂端有等高線式的小型半徑標籤（如「180 km」，
@@ -247,12 +253,17 @@ Features
       沿每顆颱風的 CWA 預報軌跡各點（tau=0/24/48/...），抓該座標的 10m/100m 風速
       (kn)、海平面氣壓 (hPa)、氣溫 (°C)，以 6 小時原生解析度取最接近 tau 的時刻，
       寫出 output/weathernext_各國颱風路徑.json。
-    - 網頁呈現：plot_web.py 將該 JSON 以 "weathernext" 鍵內嵌進 HTML；每顆颱風
-      新增「XXX WeatherNext」圖層（青綠色虛線軌跡，圖層控制可開關），圓點點開有
-      tooltip（+τH 風速）與 popup（時間/位置/風速/氣壓/氣溫）。圖例與「❓」說明
-      也有相應項目。
+    - 網頁呈現（目前暫時停用）：plot_web.py 自本版起已暫時不再將 WeatherNext 軌跡
+       繪製到網頁上——fetch_weathernext.py 仍會產生 JSON，但網頁不內嵌、不顯示。
+       原因：Open-Meteo 免費端點僅回傳「某座標點的氣象」，並非 Google 自行預測的
+       颱風路徑；其點位是沿 CWA 預報路徑取樣，畫出來只是與 CWA 重疊的青綠色虛線，
+       並無額外預報價值。待日後改用能提供真正 Google WeatherNext 2 路徑的資料源時
+       再啟用。歷史說明：先前版本曾以 "weathernext" 鍵內嵌 JSON，每顆颱風加
+       「XXX WeatherNext」圖層（青綠色虛線 + tooltip/popup），圖例與「❓」說明亦有
+       對應項目。
     - 執行順序：fetch_typhoon2000.py → fetch_weathernext.py → plot_web.py；
-      update_typhoon_web.bat 已依序執行三者。
+       update_typhoon_web.bat 仍依序執行三者（fetch_weathernext 產生的 JSON 目前
+       僅留存，網頁不繪製）。
     - 若無 WeatherNext JSON 檔，網頁不會出現該圖層，其餘功能不受影響。
 
 11. ECMWF 模式預報 (ECMWF Open Data HRES/ENS TC tracks)
@@ -281,6 +292,18 @@ Features
     - 執行順序：fetch_typhoon2000.py → fetch_weathernext.py → fetch_ecmwf.py
       → plot_web.py；update_typhoon_web.bat 已依序執行四者（ECMWF 失敗不中斷）。
     - 若無 ECMWF JSON 檔，網頁不會出現該圖層，其餘功能不受影響。
+
+12. 預報時間顯示與強健性 (Forecast-time display & robustness)
+    - 資料中的 forecast_time_utc 一律以「真正 UTC」儲存（YYYY-MM-DD HH:MM:SS UTC）；
+      網頁顯示時統一 +8 小時轉為臺灣本地時（LTC）。CWA 原始 InitialTime 為 +08:00，
+      fetch 時已轉換為 UTC 再存檔，避免出現「本地時間被當成 UTC、顯示多 8 小時」的錯誤。
+    - TD（熱帶性低氣壓）/ 只有 CWA 資料的颱風，CWA API 可能沒有 InitialTime，
+      導致 forecast_time_utc 為空；fetch 會借用同批次中其他有 InitialTime 的颱風
+      之「共用 CWA 公告基準時間」填入，確保仍有預報時間。
+    - 網頁標頭的「預報時間」改取第一個有有效 forecast_time_utc 的颱風
+      （firstValidFtu），不再固定取 typhoons[0]（避免 TD24 這類缺資料的颱風
+       排在前面時顯示空白）。
+    - 時間解析失敗或空白時，網頁顯示「—」而非舊版的「?」。
 
 Notes
 -----
