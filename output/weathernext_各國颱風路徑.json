@@ -1,46 +1,10 @@
 {
- "generated_at": "2026-08-24 13:20:14 UTC",
+ "generated_at": "2026-08-24 14:20:07 UTC",
  "source": "Open-Meteo Google WeatherNext 2 Ensemble Mean (free API)",
  "api": "https://ensemble-api.open-meteo.com/v1/ensemble",
  "model": "google_weathernext2_ensemble_mean",
  "variable_unit": "kn (wind), hPa (pressure), degC (temp)",
  "typhoons": [
-  {
-   "storm_name": "?",
-   "forecast_time_utc": "2026-08-24 06:00:00 UTC",
-   "points": [
-    {
-     "tau": 0,
-     "lat": 24.8,
-     "lon": 118.5,
-     "time_utc": "2026-08-24T06:00",
-     "wind_kt_10m": 10.5,
-     "wind_kt_100m": 13.5,
-     "pressure_hpa": 998.6,
-     "temp_c": 27.3
-    },
-    {
-     "tau": 6,
-     "lat": 25.1,
-     "lon": 117.7,
-     "time_utc": "2026-08-24T12:00",
-     "wind_kt_10m": 3.0,
-     "wind_kt_100m": 5.8,
-     "pressure_hpa": 1002.8,
-     "temp_c": 22.5
-    },
-    {
-     "tau": 12,
-     "lat": 25.1,
-     "lon": 116.8,
-     "time_utc": "2026-08-24T18:00",
-     "wind_kt_10m": 2.4,
-     "wind_kt_100m": 4.9,
-     "pressure_hpa": 1003.3,
-     "temp_c": 22.2
-    }
-   ]
-  },
   {
    "storm_name": "SAUDEL",
    "forecast_time_utc": "2026-08-24 06:00:00 UTC",
