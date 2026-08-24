@@ -48,7 +48,7 @@
                 ]
               }
             ],
-            "forecast_time_utc": "2026-08-24 08:00:00 UTC",
+            "forecast_time_utc": "",
             "_fetch_name": "TD24_2026",
             "_storm_name_cn": "TD24",
             "_max_wind_ms": 12,

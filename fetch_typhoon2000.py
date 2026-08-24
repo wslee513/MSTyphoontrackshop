@@ -491,12 +491,14 @@ def _build_cwa_only_entry(tc_info, storm_cn):
     if not cwa_forecasts:
         return None
 
-    # Build forecast_time_utc from initial time
+    # Build forecast_time_utc from initial time.
+    # CWA InitialTime carries a +08:00 (Taiwan) offset; normalize to true UTC.
     forecast_time_utc = ""
     if initial_time_str:
         try:
-            it = dt.fromisoformat(initial_time_str.replace("+08:00", "+08:00"))
-            forecast_time_utc = it.strftime("%Y-%m-%dT%H:%M:%SZ").replace("T", " ").replace("Z", " UTC")
+            it = dt.fromisoformat(initial_time_str)
+            if it.tzinfo is not None:
+                it = it.astimezone(dt.timezone.utc)
             forecast_time_utc = it.strftime("%Y-%m-%d %H:%M:%S UTC")
         except Exception:
             pass
