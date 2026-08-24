@@ -648,6 +648,16 @@ def main():
             "entries": typhoon_entries,
         })
 
+    # TD / CWA-only entries sometimes lack InitialTime, leaving forecast_time_utc
+    # empty. They share the same CWA bulletin base as the other active storms,
+    # so borrow a valid base time from a sibling to keep the page time correct.
+    known_base = next((t.get("forecast_time_utc") for t in all_typhoons_data
+                       if t.get("forecast_time_utc")), None)
+    if known_base:
+        for t in all_typhoons_data:
+            if not t.get("forecast_time_utc"):
+                t["forecast_time_utc"] = known_base
+
     if not all_typhoons_data:
         print("No data fetched for any typhoon.")
         return

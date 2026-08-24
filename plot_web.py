@@ -412,7 +412,7 @@ function pad2(n) { return String(n).padStart(2, '0'); }
 function utcToLTC(utcStr) {
   const s = String(utcStr || '');
   const m = s.match(/(\d{4})-(\d{2})-(\d{2}) (\d{2}):(\d{2}):(\d{2})/);
-  if (!m) return s || '?';
+  if (!m) return '—';
   const d = new Date(Date.UTC(+m[1], +m[2]-1, +m[3], +m[4], +m[5], +m[6]) + 8*3600*1000);
   return `${d.getUTCFullYear()}/${pad2(d.getUTCMonth()+1)}/${pad2(d.getUTCDate())} ${pad2(d.getUTCHours())}:${pad2(d.getUTCMinutes())} LTC`;
 }
@@ -420,7 +420,7 @@ function utcToLTC(utcStr) {
 function fcTimeLTC(info, fc) {
   const s = String(info.forecast_time_utc || '');
   const m = s.match(/(\d{4})-(\d{2})-(\d{2}) (\d{2}):(\d{2}):(\d{2})/);
-  if (!m) return '?';
+  if (!m) return '—';
   const hours = (fc.tau || 0) + 8;
   const d = new Date(Date.UTC(+m[1], +m[2]-1, +m[3], +m[4], +m[5], +m[6]) + hours*3600*1000);
   return `${pad2(d.getUTCMonth()+1)}/${pad2(d.getUTCDate())} ${pad2(d.getUTCHours())}:${pad2(d.getUTCMinutes())} LTC`;
@@ -766,10 +766,18 @@ function drawECMWF(t, hresGrp, ensGrp) {
   drawPts(hres, hresGrp, ECMWF_COLOR, 'HRES');
 }
 
+function firstValidFtu() {
+  for (const t of (DATA.typhoons || [])) {
+    const s = t.forecast_time_utc || '';
+    if (s && utcToLTC(s) !== '—') return s;
+  }
+  return '';
+}
+
 const meta = document.getElementById('meta');
 meta.innerHTML =
   `產生時間：${escapeHtml(DATA.generated_at)}<br>` +
-  `預報時間：${escapeHtml(utcToLTC(DATA.typhoons.length ? DATA.typhoons[0].forecast_time_utc : ''))}<br>` +
+  `預報時間：${escapeHtml(utcToLTC(firstValidFtu()))}<br>` +
   `資料：${escapeHtml(DATA.typhoons.length)} 個颱風`;
 
 const panel = document.getElementById('typhoon-panel');
