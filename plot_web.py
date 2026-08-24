@@ -390,7 +390,9 @@ HTML_TEMPLATE = r"""<!DOCTYPE html>
     <h4>ECMWF 模式預報</h4>
     <p>深靛實線為 ECMWF Open Data 的 HRES 決定性預報，淺靛虛線為 ENS 系集平均（51 個成員平均）；由 fetch_ecmwf.py 從 ECMWF 官方 BUFR 熱帶氣旋路徑產品解碼（CC-BY-4.0），點擊圓點查看各時段位置、最大風速與中心氣壓。圖層控制中每顆颱風有「XX ECMWF HRES」與「XX ECMWF ENS」可分別開關。</p>
     <h4>圖層控制</h4>
-    <p>地圖角落的層疊圖示按鈕（桌面右下、手機右上）可開關各颱風圖層、歷史軌跡、臺灣 100km 海域線與固定風圈標註。</p>
+    <p>地圖角落的層疊圖示按鈕（桌面右下、手機右上）可開關各颱風圖層、歷史軌跡、臺灣 100km 海域線、經緯度線與固定風圈標註。</p>
+    <h4>經緯度線</h4>
+    <p>以每 5° 一條的淡灰虛線標出經度與緯度網格，便於讀取颱風所在座標，可於圖層控制開關（預設顯示）。</p>
     <h4>暴風半徑</h4>
     <p>靜態檢視不直接畫風圈，改在 CWA 預報點的快顯視窗中顯示七級／十級暴風半徑（點擊路徑點即可查看）。時間播放時，移動標記旁會框出 CWA 四象限風圈（紅＝七級、橘＝十級，虛線＝四象限、實線＝平均半徑）；也可按「📌 固定此時間風圈」把指定時間的風圈留在圖上。</p>
     <h4>臺灣 100km 海域線</h4>
@@ -621,6 +623,22 @@ if (DATA.taiwan_100km_buffer) {
   });
   overlays['臺灣 100km 海域線'] = L.layerGroup([bufLayer]).addTo(map);
 }
+
+// ── 經緯度線 (graticule) ────────────────────────────────────────
+function buildGraticule(step) {
+  const grp = L.layerGroup();
+  const latMin = -80, latMax = 80, lonMin = -180, lonMax = 180;
+  const common = { color: '#9aa0a6', weight: 0.6, opacity: 0.55, dashArray: '2,4', interactive: false };
+  for (let lat = latMin; lat <= latMax; lat += step) {
+    L.polyline([[lat, lonMin], [lat, lonMax]], common).addTo(grp);
+  }
+  for (let lon = lonMin; lon <= lonMax; lon += step) {
+    L.polyline([[latMin, lon], [latMax, lon]], common).addTo(grp);
+  }
+  return grp;
+}
+const graticuleGrp = buildGraticule(5).addTo(map);
+overlays['經緯度線'] = graticuleGrp;
 
 function collectBounds(info) {
   (info.agencies || []).forEach(ag =>
