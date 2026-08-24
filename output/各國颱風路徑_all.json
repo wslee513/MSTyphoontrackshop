@@ -15,32 +15,24 @@
                 "forecasts": [
                   {
                     "tau": 0,
-                    "lat": 24.4,
-                    "lon": 119.3,
+                    "lat": 24.8,
+                    "lon": 118.5,
                     "wind_kt": 23,
                     "wind_ms": 12,
                     "pressure_hpa": 1000
                   },
                   {
                     "tau": 6,
-                    "lat": 24.7,
-                    "lon": 118.8,
+                    "lat": 25.1,
+                    "lon": 117.7,
                     "wind_kt": 23,
                     "wind_ms": 12,
                     "pressure_hpa": 1000
                   },
                   {
                     "tau": 12,
-                    "lat": 24.9,
-                    "lon": 118.4,
-                    "wind_kt": 23,
-                    "wind_ms": 12,
-                    "pressure_hpa": 1000
-                  },
-                  {
-                    "tau": 18,
-                    "lat": 24.8,
-                    "lon": 117.9,
+                    "lat": 25.1,
+                    "lon": 116.8,
                     "wind_kt": 19,
                     "wind_ms": 10,
                     "pressure_hpa": 1004
@@ -53,14 +45,12 @@
             "_storm_name_cn": "TD24",
             "_max_wind_ms": 12,
             "_cwa_fc_mws_map": {
-              "24.7,118.8": 12,
-              "24.9,118.4": 12,
-              "24.8,117.9": 10
+              "25.1,117.7": 12,
+              "25.1,116.8": 10
             },
             "_cwa_fc_mws_map_by_tau": {
               "6": 12,
-              "12": 12,
-              "18": 10
+              "12": 10
             },
             "_cwa_fc_radius7_map": {},
             "_cwa_fc_radius7_map_by_tau": {},
@@ -75,7 +65,7 @@
             "_is_td": true,
             "_td_no": "24",
             "_td_state_map": {
-              "18": "減弱為低氣壓"
+              "12": "減弱為低氣壓"
             },
             "_source": "cwa_only"
           }

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-24 07:20:26 UTC",
+ "generated_at": "2026-08-24 08:20:11 UTC",
  "source": "Open-Meteo Google WeatherNext 2 Ensemble Mean (free API)",
  "api": "https://ensemble-api.open-meteo.com/v1/ensemble",
  "model": "google_weathernext2_ensemble_mean",
@@ -11,43 +11,33 @@
    "points": [
     {
      "tau": 0,
-     "lat": 24.4,
-     "lon": 119.3,
+     "lat": 24.8,
+     "lon": 118.5,
      "time_utc": "2026-08-24T00:00",
-     "wind_kt_10m": 5.8,
-     "wind_kt_100m": 6.7,
-     "pressure_hpa": 999.5,
-     "temp_c": 27.3
+     "wind_kt_10m": 7.2,
+     "wind_kt_100m": 9.5,
+     "pressure_hpa": 1000.1,
+     "temp_c": 27.0
     },
     {
      "tau": 6,
-     "lat": 24.7,
-     "lon": 118.8,
+     "lat": 25.1,
+     "lon": 117.7,
      "time_utc": "2026-08-24T00:00",
-     "wind_kt_10m": 7.2,
-     "wind_kt_100m": 9.5,
-     "pressure_hpa": 1000.1,
-     "temp_c": 27.0
+     "wind_kt_10m": 1.8,
+     "wind_kt_100m": 2.9,
+     "pressure_hpa": 1003.2,
+     "temp_c": 23.4
     },
     {
      "tau": 12,
-     "lat": 24.9,
-     "lon": 118.4,
+     "lat": 25.1,
+     "lon": 116.8,
      "time_utc": "2026-08-24T00:00",
-     "wind_kt_10m": 7.2,
-     "wind_kt_100m": 9.5,
-     "pressure_hpa": 1000.1,
-     "temp_c": 27.0
-    },
-    {
-     "tau": 18,
-     "lat": 24.8,
-     "lon": 117.9,
-     "time_utc": "2026-08-24T00:00",
-     "wind_kt_10m": 2.7,
-     "wind_kt_100m": 3.6,
-     "pressure_hpa": 1000.5,
-     "temp_c": 27.4
+     "wind_kt_10m": 0.7,
+     "wind_kt_100m": 1.1,
+     "pressure_hpa": 1003.1,
+     "temp_c": 23.8
     }
    ]
   },
