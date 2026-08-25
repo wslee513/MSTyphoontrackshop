@@ -1,6 +1,11 @@
 @echo off
 cd /d "%~dp0"
 
+rem --- ecCodes (ECMWF GRIB) support: point findlibs at the local eccodes build ---
+set "ECCODES_PYTHON_USE_FINDLIBS=1"
+set "ECCODESLIB_DIR=C:\eccodes"
+set "PATH=%PATH%;C:\eccodes\lib"
+
 echo [%date% %time%] Scheduled update started...
 
 echo [1/5] Fetch typhoon data...
