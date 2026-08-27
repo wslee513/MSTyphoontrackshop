@@ -651,6 +651,236 @@
       "_td_state_map": {
         "48": "減弱為熱帶性低氣壓"
       }
+    },
+    {
+      "name": "TD25",
+      "agencies": [
+        {
+          "agency": "CWA",
+          "source": "CWA OpenData",
+          "is_forecast": true,
+          "forecasts": [
+            {
+              "tau": 0,
+              "lat": 16.8,
+              "lon": 161.4,
+              "wind_kt": 29,
+              "wind_ms": 15,
+              "pressure_hpa": 1002
+            },
+            {
+              "tau": 6,
+              "lat": 16.9,
+              "lon": 162.9,
+              "wind_kt": 29,
+              "wind_ms": 15,
+              "pressure_hpa": 1000
+            },
+            {
+              "tau": 12,
+              "lat": 17.2,
+              "lon": 164.0,
+              "wind_kt": 23,
+              "wind_ms": 12,
+              "pressure_hpa": 1003
+            },
+            {
+              "tau": 18,
+              "lat": 17.7,
+              "lon": 165.1,
+              "wind_kt": 23,
+              "wind_ms": 12,
+              "pressure_hpa": 1003
+            },
+            {
+              "tau": 24,
+              "lat": 18.4,
+              "lon": 166.1,
+              "wind_kt": 19,
+              "wind_ms": 10,
+              "pressure_hpa": 1005
+            }
+          ]
+        }
+      ],
+      "forecast_time_utc": "2026-08-26 18:00:00 UTC",
+      "_fetch_name": "TD25_2026",
+      "_storm_name_cn": "TD25",
+      "_max_wind_ms": 15,
+      "_cwa_fc_mws_map": {
+        "16.9,162.9": 15,
+        "17.2,164.0": 12,
+        "17.7,165.1": 12,
+        "18.4,166.1": 10
+      },
+      "_cwa_fc_mws_map_by_tau": {
+        "6": 15,
+        "12": 12,
+        "18": 12,
+        "24": 10
+      },
+      "_cwa_fc_radius7_map": {},
+      "_cwa_fc_radius7_map_by_tau": {},
+      "_cwa_fc_radius10_map": {},
+      "_cwa_fc_radius10_map_by_tau": {},
+      "_cwa_an_radius7_map": {},
+      "_cwa_an_radius10_map": {},
+      "_cwa_an_radius7_quad_map": {},
+      "_cwa_an_radius10_quad_map": {},
+      "_cwa_an_radius7_quad_latest": null,
+      "_cwa_an_radius10_quad_latest": null,
+      "_is_td": true,
+      "_td_no": "25",
+      "_td_state_map": {
+        "24": "減弱為低氣壓"
+      },
+      "_source": "cwa_only"
+    },
+    {
+      "name": "TD26",
+      "agencies": [
+        {
+          "agency": "CWA",
+          "source": "CWA OpenData",
+          "is_forecast": true,
+          "forecasts": [
+            {
+              "tau": 0,
+              "lat": 20.5,
+              "lon": 167.8,
+              "wind_kt": 29,
+              "wind_ms": 15,
+              "pressure_hpa": 1002
+            },
+            {
+              "tau": 6,
+              "lat": 20.9,
+              "lon": 167.5,
+              "wind_kt": 29,
+              "wind_ms": 15,
+              "pressure_hpa": 1000
+            },
+            {
+              "tau": 12,
+              "lat": 21.7,
+              "lon": 167.5,
+              "wind_kt": 29,
+              "wind_ms": 15,
+              "pressure_hpa": 1000
+            },
+            {
+              "tau": 18,
+              "lat": 22.5,
+              "lon": 167.5,
+              "wind_kt": 35,
+              "wind_ms": 18,
+              "pressure_hpa": 998
+            },
+            {
+              "tau": 24,
+              "lat": 23.2,
+              "lon": 167.2,
+              "wind_kt": 39,
+              "wind_ms": 20,
+              "pressure_hpa": 995
+            },
+            {
+              "tau": 36,
+              "lat": 24.6,
+              "lon": 166.6,
+              "wind_kt": 39,
+              "wind_ms": 20,
+              "pressure_hpa": 995
+            },
+            {
+              "tau": 48,
+              "lat": 26.4,
+              "lon": 166.4,
+              "wind_kt": 45,
+              "wind_ms": 23,
+              "pressure_hpa": 988
+            },
+            {
+              "tau": 72,
+              "lat": 30.7,
+              "lon": 165.3,
+              "wind_kt": 45,
+              "wind_ms": 23,
+              "pressure_hpa": 988
+            },
+            {
+              "tau": 96,
+              "lat": 32.4,
+              "lon": 164.9,
+              "wind_kt": 39,
+              "wind_ms": 20,
+              "pressure_hpa": 995
+            },
+            {
+              "tau": 120,
+              "lat": 33.2,
+              "lon": 164.7,
+              "wind_kt": 29,
+              "wind_ms": 15,
+              "pressure_hpa": 1002
+            }
+          ]
+        }
+      ],
+      "forecast_time_utc": "2026-08-26 18:00:00 UTC",
+      "_fetch_name": "TD26_2026",
+      "_storm_name_cn": "TD26",
+      "_max_wind_ms": 15,
+      "_cwa_fc_mws_map": {
+        "20.9,167.5": 15,
+        "21.7,167.5": 15,
+        "22.5,167.5": 18,
+        "23.2,167.2": 20,
+        "24.6,166.6": 20,
+        "26.4,166.4": 23,
+        "30.7,165.3": 23,
+        "32.4,164.9": 20,
+        "33.2,164.7": 15
+      },
+      "_cwa_fc_mws_map_by_tau": {
+        "6": 15,
+        "12": 15,
+        "18": 18,
+        "24": 20,
+        "36": 20,
+        "48": 23,
+        "72": 23,
+        "96": 20,
+        "120": 15
+      },
+      "_cwa_fc_radius7_map": {
+        "22.5,167.5": 80,
+        "23.2,167.2": 100,
+        "24.6,166.6": 100,
+        "26.4,166.4": 120,
+        "30.7,165.3": 150,
+        "32.4,164.9": 100
+      },
+      "_cwa_fc_radius7_map_by_tau": {
+        "18": 80,
+        "24": 100,
+        "36": 100,
+        "48": 120,
+        "72": 150,
+        "96": 100
+      },
+      "_cwa_fc_radius10_map": {},
+      "_cwa_fc_radius10_map_by_tau": {},
+      "_cwa_an_radius7_map": {},
+      "_cwa_an_radius10_map": {},
+      "_cwa_an_radius7_quad_map": {},
+      "_cwa_an_radius10_quad_map": {},
+      "_cwa_an_radius7_quad_latest": null,
+      "_cwa_an_radius10_quad_latest": null,
+      "_is_td": true,
+      "_td_no": "26",
+      "_td_state_map": {},
+      "_source": "cwa_only"
     }
   ]
 }
