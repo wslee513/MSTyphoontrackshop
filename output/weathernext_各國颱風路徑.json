@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-27 13:20:06 UTC",
+ "generated_at": "2026-08-27 14:20:08 UTC",
  "source": "Open-Meteo Google WeatherNext 2 Ensemble Mean (free API)",
  "api": "https://ensemble-api.open-meteo.com/v1/ensemble",
  "model": "google_weathernext2_ensemble_mean",
@@ -48,6 +48,158 @@
      "wind_kt_100m": 7.4,
      "pressure_hpa": 1002.4,
      "temp_c": 25.5
+    }
+   ]
+  },
+  {
+   "storm_name": "?",
+   "forecast_time_utc": "2026-08-27 06:00:00 UTC",
+   "points": [
+    {
+     "tau": 0,
+     "lat": 17.6,
+     "lon": 163.5,
+     "time_utc": "2026-08-27T06:00",
+     "wind_kt_10m": 8.9,
+     "wind_kt_100m": 10.2,
+     "pressure_hpa": 1006.2,
+     "temp_c": 27.3
+    },
+    {
+     "tau": 6,
+     "lat": 17.8,
+     "lon": 164.4,
+     "time_utc": "2026-08-27T12:00",
+     "wind_kt_10m": 13.4,
+     "wind_kt_100m": 15.4,
+     "pressure_hpa": 1007.9,
+     "temp_c": 27.7
+    },
+    {
+     "tau": 12,
+     "lat": 18.4,
+     "lon": 165.4,
+     "time_utc": "2026-08-27T18:00",
+     "wind_kt_10m": 17.7,
+     "wind_kt_100m": 20.5,
+     "pressure_hpa": 1005.8,
+     "temp_c": 27.9
+    },
+    {
+     "tau": 18,
+     "lat": 19.1,
+     "lon": 166.3,
+     "time_utc": "2026-08-28T00:00",
+     "wind_kt_10m": 19.0,
+     "wind_kt_100m": 22.5,
+     "pressure_hpa": 1006.3,
+     "temp_c": 27.8
+    },
+    {
+     "tau": 24,
+     "lat": 20.0,
+     "lon": 167.2,
+     "time_utc": "2026-08-28T06:00",
+     "wind_kt_10m": 20.5,
+     "wind_kt_100m": 24.2,
+     "pressure_hpa": 1004.2,
+     "temp_c": 27.9
+    },
+    {
+     "tau": 36,
+     "lat": 22.4,
+     "lon": 168.3,
+     "time_utc": "2026-08-28T18:00",
+     "wind_kt_10m": 19.6,
+     "wind_kt_100m": 23.4,
+     "pressure_hpa": 1003.7,
+     "temp_c": 27.8
+    },
+    {
+     "tau": 48,
+     "lat": 25.5,
+     "lon": 169.3,
+     "time_utc": "2026-08-29T06:00",
+     "wind_kt_10m": 20.6,
+     "wind_kt_100m": 24.5,
+     "pressure_hpa": 1004.0,
+     "temp_c": 27.9
+    },
+    {
+     "tau": 72,
+     "lat": 32.2,
+     "lon": 169.7,
+     "time_utc": "2026-08-30T06:00",
+     "wind_kt_10m": 21.6,
+     "wind_kt_100m": 26.5,
+     "pressure_hpa": 1005.1,
+     "temp_c": 26.0
+    }
+   ]
+  },
+  {
+   "storm_name": "ETAU",
+   "forecast_time_utc": "2026-08-27 06:00:00 UTC",
+   "points": [
+    {
+     "tau": 0,
+     "lat": 20.9,
+     "lon": 168.2,
+     "time_utc": "2026-08-27T06:00",
+     "wind_kt_10m": 22.8,
+     "wind_kt_100m": 26.6,
+     "pressure_hpa": 1004.8,
+     "temp_c": 27.1
+    },
+    {
+     "tau": 24,
+     "lat": 24.1,
+     "lon": 167.3,
+     "time_utc": "2026-08-28T06:00",
+     "wind_kt_10m": 13.6,
+     "wind_kt_100m": 15.9,
+     "pressure_hpa": 1001.2,
+     "temp_c": 28.1
+    },
+    {
+     "tau": 48,
+     "lat": 28.0,
+     "lon": 166.1,
+     "time_utc": "2026-08-29T06:00",
+     "wind_kt_10m": 6.1,
+     "wind_kt_100m": 7.0,
+     "pressure_hpa": 999.8,
+     "temp_c": 27.0
+    },
+    {
+     "tau": 72,
+     "lat": 32.1,
+     "lon": 164.6,
+     "time_utc": "2026-08-30T06:00",
+     "wind_kt_10m": 3.3,
+     "wind_kt_100m": 3.7,
+     "pressure_hpa": 999.6,
+     "temp_c": 26.2
+    },
+    {
+     "tau": 96,
+     "lat": 34.3,
+     "lon": 164.4,
+     "time_utc": "2026-08-31T06:00",
+     "wind_kt_10m": 4.7,
+     "wind_kt_100m": 5.4,
+     "pressure_hpa": 1004.6,
+     "temp_c": 26.0
+    },
+    {
+     "tau": 120,
+     "lat": 34.8,
+     "lon": 164.1,
+     "time_utc": "2026-09-01T06:00",
+     "wind_kt_10m": 13.8,
+     "wind_kt_100m": 15.4,
+     "pressure_hpa": 1009.3,
+     "temp_c": 25.0
     }
    ]
   }
