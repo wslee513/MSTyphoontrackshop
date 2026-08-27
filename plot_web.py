@@ -929,6 +929,8 @@ if (allBounds.length) {
 // ── 時間播放 (time playback) ──────────────────────────────────────────────
 const PLAY_COLORS = ['#E0004D', '#00A2E8', '#FF7F27', '#22B573', '#A349A4', '#3F48CC', '#880015', '#8E24AA'];
 const DUR_MS = 20000;
+function snapHour(ms) { return Math.round(ms / 3600000) * 3600000; }
+function floorHour(ms) { return Math.floor(ms / 3600000) * 3600000; }
 const playback = {
   playing: false, clock: 0, tStart: 0, tEnd: 0, timer: null,
   timelines: [], quads: [], markers: [],
@@ -1281,7 +1283,8 @@ function nudgeClock(dh) {
   cancelAnimationFrame(playback.timer);
   const span = playback.tEnd - playback.tStart;
   if (span <= 0) return;
-  playback.clock = Math.max(playback.tStart, Math.min(playback.tEnd, playback.clock + dh * 3600000));
+  const c = snapHour(playback.clock) + dh * 3600000;
+  playback.clock = Math.max(playback.tStart, Math.min(playback.tEnd, c));
   renderPlayback();
   updatePlayBtn();
 }
@@ -1292,7 +1295,7 @@ const nowBtn = document.getElementById('now-btn');
 nowBtn.addEventListener('click', () => {
   playback.playing = false;
   cancelAnimationFrame(playback.timer);
-  const nowMs = Date.now();
+  const nowMs = floorHour(Date.now());
   const span = playback.tEnd - playback.tStart;
   if (span <= 0) return;
   playback.clock = Math.max(playback.tStart, Math.min(playback.tEnd, nowMs));
@@ -1304,7 +1307,8 @@ playSlider.addEventListener('input', () => {
   playback.playing = false;
   cancelAnimationFrame(playback.timer);
   const span = playback.tEnd - playback.tStart;
-  playback.clock = span > 0 ? playback.tStart + (+playSlider.value / 1000) * span : playback.tStart;
+  let c = span > 0 ? playback.tStart + (+playSlider.value / 1000) * span : playback.tStart;
+  playback.clock = Math.max(playback.tStart, Math.min(playback.tEnd, snapHour(c)));
   renderPlayback();
   updatePlayBtn();
 });
