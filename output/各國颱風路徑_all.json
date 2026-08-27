@@ -7478,6 +7478,60 @@
             "forecast_time_utc": "2026-08-27 06:00:00 UTC",
             "agencies": [
               {
+                "agency": "JTWC",
+                "forecasts": [
+                  {
+                    "tau": 0,
+                    "datetime_z": "270600",
+                    "lat": 21.2,
+                    "lon": 168.0,
+                    "wind_kt": 40
+                  },
+                  {
+                    "tau": 12,
+                    "lat": 22.9,
+                    "lon": 168.1,
+                    "wind_kt": 45
+                  },
+                  {
+                    "tau": 24,
+                    "lat": 24.7,
+                    "lon": 167.6,
+                    "wind_kt": 50
+                  },
+                  {
+                    "tau": 36,
+                    "lat": 26.5,
+                    "lon": 167.0,
+                    "wind_kt": 55
+                  },
+                  {
+                    "tau": 48,
+                    "lat": 28.7,
+                    "lon": 166.2,
+                    "wind_kt": 50
+                  },
+                  {
+                    "tau": 60,
+                    "lat": 31.1,
+                    "lon": 165.4,
+                    "wind_kt": 45
+                  },
+                  {
+                    "tau": 72,
+                    "lat": 32.3,
+                    "lon": 164.9,
+                    "wind_kt": 40
+                  },
+                  {
+                    "tau": 96,
+                    "lat": 33.9,
+                    "lon": 165.9,
+                    "wind_kt": 35
+                  }
+                ]
+              },
+              {
                 "agency": "JMA",
                 "forecasts": [
                   {
@@ -7629,6 +7683,60 @@
                     "tau": 120,
                     "lat": 34.8,
                     "lon": 164.1,
+                    "wind_kt": 29
+                  }
+                ]
+              },
+              {
+                "agency": "KMA",
+                "forecasts": [
+                  {
+                    "tau": 0,
+                    "datetime_z": "270600",
+                    "lat": 21.2,
+                    "lon": 167.9,
+                    "wind_kt": 35
+                  },
+                  {
+                    "tau": 12,
+                    "lat": 22.6,
+                    "lon": 167.4,
+                    "wind_kt": 37
+                  },
+                  {
+                    "tau": 24,
+                    "lat": 24.2,
+                    "lon": 167.0,
+                    "wind_kt": 39
+                  },
+                  {
+                    "tau": 36,
+                    "lat": 25.8,
+                    "lon": 166.6,
+                    "wind_kt": 41
+                  },
+                  {
+                    "tau": 48,
+                    "lat": 27.8,
+                    "lon": 166.2,
+                    "wind_kt": 45
+                  },
+                  {
+                    "tau": 72,
+                    "lat": 32.1,
+                    "lon": 165.5,
+                    "wind_kt": 45
+                  },
+                  {
+                    "tau": 96,
+                    "lat": 34.7,
+                    "lon": 166.0,
+                    "wind_kt": 41
+                  },
+                  {
+                    "tau": 120,
+                    "lat": 35.7,
+                    "lon": 166.3,
                     "wind_kt": 29
                   }
                 ]
