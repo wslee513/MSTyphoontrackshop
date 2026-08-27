@@ -7373,161 +7373,64 @@
               }
             ]
           }
-        }
-      ]
-    },
-    {
-      "storm_name": "TD25_2026",
-      "entries": [
+        },
         {
-          "index": 0,
+          "index": 34,
           "data": {
-            "name": "TD25",
+            "storm_name": "SAUDEL",
+            "forecast_time_utc": "2026-08-27 06:00:00 UTC",
             "agencies": [
               {
-                "agency": "CWA",
-                "source": "CWA OpenData",
-                "is_forecast": true,
+                "agency": "HKO",
                 "forecasts": [
                   {
                     "tau": 0,
-                    "lat": 16.7,
-                    "lon": 162.3,
-                    "wind_kt": 29,
-                    "wind_ms": 15,
-                    "pressure_hpa": 1002
-                  },
-                  {
-                    "tau": 6,
-                    "lat": 17.7,
-                    "lon": 164.0,
-                    "wind_kt": 23,
-                    "wind_ms": 12,
-                    "pressure_hpa": 1002
-                  },
-                  {
-                    "tau": 12,
-                    "lat": 18.8,
-                    "lon": 165.3,
-                    "wind_kt": 23,
-                    "wind_ms": 12,
-                    "pressure_hpa": 1002
-                  },
-                  {
-                    "tau": 18,
-                    "lat": 19.9,
-                    "lon": 166.6,
-                    "wind_kt": 23,
-                    "wind_ms": 12,
-                    "pressure_hpa": 1002
+                    "datetime_z": "270600",
+                    "lat": 28.5,
+                    "lon": 124.2,
+                    "wind_kt": 78
                   },
                   {
                     "tau": 24,
-                    "lat": 21.0,
-                    "lon": 167.9,
-                    "wind_kt": 19,
-                    "wind_ms": 10,
-                    "pressure_hpa": 1004
+                    "lat": 27.8,
+                    "lon": 120.1,
+                    "wind_kt": 59
+                  },
+                  {
+                    "tau": 48,
+                    "lat": 27.1,
+                    "lon": 115.1,
+                    "wind_kt": 24
+                  },
+                  {
+                    "tau": 72,
+                    "lat": 24.8,
+                    "lon": 111.4,
+                    "wind_kt": 13
                   }
                 ]
-              }
-            ],
-            "forecast_time_utc": "2026-08-27 00:00:00 UTC",
-            "_fetch_name": "TD25_2026",
-            "_storm_name_cn": "TD25",
-            "_max_wind_ms": 15,
-            "_cwa_fc_mws_map": {
-              "17.7,164.0": 12,
-              "18.8,165.3": 12,
-              "19.9,166.6": 12,
-              "21.0,167.9": 10
-            },
-            "_cwa_fc_mws_map_by_tau": {
-              "6": 12,
-              "12": 12,
-              "18": 12,
-              "24": 10
-            },
-            "_cwa_fc_radius7_map": {},
-            "_cwa_fc_radius7_map_by_tau": {},
-            "_cwa_fc_radius10_map": {},
-            "_cwa_fc_radius10_map_by_tau": {},
-            "_cwa_an_radius7_map": {},
-            "_cwa_an_radius10_map": {},
-            "_cwa_an_radius7_quad_map": {},
-            "_cwa_an_radius10_quad_map": {},
-            "_cwa_an_radius7_quad_latest": null,
-            "_cwa_an_radius10_quad_latest": null,
-            "_is_td": true,
-            "_td_no": "25",
-            "_td_state_map": {
-              "24": "減弱為低氣壓"
-            },
-            "_source": "cwa_only"
-          }
-        }
-      ]
-    },
-    {
-      "storm_name": "ETAU_2026",
-      "entries": [
-        {
-          "index": 0,
-          "data": {
-            "storm_name": "ETAU",
-            "forecast_time_utc": "2026-08-27 06:00:00 UTC",
-            "agencies": [
+              },
               {
                 "agency": "JTWC",
                 "forecasts": [
                   {
                     "tau": 0,
                     "datetime_z": "270600",
-                    "lat": 21.2,
-                    "lon": 168.0,
-                    "wind_kt": 40
-                  },
-                  {
-                    "tau": 12,
-                    "lat": 22.9,
-                    "lon": 168.1,
-                    "wind_kt": 45
+                    "lat": 28.4,
+                    "lon": 124.2,
+                    "wind_kt": 80
                   },
                   {
                     "tau": 24,
-                    "lat": 24.7,
-                    "lon": 167.6,
+                    "lat": 28.0,
+                    "lon": 120.1,
                     "wind_kt": 50
-                  },
-                  {
-                    "tau": 36,
-                    "lat": 26.5,
-                    "lon": 167.0,
-                    "wind_kt": 55
                   },
                   {
                     "tau": 48,
-                    "lat": 28.7,
-                    "lon": 166.2,
-                    "wind_kt": 50
-                  },
-                  {
-                    "tau": 60,
-                    "lat": 31.1,
-                    "lon": 165.4,
-                    "wind_kt": 45
-                  },
-                  {
-                    "tau": 72,
-                    "lat": 32.3,
-                    "lon": 164.9,
-                    "wind_kt": 40
-                  },
-                  {
-                    "tau": 96,
-                    "lat": 33.9,
-                    "lon": 165.9,
-                    "wind_kt": 35
+                    "lat": 27.0,
+                    "lon": 115.3,
+                    "wind_kt": 25
                   }
                 ]
               },
@@ -7537,38 +7440,20 @@
                   {
                     "tau": 0,
                     "datetime_z": "270600",
-                    "lat": 21.4,
-                    "lon": 168.3,
-                    "wind_kt": 35
+                    "lat": 28.5,
+                    "lon": 124.2,
+                    "wind_kt": 75
                   },
                   {
                     "tau": 24,
-                    "lat": 24.3,
-                    "lon": 167.0,
-                    "wind_kt": 40
+                    "lat": 27.8,
+                    "lon": 120.1,
+                    "wind_kt": 55
                   },
                   {
                     "tau": 48,
-                    "lat": 28.1,
-                    "lon": 166.0,
-                    "wind_kt": 35
-                  },
-                  {
-                    "tau": 72,
-                    "lat": 32.3,
-                    "lon": 165.1,
-                    "wind_kt": 35
-                  },
-                  {
-                    "tau": 96,
-                    "lat": 34.8,
-                    "lon": 166.5,
-                    "wind_kt": 35
-                  },
-                  {
-                    "tau": 120,
-                    "lat": 35.7,
-                    "lon": 167.0,
+                    "lat": 27.5,
+                    "lon": 115.0,
                     "wind_kt": null
                   }
                 ]
@@ -7579,57 +7464,27 @@
                   {
                     "tau": 0,
                     "datetime_z": "270600",
-                    "lat": 21.4,
-                    "lon": 168.3,
-                    "wind_kt": 35
-                  },
-                  {
-                    "tau": 12,
-                    "lat": 23.0,
-                    "lon": 168.0,
-                    "wind_kt": 35
+                    "lat": 28.5,
+                    "lon": 124.2,
+                    "wind_kt": 87
                   },
                   {
                     "tau": 24,
-                    "lat": 25.1,
-                    "lon": 167.3,
-                    "wind_kt": 35
-                  },
-                  {
-                    "tau": 36,
-                    "lat": 27.4,
-                    "lon": 166.9,
-                    "wind_kt": 35
+                    "lat": 27.8,
+                    "lon": 120.4,
+                    "wind_kt": 64
                   },
                   {
                     "tau": 48,
-                    "lat": 29.9,
-                    "lon": 165.9,
-                    "wind_kt": 35
-                  },
-                  {
-                    "tau": 60,
-                    "lat": 31.9,
-                    "lon": 165.0,
+                    "lat": 27.4,
+                    "lon": 115.1,
                     "wind_kt": 35
                   },
                   {
                     "tau": 72,
-                    "lat": 32.7,
-                    "lon": 165.0,
-                    "wind_kt": 35
-                  },
-                  {
-                    "tau": 96,
-                    "lat": 33.9,
-                    "lon": 166.3,
-                    "wind_kt": 35
-                  },
-                  {
-                    "tau": 120,
-                    "lat": 37.3,
-                    "lon": 168.5,
-                    "wind_kt": 29
+                    "lat": 25.2,
+                    "lon": 110.6,
+                    "wind_kt": 23
                   }
                 ]
               },
@@ -7639,51 +7494,21 @@
                   {
                     "tau": 0,
                     "datetime_z": "270600",
-                    "lat": 20.9,
-                    "lon": 168.2,
-                    "wind_kt": 35
-                  },
-                  {
-                    "tau": 12,
-                    "lat": 22.5,
-                    "lon": 167.8,
-                    "wind_kt": 39
+                    "lat": 28.4,
+                    "lon": 124.2,
+                    "wind_kt": 68
                   },
                   {
                     "tau": 24,
-                    "lat": 24.1,
-                    "lon": 167.3,
-                    "wind_kt": 45
-                  },
-                  {
-                    "tau": 36,
-                    "lat": 26.0,
-                    "lon": 166.6,
-                    "wind_kt": 39
+                    "lat": 27.8,
+                    "lon": 120.1,
+                    "wind_kt": 49
                   },
                   {
                     "tau": 48,
-                    "lat": 28.0,
-                    "lon": 166.1,
-                    "wind_kt": 39
-                  },
-                  {
-                    "tau": 72,
-                    "lat": 32.1,
-                    "lon": 164.6,
-                    "wind_kt": 39
-                  },
-                  {
-                    "tau": 96,
-                    "lat": 34.3,
-                    "lon": 164.4,
-                    "wind_kt": 35
-                  },
-                  {
-                    "tau": 120,
-                    "lat": 34.8,
-                    "lon": 164.1,
-                    "wind_kt": 29
+                    "lat": 26.7,
+                    "lon": 115.0,
+                    "wind_kt": 19
                   }
                 ]
               },
@@ -7693,128 +7518,19 @@
                   {
                     "tau": 0,
                     "datetime_z": "270600",
-                    "lat": 21.2,
-                    "lon": 167.9,
-                    "wind_kt": 35
-                  },
-                  {
-                    "tau": 12,
-                    "lat": 22.6,
-                    "lon": 167.4,
-                    "wind_kt": 37
+                    "lat": 28.3,
+                    "lon": 124.2,
+                    "wind_kt": 72
                   },
                   {
                     "tau": 24,
-                    "lat": 24.2,
-                    "lon": 167.0,
-                    "wind_kt": 39
-                  },
-                  {
-                    "tau": 36,
-                    "lat": 25.8,
-                    "lon": 166.6,
-                    "wind_kt": 41
-                  },
-                  {
-                    "tau": 48,
                     "lat": 27.8,
-                    "lon": 166.2,
-                    "wind_kt": 45
-                  },
-                  {
-                    "tau": 72,
-                    "lat": 32.1,
-                    "lon": 165.5,
-                    "wind_kt": 45
-                  },
-                  {
-                    "tau": 96,
-                    "lat": 34.7,
-                    "lon": 166.0,
-                    "wind_kt": 41
-                  },
-                  {
-                    "tau": 120,
-                    "lat": 35.7,
-                    "lon": 166.3,
-                    "wind_kt": 29
+                    "lon": 119.9,
+                    "wind_kt": 52
                   }
                 ]
               }
-            ],
-            "_fetch_name": "ETAU_2026",
-            "_storm_name_cn": "艾陶",
-            "_max_wind_ms": 18,
-            "_cwa_fc_mws_map": {
-              "21.7,168.0": 20,
-              "22.5,167.8": 20,
-              "23.3,167.6": 23,
-              "24.1,167.3": 23,
-              "26.0,166.6": 20,
-              "28.0,166.1": 20,
-              "32.1,164.6": 20,
-              "34.3,164.4": 18,
-              "34.8,164.1": 15
-            },
-            "_cwa_fc_mws_map_by_tau": {
-              "6": 20,
-              "12": 20,
-              "18": 23,
-              "24": 23,
-              "36": 20,
-              "48": 20,
-              "72": 20,
-              "96": 18,
-              "120": 15
-            },
-            "_cwa_fc_radius7_map": {
-              "21.7,168.0": 100,
-              "22.5,167.8": 100,
-              "23.3,167.6": 120,
-              "24.1,167.3": 120,
-              "26.0,166.6": 100,
-              "28.0,166.1": 100,
-              "32.1,164.6": 100,
-              "34.3,164.4": 80
-            },
-            "_cwa_fc_radius7_map_by_tau": {
-              "6": 100,
-              "12": 100,
-              "18": 120,
-              "24": 120,
-              "36": 100,
-              "48": 100,
-              "72": 100,
-              "96": 80
-            },
-            "_cwa_fc_radius10_map": {},
-            "_cwa_fc_radius10_map_by_tau": {},
-            "_cwa_an_radius7_map": {
-              "20.9,168.2": 100
-            },
-            "_cwa_an_radius10_map": {},
-            "_cwa_an_radius7_quad_map": {
-              "20.9,168.2": {
-                "NE": 120,
-                "SE": 120,
-                "SW": 70,
-                "NW": 70
-              }
-            },
-            "_cwa_an_radius10_quad_map": {},
-            "_cwa_an_radius7_quad_latest": {
-              "NE": 120,
-              "SE": 120,
-              "SW": 70,
-              "NW": 70
-            },
-            "_cwa_an_radius10_quad_latest": null,
-            "_is_td": false,
-            "_td_no": "26",
-            "_td_state_map": {
-              "120": "減弱為熱帶性低氣壓"
-            },
-            "_source": "txt"
+            ]
           }
         }
       ]
