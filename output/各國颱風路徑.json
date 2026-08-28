@@ -127,23 +127,17 @@
       ],
       "_fetch_name": "SAUDEL_2026",
       "_storm_name_cn": "沙德爾",
-      "_max_wind_ms": 25,
+      "_max_wind_ms": 20,
       "_cwa_fc_mws_map": {
-        "27.7,118.9": 20,
-        "27.4,117.3": 15,
-        "27.2,116.1": 10
+        "27.6,118.1": 15,
+        "27.3,116.6": 10
       },
       "_cwa_fc_mws_map_by_tau": {
-        "6": 20,
-        "12": 15,
-        "18": 10
+        "6": 15,
+        "12": 10
       },
-      "_cwa_fc_radius7_map": {
-        "27.7,118.9": 80
-      },
-      "_cwa_fc_radius7_map_by_tau": {
-        "6": 80
-      },
+      "_cwa_fc_radius7_map": {},
+      "_cwa_fc_radius7_map_by_tau": {},
       "_cwa_fc_radius10_map": {},
       "_cwa_fc_radius10_map_by_tau": {},
       "_cwa_an_radius7_map": {
@@ -187,7 +181,8 @@
         "28.0,122.6": 200,
         "28.0,122.0": 180,
         "28.1,121.2": 150,
-        "27.9,120.5": 120
+        "27.9,120.5": 120,
+        "27.8,119.7": 80
       },
       "_cwa_an_radius10_map": {
         "14.9,148.6": 30,
@@ -469,6 +464,12 @@
           "SE": 150,
           "SW": 90,
           "NW": 90
+        },
+        "27.8,119.7": {
+          "NE": 90,
+          "SE": 90,
+          "SW": 60,
+          "NW": 60
         }
       },
       "_cwa_an_radius10_quad_map": {
@@ -666,16 +667,16 @@
         }
       },
       "_cwa_an_radius7_quad_latest": {
-        "NE": 150,
-        "SE": 150,
-        "SW": 90,
-        "NW": 90
+        "NE": 90,
+        "SE": 90,
+        "SW": 60,
+        "NW": 60
       },
       "_cwa_an_radius10_quad_latest": null,
       "_is_td": false,
       "_td_no": "20",
       "_td_state_map": {
-        "12": "減弱為熱帶性低氣壓"
+        "6": "減弱為熱帶性低氣壓"
       }
     }
   ]
