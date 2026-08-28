@@ -2,28 +2,28 @@
   "typhoons": [
     {
       "storm_name": "SAUDEL",
-      "forecast_time_utc": "2026-08-27 18:00:00 UTC",
+      "forecast_time_utc": "2026-08-28 00:00:00 UTC",
       "agencies": [
         {
           "agency": "HKO",
           "forecasts": [
             {
               "tau": 0,
-              "datetime_z": "271800",
-              "lat": 28.1,
-              "lon": 122.6,
-              "wind_kt": 76
+              "datetime_z": "280000",
+              "lat": 28.2,
+              "lon": 121.3,
+              "wind_kt": 70
             },
             {
               "tau": 24,
-              "lat": 27.5,
-              "lon": 117.0,
-              "wind_kt": 30
+              "lat": 27.4,
+              "lon": 116.0,
+              "wind_kt": 24
             },
             {
               "tau": 48,
-              "lat": 26.1,
-              "lon": 112.8,
+              "lat": 25.7,
+              "lon": 112.1,
               "wind_kt": 22
             }
           ]
@@ -51,15 +51,15 @@
           "forecasts": [
             {
               "tau": 0,
-              "datetime_z": "271800",
-              "lat": 28.2,
-              "lon": 122.9,
-              "wind_kt": 65
+              "datetime_z": "280000",
+              "lat": 28.0,
+              "lon": 121.4,
+              "wind_kt": 60
             },
             {
               "tau": 24,
-              "lat": 27.9,
-              "lon": 117.1,
+              "lat": 27.3,
+              "lon": 116.1,
               "wind_kt": null
             }
           ]
@@ -69,22 +69,22 @@
           "forecasts": [
             {
               "tau": 0,
-              "datetime_z": "271800",
+              "datetime_z": "280000",
               "lat": 28.1,
-              "lon": 122.8,
-              "wind_kt": 87
+              "lon": 121.3,
+              "wind_kt": 68
             },
             {
               "tau": 24,
-              "lat": 27.6,
-              "lon": 117.4,
-              "wind_kt": 45
+              "lat": 27.4,
+              "lon": 116.2,
+              "wind_kt": 35
             },
             {
               "tau": 48,
-              "lat": 26.4,
-              "lon": 113.0,
-              "wind_kt": 35
+              "lat": 25.4,
+              "lon": 111.4,
+              "wind_kt": 23
             }
           ]
         },
@@ -93,16 +93,16 @@
           "forecasts": [
             {
               "tau": 0,
-              "datetime_z": "271800",
-              "lat": 28.0,
-              "lon": 122.6,
-              "wind_kt": 64
+              "datetime_z": "280000",
+              "lat": 28.1,
+              "lon": 121.2,
+              "wind_kt": 58
             },
             {
               "tau": 24,
-              "lat": 27.3,
-              "lon": 116.7,
-              "wind_kt": 23
+              "lat": 27.0,
+              "lon": 115.7,
+              "wind_kt": 19
             }
           ]
         },
