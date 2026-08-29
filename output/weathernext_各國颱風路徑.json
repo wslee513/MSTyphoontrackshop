@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-29 08:31:12 UTC",
+ "generated_at": "2026-08-29 09:20:07 UTC",
  "source": "Open-Meteo Google WeatherNext 2 Ensemble Mean (free API)",
  "api": "https://ensemble-api.open-meteo.com/v1/ensemble",
  "model": "google_weathernext2_ensemble_mean",
@@ -48,16 +48,6 @@
      "wind_kt_100m": 5.7,
      "pressure_hpa": 1009.7,
      "temp_c": 23.2
-    },
-    {
-     "tau": 96,
-     "lat": 44.1,
-     "lon": 172.7,
-     "time_utc": "2026-09-02T00:00",
-     "wind_kt_10m": 11.6,
-     "wind_kt_100m": 12.5,
-     "pressure_hpa": 1008.4,
-     "temp_c": 18.1
     }
    ]
   },
@@ -65,16 +55,6 @@
    "storm_name": "ETAU",
    "forecast_time_utc": "2026-08-29 00:00:00 UTC",
    "points": [
-    {
-     "tau": 0,
-     "lat": 26.3,
-     "lon": 165.8,
-     "time_utc": "2026-08-29T00:00",
-     "wind_kt_10m": 10.4,
-     "wind_kt_100m": 12.1,
-     "pressure_hpa": 1000.6,
-     "temp_c": 27.8
-    },
     {
      "tau": 24,
      "lat": 31.2,
