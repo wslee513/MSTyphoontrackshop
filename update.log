@@ -1,0 +1,107 @@
+[2026/08/29 13:14:02.67] Scheduled update started... 
+[2026/08/29 13:14:02.84] Using python: python 
+[1/5] Fetch typhoon data... 
+[2026/08/29 13:14:02.85] fetch_typhoon2000.py attempt 1... 
+Auto-detected from CWA: BANG-LANG(班朗), ETAU(艾陶)
+
+==================================================
+Processing: BANG-LANG_2026
+==================================================
+Fetching: https://www.typhoon2000.ph/multi/log.php?name=BANG-LANG_2026
+Found 4 time entries (oldest -> newest)
+Latest entry index: 4
+
+Agencies found: 4
+
+Storm: BANG-LANG
+Time:  2026-08-29 00:00:00 UTC
+
+  [JTWC]
+    NOW (290000): 22.2N 167.8E  65KT
+    + 24H:        29.1N 169.0E  75KT
+    + 48H:        35.3N 167.1E  60KT
+
+  [JMA]
+    NOW (290000): 22.2N 167.9E  60KT
+    + 24H:        29.1N 168.3E  60KT
+    + 48H:        35.1N 165.8E  55KT
+    + 72H:        39.0N 167.0E  50KT
+    + 96H:        47.0N 177.5E  45KT
+
+  [NMC]
+    NOW (290000): 22.1N 167.8E  49KT
+    + 24H:        28.7N 168.4E  64KT
+    + 48H:        36.1N 166.3E  54KT
+    + 72H:        46.0N 171.1E  49KT
+    + 96H:        51.8N 178.0E  45KT
+
+  [CWA]
+    NOW (290000): 22.2N 167.7E  64KT
+    + 24H:        28.6N 169.0E  54KT
+    + 48H:        35.3N 167.5E  45KT
+    + 72H:        39.1N 168.2E  35KT
+    + 96H:        44.1N 172.7E  19KT
+
+==================================================
+Processing: ETAU_2026
+==================================================
+Fetching: https://www.typhoon2000.ph/multi/log.php?name=ETAU_2026
+Found 8 time entries (oldest -> newest)
+Latest entry index: 8
+
+Agencies found: 4
+
+Storm: ETAU
+Time:  2026-08-29 00:00:00 UTC
+
+  [JTWC]
+    NOW (290000): 26.4N 165.8E  35KT
+    + 24H:        30.3N 165.1E  30KT
+    + 48H:        32.4N 166.3E  30KT
+
+  [JMA]
+    NOW (290000): 26.5N 165.9E  40KT
+    + 24H:        30.5N 164.0E  40KT
+    + 48H:        31.2N 165.6E  35KT
+    + 72H:        32.2N 167.7E  ---KT
+
+  [NMC]
+    NOW (290000): 26.2N 165.8E  39KT
+    + 24H:        31.6N 163.5E  39KT
+    + 48H:        31.4N 165.7E  35KT
+    + 72H:        32.7N 166.9E  29KT
+
+  [CWA]
+    NOW (290000): 26.3N 165.8E  35KT
+    + 24H:        31.2N 164.9E  35KT
+    + 48H:        33.4N 166.1E  29KT
+    + 72H:        34.8N 167.0E  19KT
+
+Saved: output\各國颱風路徑.json
+Saved: output\各國颱風路徑_all.json
+[2/5] Fetch WeatherNext... 
+[2026/08/29 13:14:06.42] fetch_weathernext.py attempt 1... 
+== BANG-LANG ==
+  tau=  0 (22.2,167.7) -> 2026-08-29T00:00 風16.3kn 壓1001.5hPa
+  tau= 24 (28.6,169.0) -> 2026-08-30T00:00 風7.0kn 壓1001.9hPa
+  tau= 48 (35.3,167.5) -> 2026-08-31T00:00 風19.5kn 壓1006.1hPa
+  tau= 72 (39.1,168.2) -> 2026-09-01T00:00 風5.5kn 壓1009.7hPa
+  tau= 96 (44.1,172.7) -> 2026-09-02T00:00 風11.6kn 壓1008.4hPa
+== ETAU ==
+  tau=  0 (26.3,165.8) -> 2026-08-29T00:00 風10.4kn 壓1000.6hPa
+  tau= 24 (31.2,164.9) -> 2026-08-30T00:00 風11.8kn 壓1000.5hPa
+  tau= 48 (33.4,166.1) -> 2026-08-31T00:00 風6.4kn 壓1005.6hPa
+  tau= 72 (34.8,167.0) -> 2026-09-01T00:00 風2.7kn 壓1009.7hPa
+Saved: output\weathernext_各國颱風路徑.json
+[3/5] Fetch ECMWF... 
+To ensure the stability of our systems and to preserve resources for our operational activities (network, compute, etc.), access to the open-data portal is limited to 500 simultaneous connections. This limit helps us guarantee reliable service for our operational users, especially during periods of high demand. For added reliability, the open-data is replicated across AWS, Azure, and Google Cloud. If you experience difficulties accessing the portal directly, you can also retrieve the data from these cloud platforms.
+下載 20260828 00z (HRES+ENS, step=360) [ecmwf] ...
+20260828000000-360h-oper-tf.bufr:   0%|          | 0.00/85.5k [00:00<?, ?B/s]20260828000000-360h-oper-tf.bufr: 100%|██████████| 85.5k/85.5k [00:00<00:00, 142kB/s]                                                                                     By downloading data from the ECMWF open data dataset, you agree to the terms: Attribution 4.0 International (CC BY 4.0). Please attribute ECMWF when downloading this data.
+20260828000000-360h-enfo-tf.bufr:   0%|          | 0.00/2.00M [00:00<?, ?B/s]20260828000000-360h-enfo-tf.bufr:  50%|████▉     | 1.00M/2.00M [00:01<00:01, 691kB/s]20260828000000-360h-enfo-tf.bufr: 100%|█████████▉| 2.00M/2.00M [00:02<00:00, 1.07MB/s]                                                                                      == ETAU ==
+   HRES 點數: 23  ENS 點數: 40 (成員 51)
+Saved: output\ecmwf_各國颱風路徑.json
+[4/5] Generate web page... 
+Saved: output\各國颱風路徑.html (175,776 bytes)
+Open it directly in a browser (no server needed).
+Hint: add a free Stadia Maps API key to config.json (stadia_api_key) to enable the Stamen 地形圖 basemap.
+[5/5] Deploy to GitHub... 
