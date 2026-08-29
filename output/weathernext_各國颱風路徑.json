@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-29 14:20:42 UTC",
+ "generated_at": "2026-08-29 15:20:06 UTC",
  "source": "Open-Meteo Google WeatherNext 2 Ensemble Mean (free API)",
  "api": "https://ensemble-api.open-meteo.com/v1/ensemble",
  "model": "google_weathernext2_ensemble_mean",
@@ -9,16 +9,6 @@
    "storm_name": "BANG-LANG",
    "forecast_time_utc": "2026-08-29 06:00:00 UTC",
    "points": [
-    {
-     "tau": 0,
-     "lat": 24.0,
-     "lon": 168.4,
-     "time_utc": "2026-08-29T06:00",
-     "wind_kt_10m": 31.6,
-     "wind_kt_100m": 39.5,
-     "pressure_hpa": 998.8,
-     "temp_c": 27.0
-    },
     {
      "tau": 24,
      "lat": 31.5,
@@ -38,6 +28,16 @@
      "wind_kt_100m": 5.0,
      "pressure_hpa": 1005.3,
      "temp_c": 25.8
+    },
+    {
+     "tau": 72,
+     "lat": 39.8,
+     "lon": 168.7,
+     "time_utc": "2026-09-01T06:00",
+     "wind_kt_10m": 14.7,
+     "wind_kt_100m": 16.2,
+     "pressure_hpa": 1005.7,
+     "temp_c": 21.9
     },
     {
      "tau": 96,
