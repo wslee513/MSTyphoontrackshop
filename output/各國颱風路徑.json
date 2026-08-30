@@ -2,29 +2,23 @@
   "typhoons": [
     {
       "storm_name": "BANG-LANG",
-      "forecast_time_utc": "2026-08-29 18:00:00 UTC",
+      "forecast_time_utc": "2026-08-30 00:00:00 UTC",
       "agencies": [
         {
           "agency": "JTWC",
           "forecasts": [
             {
               "tau": 0,
-              "datetime_z": "291800",
-              "lat": 27.7,
-              "lon": 169.2,
-              "wind_kt": 65
+              "datetime_z": "300000",
+              "lat": 31.3,
+              "lon": 167.9,
+              "wind_kt": 60
             },
             {
               "tau": 24,
-              "lat": 33.8,
-              "lon": 167.6,
+              "lat": 36.9,
+              "lon": 166.0,
               "wind_kt": 45
-            },
-            {
-              "tau": 48,
-              "lat": 39.1,
-              "lon": 168.1,
-              "wind_kt": 40
             }
           ]
         },
@@ -33,27 +27,27 @@
           "forecasts": [
             {
               "tau": 0,
-              "datetime_z": "291800",
-              "lat": 27.2,
-              "lon": 169.4,
-              "wind_kt": 55
-            },
-            {
-              "tau": 24,
-              "lat": 34.8,
-              "lon": 166.0,
+              "datetime_z": "300000",
+              "lat": 30.8,
+              "lon": 168.0,
               "wind_kt": 50
             },
             {
+              "tau": 24,
+              "lat": 35.3,
+              "lon": 165.8,
+              "wind_kt": 45
+            },
+            {
               "tau": 48,
-              "lat": 36.3,
-              "lon": 166.4,
-              "wind_kt": 40
+              "lat": 41.2,
+              "lon": 168.2,
+              "wind_kt": 45
             },
             {
               "tau": 72,
-              "lat": 47.5,
-              "lon": 173.2,
+              "lat": 54.4,
+              "lon": 169.7,
               "wind_kt": 45
             }
           ]
@@ -63,21 +57,15 @@
           "forecasts": [
             {
               "tau": 0,
-              "datetime_z": "291800",
-              "lat": 27.9,
-              "lon": 168.6,
-              "wind_kt": 54
+              "datetime_z": "300000",
+              "lat": 30.4,
+              "lon": 168.1,
+              "wind_kt": 45
             },
             {
               "tau": 24,
-              "lat": 35.3,
-              "lon": 166.0,
-              "wind_kt": 35
-            },
-            {
-              "tau": 48,
-              "lat": 39.1,
-              "lon": 167.5,
+              "lat": 35.8,
+              "lon": 167.0,
               "wind_kt": 35
             }
           ]
@@ -87,28 +75,16 @@
           "forecasts": [
             {
               "tau": 0,
-              "datetime_z": "291800",
-              "lat": 27.8,
-              "lon": 168.5,
-              "wind_kt": 58
-            },
-            {
-              "tau": 24,
-              "lat": 34.6,
-              "lon": 165.8,
+              "datetime_z": "300000",
+              "lat": 30.5,
+              "lon": 168.4,
               "wind_kt": 45
             },
             {
-              "tau": 48,
-              "lat": 38.9,
-              "lon": 167.0,
-              "wind_kt": 35
-            },
-            {
-              "tau": 72,
-              "lat": 46.5,
-              "lon": 172.3,
-              "wind_kt": null
+              "tau": 24,
+              "lat": 36.0,
+              "lon": 166.4,
+              "wind_kt": 19
             }
           ]
         }
