@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-30 15:20:06 UTC",
+ "generated_at": "2026-08-30 16:20:05 UTC",
  "source": "Open-Meteo Google WeatherNext 2 Ensemble Mean (free API)",
  "api": "https://ensemble-api.open-meteo.com/v1/ensemble",
  "model": "google_weathernext2_ensemble_mean",
@@ -7,37 +7,37 @@
  "typhoons": [
   {
    "storm_name": "BANG-LANG",
-   "forecast_time_utc": "2026-08-30 06:00:00 UTC",
+   "forecast_time_utc": "2026-08-30 12:00:00 UTC",
    "points": [
     {
      "tau": 0,
-     "lat": 33.3,
-     "lon": 167.5,
-     "time_utc": "2026-08-30T06:00",
-     "wind_kt_10m": 26.7,
-     "wind_kt_100m": 34.1,
-     "pressure_hpa": 997.3,
-     "temp_c": 25.8
-    },
-    {
-     "tau": 24,
-     "lat": 37.4,
-     "lon": 166.3,
-     "time_utc": "2026-08-31T06:00",
-     "wind_kt_10m": 17.4,
-     "wind_kt_100m": 21.3,
-     "pressure_hpa": 1003.1,
+     "lat": 34.3,
+     "lon": 166.8,
+     "time_utc": "2026-08-30T12:00",
+     "wind_kt_10m": 26.4,
+     "wind_kt_100m": 33.0,
+     "pressure_hpa": 998.7,
      "temp_c": 25.6
     },
     {
+     "tau": 24,
+     "lat": 40.2,
+     "lon": 166.8,
+     "time_utc": "2026-08-31T12:00",
+     "wind_kt_10m": 15.8,
+     "wind_kt_100m": 20.1,
+     "pressure_hpa": 1004.1,
+     "temp_c": 24.2
+    },
+    {
      "tau": 48,
-     "lat": 46.6,
-     "lon": 170.3,
-     "time_utc": "2026-09-01T06:00",
-     "wind_kt_10m": 9.0,
-     "wind_kt_100m": 9.9,
-     "pressure_hpa": 999.7,
-     "temp_c": 16.2
+     "lat": 52.4,
+     "lon": 169.7,
+     "time_utc": "2026-09-01T12:00",
+     "wind_kt_10m": 5.3,
+     "wind_kt_100m": 6.5,
+     "pressure_hpa": 997.8,
+     "temp_c": 12.2
     }
    ]
   }

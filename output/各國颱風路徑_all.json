@@ -1079,6 +1079,93 @@
               }
             ]
           }
+        },
+        {
+          "index": 10,
+          "data": {
+            "storm_name": "BANG-LANG",
+            "forecast_time_utc": "2026-08-30 12:00:00 UTC",
+            "agencies": [
+              {
+                "agency": "JTWC",
+                "forecasts": [
+                  {
+                    "tau": 0,
+                    "datetime_z": "301200",
+                    "lat": 34.1,
+                    "lon": 165.9,
+                    "wind_kt": 35
+                  },
+                  {
+                    "tau": 24,
+                    "lat": 39.4,
+                    "lon": 166.3,
+                    "wind_kt": 30
+                  }
+                ]
+              },
+              {
+                "agency": "JMA",
+                "forecasts": [
+                  {
+                    "tau": 0,
+                    "datetime_z": "301200",
+                    "lat": 34.5,
+                    "lon": 166.3,
+                    "wind_kt": 45
+                  },
+                  {
+                    "tau": 24,
+                    "lat": 38.4,
+                    "lon": 166.2,
+                    "wind_kt": 45
+                  },
+                  {
+                    "tau": 48,
+                    "lat": 52.4,
+                    "lon": 169.7,
+                    "wind_kt": 40
+                  }
+                ]
+              },
+              {
+                "agency": "NMC",
+                "forecasts": [
+                  {
+                    "tau": 0,
+                    "datetime_z": "301200",
+                    "lat": 34.2,
+                    "lon": 166.7,
+                    "wind_kt": 39
+                  },
+                  {
+                    "tau": 24,
+                    "lat": 40.3,
+                    "lon": 166.8,
+                    "wind_kt": 35
+                  }
+                ]
+              },
+              {
+                "agency": "CWA",
+                "forecasts": [
+                  {
+                    "tau": 0,
+                    "datetime_z": "301200",
+                    "lat": 34.3,
+                    "lon": 166.8,
+                    "wind_kt": 35
+                  },
+                  {
+                    "tau": 24,
+                    "lat": 40.2,
+                    "lon": 166.8,
+                    "wind_kt": 19
+                  }
+                ]
+              }
+            ]
+          }
         }
       ]
     }
