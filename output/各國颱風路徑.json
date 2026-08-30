@@ -27,22 +27,22 @@
           "forecasts": [
             {
               "tau": 0,
-              "datetime_z": "301200",
-              "lat": 34.5,
-              "lon": 166.3,
-              "wind_kt": 45
+              "datetime_z": "301800",
+              "lat": 35.4,
+              "lon": 165.9,
+              "wind_kt": 40
             },
             {
               "tau": 24,
-              "lat": 38.4,
-              "lon": 166.2,
-              "wind_kt": 45
+              "lat": 41.8,
+              "lon": 167.7,
+              "wind_kt": 40
             },
             {
               "tau": 48,
-              "lat": 52.4,
-              "lon": 169.7,
-              "wind_kt": 40
+              "lat": 52.9,
+              "lon": 171.2,
+              "wind_kt": 45
             }
           ]
         },
@@ -51,15 +51,15 @@
           "forecasts": [
             {
               "tau": 0,
-              "datetime_z": "301200",
-              "lat": 34.2,
-              "lon": 166.7,
+              "datetime_z": "301800",
+              "lat": 35.7,
+              "lon": 165.4,
               "wind_kt": 39
             },
             {
               "tau": 24,
-              "lat": 40.3,
-              "lon": 166.8,
+              "lat": 41.7,
+              "lon": 167.5,
               "wind_kt": 35
             }
           ]
@@ -69,16 +69,10 @@
           "forecasts": [
             {
               "tau": 0,
-              "datetime_z": "301200",
-              "lat": 34.3,
-              "lon": 166.8,
-              "wind_kt": 35
-            },
-            {
-              "tau": 24,
-              "lat": 40.2,
-              "lon": 166.8,
-              "wind_kt": 19
+              "datetime_z": "301800",
+              "lat": 35.5,
+              "lon": 166.0,
+              "wind_kt": 29
             }
           ]
         }
@@ -265,14 +259,32 @@
           ]
         },
         {
-          "agency": "NMC",
+          "agency": "CWA",
           "forecasts": [
             {
               "tau": 0,
-              "datetime_z": "300600",
-              "lat": 23.6,
-              "lon": 111.4,
-              "wind_kt": 23
+              "datetime_z": "301800",
+              "lat": 21.3,
+              "lon": 110.8,
+              "wind_kt": 29
+            },
+            {
+              "tau": 24,
+              "lat": 19.2,
+              "lon": 112.4,
+              "wind_kt": 35
+            },
+            {
+              "tau": 48,
+              "lat": 22.0,
+              "lon": 116.4,
+              "wind_kt": 35
+            },
+            {
+              "tau": 72,
+              "lat": 22.8,
+              "lon": 117.2,
+              "wind_kt": 19
             }
           ]
         },
