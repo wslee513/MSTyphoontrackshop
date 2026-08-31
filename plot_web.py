@@ -205,6 +205,9 @@ HTML_TEMPLATE = r"""<!DOCTYPE html>
   #help-box h3 { margin: 0 0 8px; font-size: 17px; }
   #help-box h4 { margin: 14px 0 4px; font-size: 14px; color: #D81B60; }
   #help-box p { margin: 4px 0; }
+  .typhoon-icon-legend { margin: 6px 0; }
+  .ty-icon-row { display: flex; align-items: center; gap: 8px; margin: 5px 0; }
+  .ty-icon-row span { font-size: 13px; }
   #help-close {
     float: right; cursor: pointer; border: none; background: none;
     font-size: 16px; color: #888; line-height: 1; padding: 0 2px;
@@ -395,6 +398,10 @@ HTML_TEMPLATE = r"""<!DOCTYPE html>
     <p>以每 5° 一條的淡灰虛線標出經度與緯度網格，便於讀取颱風所在座標，可於圖層控制開關（預設顯示）。</p>
     <h4>暴風半徑</h4>
     <p>靜態檢視不直接畫風圈，改在 CWA 預報點的快顯視窗中顯示七級／十級暴風半徑（點擊路徑點即可查看）。時間播放時，移動標記旁會框出 CWA 四象限風圈（紅＝七級、橘＝十級，虛線＝四象限、實線＝平均半徑）；也可按「📌 固定此時間風圈」把指定時間的風圈留在圖上。</p>
+    <h4>颱風中心圖示</h4>
+    <p>播放時的移動標記與最新預報點（tau=0）會依強度顯示不同的颱風標誌：</p>
+    <div id="typhoon-icon-legend" class="typhoon-icon-legend"></div>
+    <p>圈中點為颱風眼、上下兩條旋臂為颱風標誌；顏色表示強度——綠色＝中度、紅色＝強烈，深灰空心＝輕度，灰點＝熱帶性低氣壓。</p>
     <h4>臺灣 100km 海域線</h4>
     <p>由臺灣海岸輪廓向外緩衝 100 公里的海洋界線，用於觀察颱風是否進入警戒範圍，可於圖層控制開關。</p>
   </div>
@@ -562,6 +569,49 @@ function trackIcon(ch) {
   });
 }
 
+function windTier(windMs) {
+  if (windMs >= 51) return 'strong';
+  if (windMs >= 32) return 'medium';
+  if (windMs >= 17) return 'light';
+  return 'td';
+}
+
+function typhoonArms(n, cx, cy, R, color, sw) {
+  if (n <= 0) return '';
+  let paths = '';
+  for (let k = 0; k < n; k++) {
+    const a = -Math.PI / 2 + k * (2 * Math.PI / n);
+    const sx = cx + R * Math.cos(a), sy = cy + R * Math.sin(a);
+    const c1x = cx + (R + 3.2) * Math.cos(a - 0.5), c1y = cy + (R + 3.2) * Math.sin(a - 0.5);
+    const ex = cx + (R + 6.2) * Math.cos(a + 0.65), ey = cy + (R + 6.2) * Math.sin(a + 0.65);
+    paths += `<path d="M ${sx.toFixed(2)} ${sy.toFixed(2)} Q ${c1x.toFixed(2)} ${c1y.toFixed(2)} ${ex.toFixed(2)} ${ey.toFixed(2)}" fill="none" stroke="${color}" stroke-width="${sw}" stroke-linecap="round"/>`;
+  }
+  return paths;
+}
+
+function typhoonCenterIcon(windMs, color) {
+  const tier = windTier(windMs);
+  const cx = 14, cy = 14, R = 6.5;
+  let fill, stroke, eye, armColor, arms;
+  if (tier === 'strong') {
+    fill = '#FF2D2D'; stroke = '#FF2D2D'; eye = '#ffffff'; armColor = '#FF2D2D'; arms = 2;
+  } else if (tier === 'medium') {
+    fill = '#22B573'; stroke = '#22B573'; eye = '#ffffff'; armColor = '#22B573'; arms = 2;
+  } else if (tier === 'light') {
+    fill = 'none'; stroke = '#444444'; eye = '#444444'; armColor = '#444444'; arms = 2;
+  } else {
+    fill = 'none'; stroke = '#888888'; eye = '#888888'; armColor = '#888888'; arms = 0;
+  }
+  const S = 28;
+  const inner =
+    `<circle cx="${cx}" cy="${cy}" r="${R}" fill="${fill}" stroke="${stroke}" stroke-width="2"/>` +
+    `<circle cx="${cx}" cy="${cy}" r="1.7" fill="${eye}"/>` +
+    typhoonArms(arms, cx, cy, R, armColor, 2);
+  const html = `<div style="background:none;border:none;line-height:0;">` +
+    `<svg width="${S}" height="${S}" viewBox="0 0 ${S} ${S}">${inner}</svg></div>`;
+  return L.divIcon({ html, className: 'typhoon-center-icon', iconSize: [S, S], iconAnchor: [S/2, S/2] });
+}
+
 const map = L.map('map', { zoomControl: false });
 const radiusLabelGrp = L.layerGroup().addTo(map);
 const pinLabelGrp = L.layerGroup().addTo(map);
@@ -692,11 +742,17 @@ function drawForecast(t, grp, selIdx, upto) {
         `風速：${windStr}${grade ? `（${grade}）` : ''}${tdLine}<br>` +
         `${radius > 0 ? `七級暴風半徑：${radius} km${radius10 > 0 ? `<br>十級暴風半徑：${radius10} km` : ''}` : ''}</div>`;
 
-      const mk = L.circleMarker([fc.lat, fc.lon], {
-        radius: fc.tau === 0 ? 6 : 4.5,
-        color: '#ffffff', weight: 1,
-        fillColor: color, fillOpacity: 0.95,
-      }).addTo(grp);
+      let mk;
+      if (fc.tau === 0) {
+        mk = L.marker([fc.lat, fc.lon], {
+          icon: typhoonCenterIcon(fc.wind_kt * 0.514444, color),
+        }).addTo(grp);
+      } else {
+        mk = L.circleMarker([fc.lat, fc.lon], {
+          radius: 4.5, color: '#ffffff', weight: 1,
+          fillColor: color, fillOpacity: 0.95,
+        }).addTo(grp);
+      }
       mk.bindTooltip(`${escapeHtml(t.storm_name_cn)}（${escapeHtml(agency)}）${escapeHtml(fcTimeLTC(info, fc))} ${windStr}`);
       mk.bindPopup(popup);
     });
@@ -873,6 +929,8 @@ if (allBounds.length) {
 // ── 時間播放 (time playback) ──────────────────────────────────────────────
 const PLAY_COLORS = ['#E0004D', '#00A2E8', '#FF7F27', '#22B573', '#A349A4', '#3F48CC', '#880015', '#8E24AA'];
 const DUR_MS = 20000;
+function snapHour(ms) { return Math.round(ms / 3600000) * 3600000; }
+function floorHour(ms) { return Math.floor(ms / 3600000) * 3600000; }
 const playback = {
   playing: false, clock: 0, tStart: 0, tEnd: 0, timer: null,
   timelines: [], quads: [], markers: [],
@@ -1043,12 +1101,14 @@ function renderPlayback() {
       const r10 = (quad && quad.r10) || null;
       const r7avg = (quad && quad.r7avg != null) ? quad.r7avg : windKtToRadius(pos.wind);
       const r10avg = (quad && quad.r10avg != null) ? quad.r10avg : windKtToRadius10(pos.wind);
+      const windMs = pos.wind != null ? pos.wind * 0.514444 : 0;
+      const tier = windTier(windMs);
       if (!playback.markers[i]) {
         playback.markers[i] = {
-          m: L.circleMarker([pos.lat, pos.lon], {
-            radius: 8, color: '#ffffff', weight: 2,
-            fillColor: PLAY_COLORS[i % PLAY_COLORS.length], fillOpacity: 1,
+          m: L.marker([pos.lat, pos.lon], {
+            icon: typhoonCenterIcon(windMs, PLAY_COLORS[i % PLAY_COLORS.length]),
           }).addTo(playbackGrp),
+          mTier: tier,
           cU: L.polygon([], { color: '#ffffff', weight: 4.2, opacity: 0.9, fill: false, dashArray: '8 4' }).addTo(playbackGrp),
           c: L.polygon([], {
             color: CWA_COLOR, weight: 1.2, opacity: 0.7,
@@ -1065,6 +1125,12 @@ function renderPlayback() {
         };
       }
       playback.markers[i].m.setLatLng([pos.lat, pos.lon]);
+      const curMs = pos.wind != null ? pos.wind * 0.514444 : 0;
+      const curTier = windTier(curMs);
+      if (curTier !== playback.markers[i].mTier) {
+        playback.markers[i].m.setIcon(typhoonCenterIcon(curMs, PLAY_COLORS[i % PLAY_COLORS.length]));
+        playback.markers[i].mTier = curTier;
+      }
       const hasQuad7 = anyRadius(r7);
       const pts7 = hasQuad7 ? quadrantCirclePoints(pos.lat, pos.lon, r7) : [];
       playback.markers[i].cU.setLatLngs(pts7);
@@ -1217,7 +1283,8 @@ function nudgeClock(dh) {
   cancelAnimationFrame(playback.timer);
   const span = playback.tEnd - playback.tStart;
   if (span <= 0) return;
-  playback.clock = Math.max(playback.tStart, Math.min(playback.tEnd, playback.clock + dh * 3600000));
+  const c = snapHour(playback.clock) + dh * 3600000;
+  playback.clock = Math.max(playback.tStart, Math.min(playback.tEnd, c));
   renderPlayback();
   updatePlayBtn();
 }
@@ -1228,7 +1295,7 @@ const nowBtn = document.getElementById('now-btn');
 nowBtn.addEventListener('click', () => {
   playback.playing = false;
   cancelAnimationFrame(playback.timer);
-  const nowMs = Date.now();
+  const nowMs = floorHour(Date.now());
   const span = playback.tEnd - playback.tStart;
   if (span <= 0) return;
   playback.clock = Math.max(playback.tStart, Math.min(playback.tEnd, nowMs));
@@ -1240,7 +1307,8 @@ playSlider.addEventListener('input', () => {
   playback.playing = false;
   cancelAnimationFrame(playback.timer);
   const span = playback.tEnd - playback.tStart;
-  playback.clock = span > 0 ? playback.tStart + (+playSlider.value / 1000) * span : playback.tStart;
+  let c = span > 0 ? playback.tStart + (+playSlider.value / 1000) * span : playback.tStart;
+  playback.clock = Math.max(playback.tStart, Math.min(playback.tEnd, snapHour(c)));
   renderPlayback();
   updatePlayBtn();
 });
@@ -1334,6 +1402,23 @@ function closeHelp() { helpModal.classList.remove('open'); }
 document.getElementById('help-btn').addEventListener('click', openHelp);
 document.getElementById('help-close').addEventListener('click', closeHelp);
 helpModal.addEventListener('click', e => { if (e.target === helpModal) closeHelp(); });
+
+(function buildTyphoonIconLegend() {
+  const el = document.getElementById('typhoon-icon-legend');
+  if (!el) return;
+  const rows = [
+    { ms: 25, label: '輕度颱風（17–32 m/s）：深灰空心圓' },
+    { ms: 40, label: '中度颱風（32–51 m/s）：綠色實心圓' },
+    { ms: 60, label: '強烈颱風（≥51 m/s）：紅色實心圓' },
+    { ms: 10, label: '熱帶性低氣壓（<17 m/s）：灰點' },
+  ];
+  rows.forEach(r => {
+    const row = document.createElement('div');
+    row.className = 'ty-icon-row';
+    row.innerHTML = typhoonCenterIcon(r.ms).html + '<span>' + r.label + '</span>';
+    el.appendChild(row);
+  });
+})();
 document.addEventListener('keydown', e => { if (e.key === 'Escape') closeHelp(); });
 
 rebuildTimelines();
