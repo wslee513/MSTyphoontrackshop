@@ -684,73 +684,73 @@
               "tau": 6,
               "lat": 21.5,
               "lon": 131.8,
-              "wind_kt": 19,
-              "wind_ms": 10,
-              "pressure_hpa": 1004
+              "wind_kt": 29,
+              "wind_ms": 15,
+              "pressure_hpa": 1000
             },
             {
               "tau": 12,
               "lat": 21.8,
               "lon": 131.7,
-              "wind_kt": 19,
-              "wind_ms": 10,
-              "pressure_hpa": 1004
+              "wind_kt": 29,
+              "wind_ms": 15,
+              "pressure_hpa": 1000
             },
             {
               "tau": 18,
               "lat": 22.0,
               "lon": 131.6,
-              "wind_kt": 19,
-              "wind_ms": 10,
-              "pressure_hpa": 1004
+              "wind_kt": 29,
+              "wind_ms": 15,
+              "pressure_hpa": 1000
             },
             {
               "tau": 24,
               "lat": 22.2,
               "lon": 131.5,
-              "wind_kt": 19,
-              "wind_ms": 10,
-              "pressure_hpa": 1004
+              "wind_kt": 35,
+              "wind_ms": 18,
+              "pressure_hpa": 998
             },
             {
               "tau": 36,
               "lat": 22.6,
               "lon": 131.5,
-              "wind_kt": 19,
-              "wind_ms": 10,
-              "pressure_hpa": 1004
+              "wind_kt": 35,
+              "wind_ms": 18,
+              "pressure_hpa": 998
             },
             {
               "tau": 48,
               "lat": 23.6,
               "lon": 131.4,
-              "wind_kt": 19,
-              "wind_ms": 10,
-              "pressure_hpa": 1004
+              "wind_kt": 35,
+              "wind_ms": 18,
+              "pressure_hpa": 998
             },
             {
               "tau": 72,
               "lat": 25.6,
               "lon": 130.5,
-              "wind_kt": 19,
-              "wind_ms": 10,
-              "pressure_hpa": 1004
+              "wind_kt": 35,
+              "wind_ms": 18,
+              "pressure_hpa": 998
             },
             {
               "tau": 96,
               "lat": 27.7,
               "lon": 129.3,
-              "wind_kt": 19,
-              "wind_ms": 10,
-              "pressure_hpa": 1004
+              "wind_kt": 35,
+              "wind_ms": 18,
+              "pressure_hpa": 998
             },
             {
               "tau": 120,
               "lat": 29.1,
               "lon": 129.8,
-              "wind_kt": 19,
-              "wind_ms": 10,
-              "pressure_hpa": 1004
+              "wind_kt": 35,
+              "wind_ms": 18,
+              "pressure_hpa": 998
             }
           ]
         }
@@ -760,29 +760,43 @@
       "_storm_name_cn": "TD27",
       "_max_wind_ms": 15,
       "_cwa_fc_mws_map": {
-        "21.5,131.8": 10,
-        "21.8,131.7": 10,
-        "22.0,131.6": 10,
-        "22.2,131.5": 10,
-        "22.6,131.5": 10,
-        "23.6,131.4": 10,
-        "25.6,130.5": 10,
-        "27.7,129.3": 10,
-        "29.1,129.8": 10
+        "21.5,131.8": 15,
+        "21.8,131.7": 15,
+        "22.0,131.6": 15,
+        "22.2,131.5": 18,
+        "22.6,131.5": 18,
+        "23.6,131.4": 18,
+        "25.6,130.5": 18,
+        "27.7,129.3": 18,
+        "29.1,129.8": 18
       },
       "_cwa_fc_mws_map_by_tau": {
-        "6": 10,
-        "12": 10,
-        "18": 10,
-        "24": 10,
-        "36": 10,
-        "48": 10,
-        "72": 10,
-        "96": 10,
-        "120": 10
+        "6": 15,
+        "12": 15,
+        "18": 15,
+        "24": 18,
+        "36": 18,
+        "48": 18,
+        "72": 18,
+        "96": 18,
+        "120": 18
       },
-      "_cwa_fc_radius7_map": {},
-      "_cwa_fc_radius7_map_by_tau": {},
+      "_cwa_fc_radius7_map": {
+        "22.2,131.5": 80,
+        "22.6,131.5": 80,
+        "23.6,131.4": 80,
+        "25.6,130.5": 80,
+        "27.7,129.3": 80,
+        "29.1,129.8": 80
+      },
+      "_cwa_fc_radius7_map_by_tau": {
+        "24": 80,
+        "36": 80,
+        "48": 80,
+        "72": 80,
+        "96": 80,
+        "120": 80
+      },
       "_cwa_fc_radius10_map": {},
       "_cwa_fc_radius10_map_by_tau": {},
       "_cwa_an_radius7_map": {},
@@ -794,7 +808,7 @@
       "_is_td": true,
       "_td_no": "27",
       "_td_state_map": {
-        "6": "減弱為低氣壓"
+        "24": "有發展為輕度颱風的趨勢"
       },
       "_source": "cwa_only"
     }
