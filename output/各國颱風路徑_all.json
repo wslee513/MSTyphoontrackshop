@@ -9050,6 +9050,147 @@
               }
             ]
           }
+        },
+        {
+          "index": 49,
+          "data": {
+            "storm_name": "SAUDEL",
+            "forecast_time_utc": "2026-08-31 06:00:00 UTC",
+            "agencies": [
+              {
+                "agency": "HKO",
+                "forecasts": [
+                  {
+                    "tau": 0,
+                    "datetime_z": "310900",
+                    "lat": 18.9,
+                    "lon": 110.6,
+                    "wind_kt": 24
+                  },
+                  {
+                    "tau": 24,
+                    "lat": 20.7,
+                    "lon": 115.6,
+                    "wind_kt": 35
+                  },
+                  {
+                    "tau": 48,
+                    "lat": 22.3,
+                    "lon": 117.9,
+                    "wind_kt": 35
+                  },
+                  {
+                    "tau": 72,
+                    "lat": 23.2,
+                    "lon": 117.8,
+                    "wind_kt": 30
+                  },
+                  {
+                    "tau": 96,
+                    "lat": 23.1,
+                    "lon": 116.7,
+                    "wind_kt": 24
+                  },
+                  {
+                    "tau": 120,
+                    "lat": 22.9,
+                    "lon": 116.1,
+                    "wind_kt": 24
+                  }
+                ]
+              },
+              {
+                "agency": "JTWC",
+                "forecasts": [
+                  {
+                    "tau": 0,
+                    "datetime_z": "271800",
+                    "lat": 28.1,
+                    "lon": 122.6,
+                    "wind_kt": 70
+                  },
+                  {
+                    "tau": 24,
+                    "lat": 27.6,
+                    "lon": 117.5,
+                    "wind_kt": 30
+                  }
+                ]
+              },
+              {
+                "agency": "JMA",
+                "forecasts": [
+                  {
+                    "tau": 0,
+                    "datetime_z": "281200",
+                    "lat": 27.0,
+                    "lon": 117.9,
+                    "wind_kt": 35
+                  },
+                  {
+                    "tau": 24,
+                    "lat": 26.7,
+                    "lon": 113.5,
+                    "wind_kt": null
+                  }
+                ]
+              },
+              {
+                "agency": "CWA",
+                "forecasts": [
+                  {
+                    "tau": 0,
+                    "datetime_z": "310600",
+                    "lat": 19.6,
+                    "lon": 110.4,
+                    "wind_kt": 29
+                  },
+                  {
+                    "tau": 24,
+                    "lat": 20.7,
+                    "lon": 115.5,
+                    "wind_kt": 35
+                  },
+                  {
+                    "tau": 48,
+                    "lat": 22.6,
+                    "lon": 117.1,
+                    "wind_kt": 29
+                  },
+                  {
+                    "tau": 72,
+                    "lat": 23.4,
+                    "lon": 117.2,
+                    "wind_kt": 29
+                  },
+                  {
+                    "tau": 96,
+                    "lat": 24.1,
+                    "lon": 117.2,
+                    "wind_kt": 19
+                  }
+                ]
+              },
+              {
+                "agency": "KMA",
+                "forecasts": [
+                  {
+                    "tau": 0,
+                    "datetime_z": "271800",
+                    "lat": 28.1,
+                    "lon": 122.8,
+                    "wind_kt": 72
+                  },
+                  {
+                    "tau": 24,
+                    "lat": 27.6,
+                    "lon": 117.2,
+                    "wind_kt": 29
+                  }
+                ]
+              }
+            ]
+          }
         }
       ]
     },
@@ -9149,7 +9290,7 @@
                 ]
               }
             ],
-            "forecast_time_utc": "2026-08-31 00:00:00 UTC",
+            "forecast_time_utc": "2026-08-31 06:00:00 UTC",
             "_fetch_name": "TD27_2026",
             "_storm_name_cn": "TD27",
             "_max_wind_ms": 15,
