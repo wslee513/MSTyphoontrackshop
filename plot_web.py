@@ -960,7 +960,10 @@ function buildTimeline(t, info) {
       }
     }
   });
+  // 播放標記只追蹤 CWA 的預報點，避免其他機構（例如 KMA 較長的 120h 預報）在
+  // CWA 路徑結束後再接上一段，造成「消失後又出現 180 公里風圈」的錯誤呈現。
   (info.agencies || []).forEach(ag => {
+    if (ag.agency !== 'CWA') return;
     (ag.forecasts || []).forEach(fc => {
       const tm = base + (fc.tau || 0) * 3600000;
       setPos(tm, fc.lat, fc.lon, ag.agency, fc.wind_kt);
