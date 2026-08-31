@@ -138,21 +138,33 @@ def parse_entry_text(text):
     # typhoon2000.ph's (YYYY-MM-DD HH:MM:SS UTC) is the page generation time,
     # NOT the forecast cycle time. The actual cycle time is in tau=0's datetime_z
     # (format: DDHHMMZ, e.g. "201800" = 20th 18:00 UTC).
+    # Prefer the CWA base time (local authority); if CWA has no tau=0 point,
+    # fall back to the freshest (max) agency time instead of the first one.
     raw_ft = info.get("forecast_time_utc", "")
     m_date = re.match(r"(\d{4})-(\d{2})-(\d{2})", raw_ft)
     if m_date:
         year, month = m_date.group(1), m_date.group(2)
+        cwa_dz = None
+        best_dz = None
         for ag in agencies:
             for fc in ag.get("forecasts", []):
-                if fc.get("tau") == 0 and fc.get("datetime_z"):
-                    dz = fc["datetime_z"]  # e.g. "201800"
-                    m_dz = re.match(r"(\d{2})(\d{2})(\d{2})", dz)
-                    if m_dz:
-                        day, hour, minute = m_dz.group(1), m_dz.group(2), m_dz.group(3)
-                        info["forecast_time_utc"] = f"{year}-{month}-{day} {hour}:{minute}:00 UTC"
-                    break
-            if "forecast_time_utc" in info and info["forecast_time_utc"] != raw_ft:
+                if fc.get("tau") != 0 or not fc.get("datetime_z"):
+                    continue
+                dz = fc["datetime_z"]  # e.g. "201800"
+                if not re.match(r"\d{6}$", dz):
+                    continue
+                if best_dz is None or int(dz) > int(best_dz):
+                    best_dz = dz
+                if ag.get("agency") == "CWA":
+                    cwa_dz = dz
+            if cwa_dz:
                 break
+        chosen = cwa_dz or best_dz
+        if chosen:
+            m_dz = re.match(r"(\d{2})(\d{2})(\d{2})", chosen)
+            if m_dz:
+                day, hour, minute = m_dz.group(1), m_dz.group(2), m_dz.group(3)
+                info["forecast_time_utc"] = f"{year}-{month}-{day} {hour}:{minute}:00 UTC"
 
     return info
 

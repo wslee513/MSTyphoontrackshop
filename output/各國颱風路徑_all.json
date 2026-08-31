@@ -3343,7 +3343,7 @@
           "index": 17,
           "data": {
             "storm_name": "SAUDEL",
-            "forecast_time_utc": "2026-08-22 18:00:00 UTC",
+            "forecast_time_utc": "2026-08-23 00:00:00 UTC",
             "agencies": [
               {
                 "agency": "JTWC",
@@ -8752,7 +8752,7 @@
           "index": 46,
           "data": {
             "storm_name": "SAUDEL",
-            "forecast_time_utc": "2026-08-30 00:00:00 UTC",
+            "forecast_time_utc": "2026-08-30 06:00:00 UTC",
             "agencies": [
               {
                 "agency": "HKO",
@@ -8833,7 +8833,7 @@
           "index": 47,
           "data": {
             "storm_name": "SAUDEL",
-            "forecast_time_utc": "2026-08-30 00:00:00 UTC",
+            "forecast_time_utc": "2026-08-30 18:00:00 UTC",
             "agencies": [
               {
                 "agency": "HKO",
@@ -9026,7 +9026,7 @@
                 ]
               }
             ],
-            "forecast_time_utc": "2026-08-30 00:00:00 UTC",
+            "forecast_time_utc": "2026-08-30 18:00:00 UTC",
             "_fetch_name": "TD27_2026",
             "_storm_name_cn": "TD27",
             "_max_wind_ms": 15,
