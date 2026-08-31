@@ -1,212 +1,6 @@
 {
   "typhoons": [
     {
-      "storm_name": "BANG-LANG",
-      "forecast_time_utc": "2026-08-30 12:00:00 UTC",
-      "agencies": [
-        {
-          "agency": "JTWC",
-          "forecasts": [
-            {
-              "tau": 0,
-              "datetime_z": "301200",
-              "lat": 34.1,
-              "lon": 165.9,
-              "wind_kt": 35
-            },
-            {
-              "tau": 24,
-              "lat": 39.4,
-              "lon": 166.3,
-              "wind_kt": 30
-            }
-          ]
-        },
-        {
-          "agency": "JMA",
-          "forecasts": [
-            {
-              "tau": 0,
-              "datetime_z": "301800",
-              "lat": 35.4,
-              "lon": 165.9,
-              "wind_kt": 40
-            },
-            {
-              "tau": 24,
-              "lat": 41.8,
-              "lon": 167.7,
-              "wind_kt": 40
-            },
-            {
-              "tau": 48,
-              "lat": 52.9,
-              "lon": 171.2,
-              "wind_kt": 45
-            }
-          ]
-        },
-        {
-          "agency": "NMC",
-          "forecasts": [
-            {
-              "tau": 0,
-              "datetime_z": "301800",
-              "lat": 35.7,
-              "lon": 165.4,
-              "wind_kt": 39
-            },
-            {
-              "tau": 24,
-              "lat": 41.7,
-              "lon": 167.5,
-              "wind_kt": 35
-            }
-          ]
-        },
-        {
-          "agency": "CWA",
-          "forecasts": [
-            {
-              "tau": 0,
-              "datetime_z": "301800",
-              "lat": 35.5,
-              "lon": 166.0,
-              "wind_kt": 29
-            }
-          ]
-        }
-      ],
-      "_fetch_name": "BANG-LANG_2026",
-      "_storm_name_cn": "班朗",
-      "_max_wind_ms": 15,
-      "_cwa_fc_mws_map": {
-        "36.8,165.7": 12,
-        "40.0,166.5": 10
-      },
-      "_cwa_fc_mws_map_by_tau": {
-        "6": 12,
-        "12": 10
-      },
-      "_cwa_fc_radius7_map": {},
-      "_cwa_fc_radius7_map_by_tau": {},
-      "_cwa_fc_radius10_map": {},
-      "_cwa_fc_radius10_map_by_tau": {},
-      "_cwa_an_radius7_map": {
-        "19.1,166.0": 100,
-        "19.7,166.2": 120,
-        "20.7,167.0": 120,
-        "22.2,167.7": 150,
-        "24.0,168.4": 150,
-        "25.2,168.8": 150,
-        "27.8,168.5": 150,
-        "30.5,168.4": 100,
-        "33.3,167.5": 80,
-        "34.3,166.8": 80
-      },
-      "_cwa_an_radius10_map": {
-        "22.2,167.7": 50,
-        "24.0,168.4": 50,
-        "25.2,168.8": 50,
-        "27.8,168.5": 50
-      },
-      "_cwa_an_radius7_quad_map": {
-        "19.1,166.0": {
-          "NE": 80,
-          "SE": 120,
-          "SW": 120,
-          "NW": 80
-        },
-        "19.7,166.2": {
-          "NE": 100,
-          "SE": 140,
-          "SW": 140,
-          "NW": 100
-        },
-        "20.7,167.0": {
-          "NE": 100,
-          "SE": 140,
-          "SW": 140,
-          "NW": 100
-        },
-        "22.2,167.7": {
-          "NE": 180,
-          "SE": 180,
-          "SW": 140,
-          "NW": 110
-        },
-        "24.0,168.4": {
-          "NE": 150,
-          "SE": 180,
-          "SW": 140,
-          "NW": 120
-        },
-        "25.2,168.8": {
-          "NE": 150,
-          "SE": 180,
-          "SW": 140,
-          "NW": 120
-        },
-        "27.8,168.5": {
-          "NE": 150,
-          "SE": 180,
-          "SW": 140,
-          "NW": 120
-        },
-        "30.5,168.4": {
-          "NE": 100,
-          "SE": 120,
-          "SW": 100,
-          "NW": 70
-        },
-        "33.3,167.5": {
-          "NE": 100,
-          "SE": 100,
-          "SW": 60,
-          "NW": 60
-        },
-        "34.3,166.8": {
-          "NE": 100,
-          "SE": 100,
-          "SW": 60,
-          "NW": 60
-        }
-      },
-      "_cwa_an_radius10_quad_map": {
-        "22.2,167.7": {
-          "NE": 50,
-          "SE": 50,
-          "SW": 50,
-          "NW": 50
-        },
-        "24.0,168.4": {
-          "NE": 50,
-          "SE": 50,
-          "SW": 50,
-          "NW": 50
-        },
-        "25.2,168.8": {
-          "NE": 50,
-          "SE": 50,
-          "SW": 50,
-          "NW": 50
-        },
-        "27.8,168.5": {
-          "NE": 50,
-          "SE": 50,
-          "SW": 50,
-          "NW": 50
-        }
-      },
-      "_cwa_an_radius7_quad_latest": null,
-      "_cwa_an_radius10_quad_latest": null,
-      "_is_td": false,
-      "_td_no": "25",
-      "_td_state_map": {
-        "12": "減弱為低氣壓"
-      }
-    },
-    {
       "storm_name": "SAUDEL",
       "forecast_time_utc": "2026-08-30 00:00:00 UTC",
       "agencies": [
@@ -305,13 +99,14 @@
       "_storm_name_cn": "沙德爾",
       "_max_wind_ms": 15,
       "_cwa_fc_mws_map": {
-        "20.2,110.3": 15,
-        "19.4,110.4": 15,
-        "19.0,111.2": 15,
-        "19.2,112.4": 18,
-        "20.4,114.9": 18,
-        "22.0,116.4": 18,
-        "22.8,117.2": 10
+        "19.2,110.2": 15,
+        "18.9,111.1": 15,
+        "19.1,112.5": 15,
+        "19.7,113.8": 18,
+        "21.4,115.9": 18,
+        "22.2,116.5": 18,
+        "23.3,117.1": 15,
+        "24.0,117.3": 10
       },
       "_cwa_fc_mws_map_by_tau": {
         "6": 15,
@@ -320,12 +115,13 @@
         "24": 18,
         "36": 18,
         "48": 18,
-        "72": 10
+        "72": 15,
+        "96": 10
       },
       "_cwa_fc_radius7_map": {
-        "19.2,112.4": 80,
-        "20.4,114.9": 80,
-        "22.0,116.4": 80
+        "19.7,113.8": 80,
+        "21.4,115.9": 80,
+        "22.2,116.5": 80
       },
       "_cwa_fc_radius7_map_by_tau": {
         "24": 80,
@@ -867,6 +663,140 @@
       "_td_state_map": {
         "24": "減弱為低氣壓"
       }
+    },
+    {
+      "name": "TD27",
+      "agencies": [
+        {
+          "agency": "CWA",
+          "source": "CWA OpenData",
+          "is_forecast": true,
+          "forecasts": [
+            {
+              "tau": 0,
+              "lat": 21.1,
+              "lon": 132.0,
+              "wind_kt": 29,
+              "wind_ms": 15,
+              "pressure_hpa": 1000
+            },
+            {
+              "tau": 6,
+              "lat": 21.5,
+              "lon": 131.8,
+              "wind_kt": 19,
+              "wind_ms": 10,
+              "pressure_hpa": 1004
+            },
+            {
+              "tau": 12,
+              "lat": 21.8,
+              "lon": 131.7,
+              "wind_kt": 19,
+              "wind_ms": 10,
+              "pressure_hpa": 1004
+            },
+            {
+              "tau": 18,
+              "lat": 22.0,
+              "lon": 131.6,
+              "wind_kt": 19,
+              "wind_ms": 10,
+              "pressure_hpa": 1004
+            },
+            {
+              "tau": 24,
+              "lat": 22.2,
+              "lon": 131.5,
+              "wind_kt": 19,
+              "wind_ms": 10,
+              "pressure_hpa": 1004
+            },
+            {
+              "tau": 36,
+              "lat": 22.6,
+              "lon": 131.5,
+              "wind_kt": 19,
+              "wind_ms": 10,
+              "pressure_hpa": 1004
+            },
+            {
+              "tau": 48,
+              "lat": 23.6,
+              "lon": 131.4,
+              "wind_kt": 19,
+              "wind_ms": 10,
+              "pressure_hpa": 1004
+            },
+            {
+              "tau": 72,
+              "lat": 25.6,
+              "lon": 130.5,
+              "wind_kt": 19,
+              "wind_ms": 10,
+              "pressure_hpa": 1004
+            },
+            {
+              "tau": 96,
+              "lat": 27.7,
+              "lon": 129.3,
+              "wind_kt": 19,
+              "wind_ms": 10,
+              "pressure_hpa": 1004
+            },
+            {
+              "tau": 120,
+              "lat": 29.1,
+              "lon": 129.8,
+              "wind_kt": 19,
+              "wind_ms": 10,
+              "pressure_hpa": 1004
+            }
+          ]
+        }
+      ],
+      "forecast_time_utc": "2026-08-30 00:00:00 UTC",
+      "_fetch_name": "TD27_2026",
+      "_storm_name_cn": "TD27",
+      "_max_wind_ms": 15,
+      "_cwa_fc_mws_map": {
+        "21.5,131.8": 10,
+        "21.8,131.7": 10,
+        "22.0,131.6": 10,
+        "22.2,131.5": 10,
+        "22.6,131.5": 10,
+        "23.6,131.4": 10,
+        "25.6,130.5": 10,
+        "27.7,129.3": 10,
+        "29.1,129.8": 10
+      },
+      "_cwa_fc_mws_map_by_tau": {
+        "6": 10,
+        "12": 10,
+        "18": 10,
+        "24": 10,
+        "36": 10,
+        "48": 10,
+        "72": 10,
+        "96": 10,
+        "120": 10
+      },
+      "_cwa_fc_radius7_map": {},
+      "_cwa_fc_radius7_map_by_tau": {},
+      "_cwa_fc_radius10_map": {},
+      "_cwa_fc_radius10_map_by_tau": {},
+      "_cwa_an_radius7_map": {},
+      "_cwa_an_radius10_map": {},
+      "_cwa_an_radius7_quad_map": {},
+      "_cwa_an_radius10_quad_map": {},
+      "_cwa_an_radius7_quad_latest": null,
+      "_cwa_an_radius10_quad_latest": null,
+      "_is_td": true,
+      "_td_no": "27",
+      "_td_state_map": {
+        "6": "減弱為低氣壓"
+      },
+      "_source": "cwa_only"
     }
   ]
 }

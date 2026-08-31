@@ -1,1256 +1,6 @@
 {
   "typhoons": [
     {
-      "storm_name": "BANG-LANG_2026",
-      "entries": [
-        {
-          "index": 1,
-          "data": {
-            "storm_name": "BANG-LANG",
-            "forecast_time_utc": "2026-08-28 06:00:00 UTC",
-            "agencies": [
-              {
-                "agency": "JMA",
-                "forecasts": [
-                  {
-                    "tau": 0,
-                    "datetime_z": "280600",
-                    "lat": 18.8,
-                    "lon": 165.3,
-                    "wind_kt": 35
-                  },
-                  {
-                    "tau": 24,
-                    "lat": 23.6,
-                    "lon": 168.0,
-                    "wind_kt": 35
-                  },
-                  {
-                    "tau": 48,
-                    "lat": 28.0,
-                    "lon": 169.2,
-                    "wind_kt": 35
-                  },
-                  {
-                    "tau": 72,
-                    "lat": 34.2,
-                    "lon": 166.7,
-                    "wind_kt": 40
-                  },
-                  {
-                    "tau": 96,
-                    "lat": 35.8,
-                    "lon": 167.4,
-                    "wind_kt": 35
-                  },
-                  {
-                    "tau": 120,
-                    "lat": 40.0,
-                    "lon": 173.2,
-                    "wind_kt": null
-                  }
-                ]
-              },
-              {
-                "agency": "NMC",
-                "forecasts": [
-                  {
-                    "tau": 0,
-                    "datetime_z": "280600",
-                    "lat": 19.4,
-                    "lon": 165.9,
-                    "wind_kt": 35
-                  },
-                  {
-                    "tau": 24,
-                    "lat": 24.3,
-                    "lon": 168.0,
-                    "wind_kt": 49
-                  },
-                  {
-                    "tau": 48,
-                    "lat": 30.9,
-                    "lon": 168.0,
-                    "wind_kt": 49
-                  },
-                  {
-                    "tau": 72,
-                    "lat": 35.1,
-                    "lon": 167.3,
-                    "wind_kt": 35
-                  },
-                  {
-                    "tau": 96,
-                    "lat": 38.1,
-                    "lon": 168.4,
-                    "wind_kt": 29
-                  }
-                ]
-              },
-              {
-                "agency": "CWA",
-                "forecasts": [
-                  {
-                    "tau": 0,
-                    "datetime_z": "280600",
-                    "lat": 19.1,
-                    "lon": 166.0,
-                    "wind_kt": 35
-                  },
-                  {
-                    "tau": 24,
-                    "lat": 23.7,
-                    "lon": 168.6,
-                    "wind_kt": 49
-                  },
-                  {
-                    "tau": 48,
-                    "lat": 30.8,
-                    "lon": 168.3,
-                    "wind_kt": 45
-                  },
-                  {
-                    "tau": 72,
-                    "lat": 34.8,
-                    "lon": 166.7,
-                    "wind_kt": 35
-                  },
-                  {
-                    "tau": 96,
-                    "lat": 36.9,
-                    "lon": 167.1,
-                    "wind_kt": 19
-                  }
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "index": 2,
-          "data": {
-            "storm_name": "BANG-LANG",
-            "forecast_time_utc": "2026-08-28 12:00:00 UTC",
-            "agencies": [
-              {
-                "agency": "JMA",
-                "forecasts": [
-                  {
-                    "tau": 0,
-                    "datetime_z": "281200",
-                    "lat": 19.6,
-                    "lon": 165.8,
-                    "wind_kt": 40
-                  },
-                  {
-                    "tau": 24,
-                    "lat": 24.4,
-                    "lon": 168.2,
-                    "wind_kt": 50
-                  },
-                  {
-                    "tau": 48,
-                    "lat": 31.6,
-                    "lon": 168.3,
-                    "wind_kt": 50
-                  },
-                  {
-                    "tau": 72,
-                    "lat": 38.2,
-                    "lon": 166.9,
-                    "wind_kt": 45
-                  },
-                  {
-                    "tau": 96,
-                    "lat": 44.8,
-                    "lon": 173.2,
-                    "wind_kt": 40
-                  }
-                ]
-              },
-              {
-                "agency": "NMC",
-                "forecasts": [
-                  {
-                    "tau": 0,
-                    "datetime_z": "281200",
-                    "lat": 19.8,
-                    "lon": 165.8,
-                    "wind_kt": 35
-                  },
-                  {
-                    "tau": 24,
-                    "lat": 24.9,
-                    "lon": 168.3,
-                    "wind_kt": 49
-                  },
-                  {
-                    "tau": 48,
-                    "lat": 31.3,
-                    "lon": 168.1,
-                    "wind_kt": 49
-                  },
-                  {
-                    "tau": 72,
-                    "lat": 35.5,
-                    "lon": 167.2,
-                    "wind_kt": 35
-                  },
-                  {
-                    "tau": 96,
-                    "lat": 38.7,
-                    "lon": 169.3,
-                    "wind_kt": 29
-                  }
-                ]
-              },
-              {
-                "agency": "CWA",
-                "forecasts": [
-                  {
-                    "tau": 0,
-                    "datetime_z": "281200",
-                    "lat": 19.7,
-                    "lon": 166.2,
-                    "wind_kt": 45
-                  },
-                  {
-                    "tau": 24,
-                    "lat": 24.9,
-                    "lon": 168.5,
-                    "wind_kt": 58
-                  },
-                  {
-                    "tau": 48,
-                    "lat": 32.3,
-                    "lon": 168.0,
-                    "wind_kt": 49
-                  },
-                  {
-                    "tau": 72,
-                    "lat": 36.8,
-                    "lon": 167.1,
-                    "wind_kt": 35
-                  },
-                  {
-                    "tau": 96,
-                    "lat": 40.4,
-                    "lon": 169.1,
-                    "wind_kt": 29
-                  }
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "index": 3,
-          "data": {
-            "storm_name": "BANG-LANG",
-            "forecast_time_utc": "2026-08-28 18:00:00 UTC",
-            "agencies": [
-              {
-                "agency": "JTWC",
-                "forecasts": [
-                  {
-                    "tau": 0,
-                    "datetime_z": "281800",
-                    "lat": 20.5,
-                    "lon": 167.0,
-                    "wind_kt": 65
-                  },
-                  {
-                    "tau": 24,
-                    "lat": 26.5,
-                    "lon": 168.8,
-                    "wind_kt": 85
-                  },
-                  {
-                    "tau": 48,
-                    "lat": 33.6,
-                    "lon": 168.0,
-                    "wind_kt": 70
-                  },
-                  {
-                    "tau": 72,
-                    "lat": 38.6,
-                    "lon": 167.7,
-                    "wind_kt": 45
-                  }
-                ]
-              },
-              {
-                "agency": "JMA",
-                "forecasts": [
-                  {
-                    "tau": 0,
-                    "datetime_z": "281800",
-                    "lat": 20.8,
-                    "lon": 167.1,
-                    "wind_kt": 50
-                  },
-                  {
-                    "tau": 24,
-                    "lat": 26.2,
-                    "lon": 168.5,
-                    "wind_kt": 60
-                  },
-                  {
-                    "tau": 48,
-                    "lat": 33.4,
-                    "lon": 167.7,
-                    "wind_kt": 55
-                  },
-                  {
-                    "tau": 72,
-                    "lat": 39.8,
-                    "lon": 167.3,
-                    "wind_kt": 50
-                  },
-                  {
-                    "tau": 96,
-                    "lat": 48.9,
-                    "lon": 172.9,
-                    "wind_kt": 50
-                  }
-                ]
-              },
-              {
-                "agency": "NMC",
-                "forecasts": [
-                  {
-                    "tau": 0,
-                    "datetime_z": "281800",
-                    "lat": 20.6,
-                    "lon": 166.8,
-                    "wind_kt": 45
-                  },
-                  {
-                    "tau": 24,
-                    "lat": 26.5,
-                    "lon": 168.5,
-                    "wind_kt": 54
-                  },
-                  {
-                    "tau": 48,
-                    "lat": 32.9,
-                    "lon": 168.2,
-                    "wind_kt": 45
-                  },
-                  {
-                    "tau": 72,
-                    "lat": 37.3,
-                    "lon": 167.6,
-                    "wind_kt": 35
-                  },
-                  {
-                    "tau": 96,
-                    "lat": 40.1,
-                    "lon": 169.7,
-                    "wind_kt": 29
-                  }
-                ]
-              },
-              {
-                "agency": "CWA",
-                "forecasts": [
-                  {
-                    "tau": 0,
-                    "datetime_z": "281800",
-                    "lat": 20.7,
-                    "lon": 167.0,
-                    "wind_kt": 54
-                  },
-                  {
-                    "tau": 24,
-                    "lat": 26.7,
-                    "lon": 168.8,
-                    "wind_kt": 58
-                  },
-                  {
-                    "tau": 48,
-                    "lat": 34.0,
-                    "lon": 167.4,
-                    "wind_kt": 45
-                  },
-                  {
-                    "tau": 72,
-                    "lat": 38.9,
-                    "lon": 167.5,
-                    "wind_kt": 35
-                  },
-                  {
-                    "tau": 96,
-                    "lat": 44.4,
-                    "lon": 171.1,
-                    "wind_kt": null
-                  }
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "index": 4,
-          "data": {
-            "storm_name": "BANG-LANG",
-            "forecast_time_utc": "2026-08-29 00:00:00 UTC",
-            "agencies": [
-              {
-                "agency": "JTWC",
-                "forecasts": [
-                  {
-                    "tau": 0,
-                    "datetime_z": "290000",
-                    "lat": 22.2,
-                    "lon": 167.8,
-                    "wind_kt": 65
-                  },
-                  {
-                    "tau": 24,
-                    "lat": 29.1,
-                    "lon": 169.0,
-                    "wind_kt": 75
-                  },
-                  {
-                    "tau": 48,
-                    "lat": 35.3,
-                    "lon": 167.1,
-                    "wind_kt": 60
-                  }
-                ]
-              },
-              {
-                "agency": "JMA",
-                "forecasts": [
-                  {
-                    "tau": 0,
-                    "datetime_z": "290000",
-                    "lat": 22.2,
-                    "lon": 167.9,
-                    "wind_kt": 60
-                  },
-                  {
-                    "tau": 24,
-                    "lat": 29.1,
-                    "lon": 168.3,
-                    "wind_kt": 60
-                  },
-                  {
-                    "tau": 48,
-                    "lat": 35.1,
-                    "lon": 165.8,
-                    "wind_kt": 55
-                  },
-                  {
-                    "tau": 72,
-                    "lat": 39.0,
-                    "lon": 167.0,
-                    "wind_kt": 50
-                  },
-                  {
-                    "tau": 96,
-                    "lat": 47.0,
-                    "lon": 177.5,
-                    "wind_kt": 45
-                  }
-                ]
-              },
-              {
-                "agency": "NMC",
-                "forecasts": [
-                  {
-                    "tau": 0,
-                    "datetime_z": "290000",
-                    "lat": 22.1,
-                    "lon": 167.8,
-                    "wind_kt": 49
-                  },
-                  {
-                    "tau": 24,
-                    "lat": 28.7,
-                    "lon": 168.4,
-                    "wind_kt": 64
-                  },
-                  {
-                    "tau": 48,
-                    "lat": 36.1,
-                    "lon": 166.3,
-                    "wind_kt": 54
-                  },
-                  {
-                    "tau": 72,
-                    "lat": 46.0,
-                    "lon": 171.1,
-                    "wind_kt": 49
-                  },
-                  {
-                    "tau": 96,
-                    "lat": 51.8,
-                    "lon": 178.0,
-                    "wind_kt": 45
-                  }
-                ]
-              },
-              {
-                "agency": "CWA",
-                "forecasts": [
-                  {
-                    "tau": 0,
-                    "datetime_z": "290000",
-                    "lat": 22.2,
-                    "lon": 167.7,
-                    "wind_kt": 64
-                  },
-                  {
-                    "tau": 24,
-                    "lat": 28.6,
-                    "lon": 169.0,
-                    "wind_kt": 54
-                  },
-                  {
-                    "tau": 48,
-                    "lat": 35.3,
-                    "lon": 167.5,
-                    "wind_kt": 45
-                  },
-                  {
-                    "tau": 72,
-                    "lat": 39.1,
-                    "lon": 168.2,
-                    "wind_kt": 35
-                  },
-                  {
-                    "tau": 96,
-                    "lat": 44.1,
-                    "lon": 172.7,
-                    "wind_kt": 19
-                  }
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "index": 5,
-          "data": {
-            "storm_name": "BANG-LANG",
-            "forecast_time_utc": "2026-08-29 06:00:00 UTC",
-            "agencies": [
-              {
-                "agency": "JTWC",
-                "forecasts": [
-                  {
-                    "tau": 0,
-                    "datetime_z": "290600",
-                    "lat": 23.9,
-                    "lon": 168.2,
-                    "wind_kt": 75
-                  },
-                  {
-                    "tau": 24,
-                    "lat": 31.3,
-                    "lon": 168.0,
-                    "wind_kt": 70
-                  },
-                  {
-                    "tau": 48,
-                    "lat": 36.5,
-                    "lon": 166.8,
-                    "wind_kt": 50
-                  }
-                ]
-              },
-              {
-                "agency": "JMA",
-                "forecasts": [
-                  {
-                    "tau": 0,
-                    "datetime_z": "290600",
-                    "lat": 23.9,
-                    "lon": 168.1,
-                    "wind_kt": 65
-                  },
-                  {
-                    "tau": 24,
-                    "lat": 31.7,
-                    "lon": 167.7,
-                    "wind_kt": 60
-                  },
-                  {
-                    "tau": 48,
-                    "lat": 35.8,
-                    "lon": 165.3,
-                    "wind_kt": 45
-                  },
-                  {
-                    "tau": 72,
-                    "lat": 41.4,
-                    "lon": 169.4,
-                    "wind_kt": 40
-                  }
-                ]
-              },
-              {
-                "agency": "NMC",
-                "forecasts": [
-                  {
-                    "tau": 0,
-                    "datetime_z": "290600",
-                    "lat": 23.8,
-                    "lon": 168.3,
-                    "wind_kt": 64
-                  },
-                  {
-                    "tau": 24,
-                    "lat": 31.1,
-                    "lon": 168.0,
-                    "wind_kt": 68
-                  },
-                  {
-                    "tau": 48,
-                    "lat": 37.2,
-                    "lon": 165.7,
-                    "wind_kt": 54
-                  },
-                  {
-                    "tau": 72,
-                    "lat": 47.9,
-                    "lon": 173.6,
-                    "wind_kt": 49
-                  }
-                ]
-              },
-              {
-                "agency": "CWA",
-                "forecasts": [
-                  {
-                    "tau": 0,
-                    "datetime_z": "290600",
-                    "lat": 24.0,
-                    "lon": 168.4,
-                    "wind_kt": 64
-                  },
-                  {
-                    "tau": 24,
-                    "lat": 31.5,
-                    "lon": 168.2,
-                    "wind_kt": 54
-                  },
-                  {
-                    "tau": 48,
-                    "lat": 35.5,
-                    "lon": 165.9,
-                    "wind_kt": 39
-                  },
-                  {
-                    "tau": 72,
-                    "lat": 39.8,
-                    "lon": 168.7,
-                    "wind_kt": 29
-                  },
-                  {
-                    "tau": 96,
-                    "lat": 45.4,
-                    "lon": 173.7,
-                    "wind_kt": 19
-                  }
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "index": 6,
-          "data": {
-            "storm_name": "BANG-LANG",
-            "forecast_time_utc": "2026-08-29 12:00:00 UTC",
-            "agencies": [
-              {
-                "agency": "JTWC",
-                "forecasts": [
-                  {
-                    "tau": 0,
-                    "datetime_z": "291200",
-                    "lat": 25.3,
-                    "lon": 168.6,
-                    "wind_kt": 75
-                  },
-                  {
-                    "tau": 24,
-                    "lat": 32.1,
-                    "lon": 167.4,
-                    "wind_kt": 55
-                  },
-                  {
-                    "tau": 48,
-                    "lat": 36.5,
-                    "lon": 167.0,
-                    "wind_kt": 40
-                  }
-                ]
-              },
-              {
-                "agency": "JMA",
-                "forecasts": [
-                  {
-                    "tau": 0,
-                    "datetime_z": "291200",
-                    "lat": 25.1,
-                    "lon": 169.1,
-                    "wind_kt": 60
-                  },
-                  {
-                    "tau": 24,
-                    "lat": 33.1,
-                    "lon": 167.0,
-                    "wind_kt": 55
-                  },
-                  {
-                    "tau": 48,
-                    "lat": 36.5,
-                    "lon": 167.1,
-                    "wind_kt": 45
-                  },
-                  {
-                    "tau": 72,
-                    "lat": 40.7,
-                    "lon": 169.8,
-                    "wind_kt": 40
-                  }
-                ]
-              },
-              {
-                "agency": "NMC",
-                "forecasts": [
-                  {
-                    "tau": 0,
-                    "datetime_z": "291200",
-                    "lat": 25.1,
-                    "lon": 168.5,
-                    "wind_kt": 64
-                  },
-                  {
-                    "tau": 24,
-                    "lat": 32.6,
-                    "lon": 167.2,
-                    "wind_kt": 64
-                  },
-                  {
-                    "tau": 48,
-                    "lat": 38.5,
-                    "lon": 167.0,
-                    "wind_kt": 49
-                  }
-                ]
-              },
-              {
-                "agency": "CWA",
-                "forecasts": [
-                  {
-                    "tau": 0,
-                    "datetime_z": "291200",
-                    "lat": 25.2,
-                    "lon": 168.8,
-                    "wind_kt": 58
-                  },
-                  {
-                    "tau": 24,
-                    "lat": 33.0,
-                    "lon": 166.9,
-                    "wind_kt": 49
-                  },
-                  {
-                    "tau": 48,
-                    "lat": 38.5,
-                    "lon": 166.9,
-                    "wind_kt": 35
-                  },
-                  {
-                    "tau": 72,
-                    "lat": 41.6,
-                    "lon": 169.8,
-                    "wind_kt": 29
-                  },
-                  {
-                    "tau": 96,
-                    "lat": 46.6,
-                    "lon": 171.8,
-                    "wind_kt": 19
-                  }
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "index": 7,
-          "data": {
-            "storm_name": "BANG-LANG",
-            "forecast_time_utc": "2026-08-29 18:00:00 UTC",
-            "agencies": [
-              {
-                "agency": "JTWC",
-                "forecasts": [
-                  {
-                    "tau": 0,
-                    "datetime_z": "291800",
-                    "lat": 27.7,
-                    "lon": 169.2,
-                    "wind_kt": 65
-                  },
-                  {
-                    "tau": 24,
-                    "lat": 33.8,
-                    "lon": 167.6,
-                    "wind_kt": 45
-                  },
-                  {
-                    "tau": 48,
-                    "lat": 39.1,
-                    "lon": 168.1,
-                    "wind_kt": 40
-                  }
-                ]
-              },
-              {
-                "agency": "JMA",
-                "forecasts": [
-                  {
-                    "tau": 0,
-                    "datetime_z": "291800",
-                    "lat": 27.2,
-                    "lon": 169.4,
-                    "wind_kt": 55
-                  },
-                  {
-                    "tau": 24,
-                    "lat": 34.8,
-                    "lon": 166.0,
-                    "wind_kt": 50
-                  },
-                  {
-                    "tau": 48,
-                    "lat": 36.3,
-                    "lon": 166.4,
-                    "wind_kt": 40
-                  },
-                  {
-                    "tau": 72,
-                    "lat": 47.5,
-                    "lon": 173.2,
-                    "wind_kt": 45
-                  }
-                ]
-              },
-              {
-                "agency": "NMC",
-                "forecasts": [
-                  {
-                    "tau": 0,
-                    "datetime_z": "291800",
-                    "lat": 27.9,
-                    "lon": 168.6,
-                    "wind_kt": 54
-                  },
-                  {
-                    "tau": 24,
-                    "lat": 35.3,
-                    "lon": 166.0,
-                    "wind_kt": 35
-                  },
-                  {
-                    "tau": 48,
-                    "lat": 39.1,
-                    "lon": 167.5,
-                    "wind_kt": 35
-                  }
-                ]
-              },
-              {
-                "agency": "CWA",
-                "forecasts": [
-                  {
-                    "tau": 0,
-                    "datetime_z": "291800",
-                    "lat": 27.8,
-                    "lon": 168.5,
-                    "wind_kt": 58
-                  },
-                  {
-                    "tau": 24,
-                    "lat": 34.6,
-                    "lon": 165.8,
-                    "wind_kt": 45
-                  },
-                  {
-                    "tau": 48,
-                    "lat": 38.9,
-                    "lon": 167.0,
-                    "wind_kt": 35
-                  },
-                  {
-                    "tau": 72,
-                    "lat": 46.5,
-                    "lon": 172.3,
-                    "wind_kt": null
-                  }
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "index": 8,
-          "data": {
-            "storm_name": "BANG-LANG",
-            "forecast_time_utc": "2026-08-30 00:00:00 UTC",
-            "agencies": [
-              {
-                "agency": "JTWC",
-                "forecasts": [
-                  {
-                    "tau": 0,
-                    "datetime_z": "300000",
-                    "lat": 31.3,
-                    "lon": 167.9,
-                    "wind_kt": 60
-                  },
-                  {
-                    "tau": 24,
-                    "lat": 36.9,
-                    "lon": 166.0,
-                    "wind_kt": 45
-                  }
-                ]
-              },
-              {
-                "agency": "JMA",
-                "forecasts": [
-                  {
-                    "tau": 0,
-                    "datetime_z": "300000",
-                    "lat": 30.8,
-                    "lon": 168.0,
-                    "wind_kt": 50
-                  },
-                  {
-                    "tau": 24,
-                    "lat": 35.3,
-                    "lon": 165.8,
-                    "wind_kt": 45
-                  },
-                  {
-                    "tau": 48,
-                    "lat": 41.2,
-                    "lon": 168.2,
-                    "wind_kt": 45
-                  },
-                  {
-                    "tau": 72,
-                    "lat": 54.4,
-                    "lon": 169.7,
-                    "wind_kt": 45
-                  }
-                ]
-              },
-              {
-                "agency": "NMC",
-                "forecasts": [
-                  {
-                    "tau": 0,
-                    "datetime_z": "300000",
-                    "lat": 30.4,
-                    "lon": 168.1,
-                    "wind_kt": 45
-                  },
-                  {
-                    "tau": 24,
-                    "lat": 35.8,
-                    "lon": 167.0,
-                    "wind_kt": 35
-                  }
-                ]
-              },
-              {
-                "agency": "CWA",
-                "forecasts": [
-                  {
-                    "tau": 0,
-                    "datetime_z": "300000",
-                    "lat": 30.5,
-                    "lon": 168.4,
-                    "wind_kt": 45
-                  },
-                  {
-                    "tau": 24,
-                    "lat": 36.0,
-                    "lon": 166.4,
-                    "wind_kt": 19
-                  }
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "index": 9,
-          "data": {
-            "storm_name": "BANG-LANG",
-            "forecast_time_utc": "2026-08-30 06:00:00 UTC",
-            "agencies": [
-              {
-                "agency": "JTWC",
-                "forecasts": [
-                  {
-                    "tau": 0,
-                    "datetime_z": "300600",
-                    "lat": 33.3,
-                    "lon": 167.3,
-                    "wind_kt": 45
-                  },
-                  {
-                    "tau": 24,
-                    "lat": 38.3,
-                    "lon": 166.2,
-                    "wind_kt": 35
-                  }
-                ]
-              },
-              {
-                "agency": "JMA",
-                "forecasts": [
-                  {
-                    "tau": 0,
-                    "datetime_z": "300600",
-                    "lat": 33.1,
-                    "lon": 167.4,
-                    "wind_kt": 50
-                  },
-                  {
-                    "tau": 24,
-                    "lat": 37.6,
-                    "lon": 165.9,
-                    "wind_kt": 45
-                  },
-                  {
-                    "tau": 48,
-                    "lat": 46.6,
-                    "lon": 170.3,
-                    "wind_kt": 40
-                  }
-                ]
-              },
-              {
-                "agency": "NMC",
-                "forecasts": [
-                  {
-                    "tau": 0,
-                    "datetime_z": "300600",
-                    "lat": 32.8,
-                    "lon": 167.7,
-                    "wind_kt": 45
-                  },
-                  {
-                    "tau": 24,
-                    "lat": 37.8,
-                    "lon": 166.0,
-                    "wind_kt": 35
-                  }
-                ]
-              },
-              {
-                "agency": "CWA",
-                "forecasts": [
-                  {
-                    "tau": 0,
-                    "datetime_z": "300600",
-                    "lat": 33.3,
-                    "lon": 167.5,
-                    "wind_kt": 35
-                  },
-                  {
-                    "tau": 24,
-                    "lat": 37.4,
-                    "lon": 166.3,
-                    "wind_kt": 23
-                  }
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "index": 10,
-          "data": {
-            "storm_name": "BANG-LANG",
-            "forecast_time_utc": "2026-08-30 12:00:00 UTC",
-            "agencies": [
-              {
-                "agency": "JTWC",
-                "forecasts": [
-                  {
-                    "tau": 0,
-                    "datetime_z": "301200",
-                    "lat": 34.1,
-                    "lon": 165.9,
-                    "wind_kt": 35
-                  },
-                  {
-                    "tau": 24,
-                    "lat": 39.4,
-                    "lon": 166.3,
-                    "wind_kt": 30
-                  }
-                ]
-              },
-              {
-                "agency": "JMA",
-                "forecasts": [
-                  {
-                    "tau": 0,
-                    "datetime_z": "301200",
-                    "lat": 34.5,
-                    "lon": 166.3,
-                    "wind_kt": 45
-                  },
-                  {
-                    "tau": 24,
-                    "lat": 38.4,
-                    "lon": 166.2,
-                    "wind_kt": 45
-                  },
-                  {
-                    "tau": 48,
-                    "lat": 52.4,
-                    "lon": 169.7,
-                    "wind_kt": 40
-                  }
-                ]
-              },
-              {
-                "agency": "NMC",
-                "forecasts": [
-                  {
-                    "tau": 0,
-                    "datetime_z": "301200",
-                    "lat": 34.2,
-                    "lon": 166.7,
-                    "wind_kt": 39
-                  },
-                  {
-                    "tau": 24,
-                    "lat": 40.3,
-                    "lon": 166.8,
-                    "wind_kt": 35
-                  }
-                ]
-              },
-              {
-                "agency": "CWA",
-                "forecasts": [
-                  {
-                    "tau": 0,
-                    "datetime_z": "301200",
-                    "lat": 34.3,
-                    "lon": 166.8,
-                    "wind_kt": 35
-                  },
-                  {
-                    "tau": 24,
-                    "lat": 40.2,
-                    "lon": 166.8,
-                    "wind_kt": 19
-                  }
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "index": 11,
-          "data": {
-            "storm_name": "BANG-LANG",
-            "forecast_time_utc": "2026-08-30 12:00:00 UTC",
-            "agencies": [
-              {
-                "agency": "JTWC",
-                "forecasts": [
-                  {
-                    "tau": 0,
-                    "datetime_z": "301200",
-                    "lat": 34.1,
-                    "lon": 165.9,
-                    "wind_kt": 35
-                  },
-                  {
-                    "tau": 24,
-                    "lat": 39.4,
-                    "lon": 166.3,
-                    "wind_kt": 30
-                  }
-                ]
-              },
-              {
-                "agency": "JMA",
-                "forecasts": [
-                  {
-                    "tau": 0,
-                    "datetime_z": "301800",
-                    "lat": 35.4,
-                    "lon": 165.9,
-                    "wind_kt": 40
-                  },
-                  {
-                    "tau": 24,
-                    "lat": 41.8,
-                    "lon": 167.7,
-                    "wind_kt": 40
-                  },
-                  {
-                    "tau": 48,
-                    "lat": 52.9,
-                    "lon": 171.2,
-                    "wind_kt": 45
-                  }
-                ]
-              },
-              {
-                "agency": "NMC",
-                "forecasts": [
-                  {
-                    "tau": 0,
-                    "datetime_z": "301800",
-                    "lat": 35.7,
-                    "lon": 165.4,
-                    "wind_kt": 39
-                  },
-                  {
-                    "tau": 24,
-                    "lat": 41.7,
-                    "lon": 167.5,
-                    "wind_kt": 35
-                  }
-                ]
-              },
-              {
-                "agency": "CWA",
-                "forecasts": [
-                  {
-                    "tau": 0,
-                    "datetime_z": "301800",
-                    "lat": 35.5,
-                    "lon": 166.0,
-                    "wind_kt": 29
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
       "storm_name": "SAUDEL_2026",
       "entries": [
         {
@@ -10176,6 +8926,148 @@
                 ]
               }
             ]
+          }
+        }
+      ]
+    },
+    {
+      "storm_name": "TD27_2026",
+      "entries": [
+        {
+          "index": 0,
+          "data": {
+            "name": "TD27",
+            "agencies": [
+              {
+                "agency": "CWA",
+                "source": "CWA OpenData",
+                "is_forecast": true,
+                "forecasts": [
+                  {
+                    "tau": 0,
+                    "lat": 21.1,
+                    "lon": 132.0,
+                    "wind_kt": 29,
+                    "wind_ms": 15,
+                    "pressure_hpa": 1000
+                  },
+                  {
+                    "tau": 6,
+                    "lat": 21.5,
+                    "lon": 131.8,
+                    "wind_kt": 19,
+                    "wind_ms": 10,
+                    "pressure_hpa": 1004
+                  },
+                  {
+                    "tau": 12,
+                    "lat": 21.8,
+                    "lon": 131.7,
+                    "wind_kt": 19,
+                    "wind_ms": 10,
+                    "pressure_hpa": 1004
+                  },
+                  {
+                    "tau": 18,
+                    "lat": 22.0,
+                    "lon": 131.6,
+                    "wind_kt": 19,
+                    "wind_ms": 10,
+                    "pressure_hpa": 1004
+                  },
+                  {
+                    "tau": 24,
+                    "lat": 22.2,
+                    "lon": 131.5,
+                    "wind_kt": 19,
+                    "wind_ms": 10,
+                    "pressure_hpa": 1004
+                  },
+                  {
+                    "tau": 36,
+                    "lat": 22.6,
+                    "lon": 131.5,
+                    "wind_kt": 19,
+                    "wind_ms": 10,
+                    "pressure_hpa": 1004
+                  },
+                  {
+                    "tau": 48,
+                    "lat": 23.6,
+                    "lon": 131.4,
+                    "wind_kt": 19,
+                    "wind_ms": 10,
+                    "pressure_hpa": 1004
+                  },
+                  {
+                    "tau": 72,
+                    "lat": 25.6,
+                    "lon": 130.5,
+                    "wind_kt": 19,
+                    "wind_ms": 10,
+                    "pressure_hpa": 1004
+                  },
+                  {
+                    "tau": 96,
+                    "lat": 27.7,
+                    "lon": 129.3,
+                    "wind_kt": 19,
+                    "wind_ms": 10,
+                    "pressure_hpa": 1004
+                  },
+                  {
+                    "tau": 120,
+                    "lat": 29.1,
+                    "lon": 129.8,
+                    "wind_kt": 19,
+                    "wind_ms": 10,
+                    "pressure_hpa": 1004
+                  }
+                ]
+              }
+            ],
+            "forecast_time_utc": "2026-08-30 00:00:00 UTC",
+            "_fetch_name": "TD27_2026",
+            "_storm_name_cn": "TD27",
+            "_max_wind_ms": 15,
+            "_cwa_fc_mws_map": {
+              "21.5,131.8": 10,
+              "21.8,131.7": 10,
+              "22.0,131.6": 10,
+              "22.2,131.5": 10,
+              "22.6,131.5": 10,
+              "23.6,131.4": 10,
+              "25.6,130.5": 10,
+              "27.7,129.3": 10,
+              "29.1,129.8": 10
+            },
+            "_cwa_fc_mws_map_by_tau": {
+              "6": 10,
+              "12": 10,
+              "18": 10,
+              "24": 10,
+              "36": 10,
+              "48": 10,
+              "72": 10,
+              "96": 10,
+              "120": 10
+            },
+            "_cwa_fc_radius7_map": {},
+            "_cwa_fc_radius7_map_by_tau": {},
+            "_cwa_fc_radius10_map": {},
+            "_cwa_fc_radius10_map_by_tau": {},
+            "_cwa_an_radius7_map": {},
+            "_cwa_an_radius10_map": {},
+            "_cwa_an_radius7_quad_map": {},
+            "_cwa_an_radius10_quad_map": {},
+            "_cwa_an_radius7_quad_latest": null,
+            "_cwa_an_radius10_quad_latest": null,
+            "_is_td": true,
+            "_td_no": "27",
+            "_td_state_map": {
+              "6": "減弱為低氣壓"
+            },
+            "_source": "cwa_only"
           }
         }
       ]
