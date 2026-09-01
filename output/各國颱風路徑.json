@@ -983,6 +983,48 @@
               "wind_kt": 45
             }
           ]
+        },
+        {
+          "agency": "PAGASA",
+          "forecasts": [
+            {
+              "tau": 0,
+              "datetime_z": "010000",
+              "lat": 22.0,
+              "lon": 132.0,
+              "wind_kt": 35
+            },
+            {
+              "tau": 12,
+              "lat": 22.2,
+              "lon": 132.5,
+              "wind_kt": 35
+            },
+            {
+              "tau": 24,
+              "lat": 23.1,
+              "lon": 132.4,
+              "wind_kt": 35
+            },
+            {
+              "tau": 36,
+              "lat": 24.8,
+              "lon": 131.2,
+              "wind_kt": 35
+            },
+            {
+              "tau": 48,
+              "lat": 26.5,
+              "lon": 129.9,
+              "wind_kt": 35
+            },
+            {
+              "tau": 60,
+              "lat": 28.0,
+              "lon": 129.2,
+              "wind_kt": 35
+            }
+          ]
         }
       ],
       "_fetch_name": "KROVANH_2026",
