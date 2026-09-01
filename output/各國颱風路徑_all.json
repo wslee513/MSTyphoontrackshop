@@ -9527,6 +9527,183 @@
               }
             ]
           }
+        },
+        {
+          "index": 52,
+          "data": {
+            "storm_name": "SAUDEL",
+            "forecast_time_utc": "2026-09-01 00:00:00 UTC",
+            "agencies": [
+              {
+                "agency": "HKO",
+                "forecasts": [
+                  {
+                    "tau": 0,
+                    "datetime_z": "010000",
+                    "lat": 19.4,
+                    "lon": 113.1,
+                    "wind_kt": 30
+                  },
+                  {
+                    "tau": 24,
+                    "lat": 21.5,
+                    "lon": 116.6,
+                    "wind_kt": 35
+                  },
+                  {
+                    "tau": 48,
+                    "lat": 22.8,
+                    "lon": 117.8,
+                    "wind_kt": 35
+                  },
+                  {
+                    "tau": 72,
+                    "lat": 22.9,
+                    "lon": 116.8,
+                    "wind_kt": 30
+                  },
+                  {
+                    "tau": 96,
+                    "lat": 22.8,
+                    "lon": 116.4,
+                    "wind_kt": 24
+                  },
+                  {
+                    "tau": 120,
+                    "lat": 22.6,
+                    "lon": 116.0,
+                    "wind_kt": 24
+                  }
+                ]
+              },
+              {
+                "agency": "JTWC",
+                "forecasts": [
+                  {
+                    "tau": 0,
+                    "datetime_z": "271800",
+                    "lat": 28.1,
+                    "lon": 122.6,
+                    "wind_kt": 70
+                  },
+                  {
+                    "tau": 24,
+                    "lat": 27.6,
+                    "lon": 117.5,
+                    "wind_kt": 30
+                  }
+                ]
+              },
+              {
+                "agency": "JMA",
+                "forecasts": [
+                  {
+                    "tau": 0,
+                    "datetime_z": "010000",
+                    "lat": 19.5,
+                    "lon": 112.7,
+                    "wind_kt": 35
+                  },
+                  {
+                    "tau": 24,
+                    "lat": 21.4,
+                    "lon": 116.8,
+                    "wind_kt": 35
+                  },
+                  {
+                    "tau": 48,
+                    "lat": 22.6,
+                    "lon": 118.0,
+                    "wind_kt": 35
+                  },
+                  {
+                    "tau": 72,
+                    "lat": 22.4,
+                    "lon": 117.3,
+                    "wind_kt": 35
+                  },
+                  {
+                    "tau": 96,
+                    "lat": 21.8,
+                    "lon": 116.6,
+                    "wind_kt": null
+                  }
+                ]
+              },
+              {
+                "agency": "NMC",
+                "forecasts": [
+                  {
+                    "tau": 0,
+                    "datetime_z": "010000",
+                    "lat": 19.4,
+                    "lon": 113.0,
+                    "wind_kt": 35
+                  },
+                  {
+                    "tau": 24,
+                    "lat": 21.6,
+                    "lon": 117.3,
+                    "wind_kt": 35
+                  },
+                  {
+                    "tau": 48,
+                    "lat": 22.3,
+                    "lon": 118.2,
+                    "wind_kt": 35
+                  },
+                  {
+                    "tau": 72,
+                    "lat": 22.6,
+                    "lon": 117.8,
+                    "wind_kt": 29
+                  }
+                ]
+              },
+              {
+                "agency": "CWA",
+                "forecasts": [
+                  {
+                    "tau": 0,
+                    "datetime_z": "010000",
+                    "lat": 19.5,
+                    "lon": 113.6,
+                    "wind_kt": 35
+                  },
+                  {
+                    "tau": 24,
+                    "lat": 21.5,
+                    "lon": 116.7,
+                    "wind_kt": 35
+                  },
+                  {
+                    "tau": 48,
+                    "lat": 22.8,
+                    "lon": 116.7,
+                    "wind_kt": 35
+                  },
+                  {
+                    "tau": 72,
+                    "lat": 22.9,
+                    "lon": 115.2,
+                    "wind_kt": 29
+                  }
+                ]
+              },
+              {
+                "agency": "KMA",
+                "forecasts": [
+                  {
+                    "tau": 0,
+                    "datetime_z": "280000",
+                    "lat": 28.0,
+                    "lon": 121.3,
+                    "wind_kt": 62
+                  }
+                ]
+              }
+            ]
+          }
         }
       ]
     },
@@ -9534,7 +9711,7 @@
       "storm_name": "KROVANH_2026",
       "entries": [
         {
-          "index": 0,
+          "index": 1,
           "data": {
             "storm_name": "KROVANH",
             "forecast_time_utc": "2026-09-01 00:00:00 UTC",
@@ -9550,22 +9727,10 @@
                     "wind_kt": 24
                   },
                   {
-                    "tau": 12,
-                    "lat": 22.0,
-                    "lon": 132.7,
-                    "wind_kt": null
-                  },
-                  {
                     "tau": 24,
                     "lat": 22.6,
                     "lon": 132.9,
                     "wind_kt": 40
-                  },
-                  {
-                    "tau": 36,
-                    "lat": 23.9,
-                    "lon": 131.9,
-                    "wind_kt": null
                   },
                   {
                     "tau": 48,
@@ -9574,34 +9739,16 @@
                     "wind_kt": 35
                   },
                   {
-                    "tau": 60,
-                    "lat": 26.9,
-                    "lon": 129.9,
-                    "wind_kt": null
-                  },
-                  {
                     "tau": 72,
                     "lat": 28.3,
                     "lon": 129.3,
                     "wind_kt": 35
                   },
                   {
-                    "tau": 84,
-                    "lat": 28.8,
-                    "lon": 129.5,
-                    "wind_kt": null
-                  },
-                  {
                     "tau": 96,
                     "lat": 29.1,
                     "lon": 130.0,
                     "wind_kt": 35
-                  },
-                  {
-                    "tau": 108,
-                    "lat": 29.4,
-                    "lon": 130.6,
-                    "wind_kt": null
                   },
                   {
                     "tau": 120,
@@ -9664,33 +9811,15 @@
                     "wind_kt": 35
                   },
                   {
-                    "tau": 12,
-                    "lat": 22.6,
-                    "lon": 132.4,
-                    "wind_kt": 35
-                  },
-                  {
                     "tau": 24,
                     "lat": 23.0,
                     "lon": 132.7,
                     "wind_kt": 35
                   },
                   {
-                    "tau": 36,
-                    "lat": 24.1,
-                    "lon": 132.4,
-                    "wind_kt": 35
-                  },
-                  {
                     "tau": 48,
                     "lat": 25.7,
                     "lon": 131.3,
-                    "wind_kt": 35
-                  },
-                  {
-                    "tau": 60,
-                    "lat": 27.2,
-                    "lon": 130.4,
                     "wind_kt": 35
                   },
                   {
@@ -9724,21 +9853,9 @@
                     "wind_kt": 35
                   },
                   {
-                    "tau": 12,
-                    "lat": 22.4,
-                    "lon": 132.4,
-                    "wind_kt": 35
-                  },
-                  {
                     "tau": 24,
                     "lat": 22.9,
                     "lon": 132.5,
-                    "wind_kt": 39
-                  },
-                  {
-                    "tau": 36,
-                    "lat": 23.7,
-                    "lon": 131.9,
                     "wind_kt": 39
                   },
                   {
@@ -9778,21 +9895,9 @@
                     "wind_kt": 35
                   },
                   {
-                    "tau": 12,
-                    "lat": 22.2,
-                    "lon": 132.5,
-                    "wind_kt": 35
-                  },
-                  {
                     "tau": 24,
                     "lat": 23.1,
                     "lon": 132.4,
-                    "wind_kt": 35
-                  },
-                  {
-                    "tau": 36,
-                    "lat": 24.8,
-                    "lon": 131.2,
                     "wind_kt": 35
                   },
                   {
@@ -9800,89 +9905,10 @@
                     "lat": 26.5,
                     "lon": 129.9,
                     "wind_kt": 35
-                  },
-                  {
-                    "tau": 60,
-                    "lat": 28.0,
-                    "lon": 129.2,
-                    "wind_kt": 35
                   }
                 ]
               }
-            ],
-            "_fetch_name": "KROVANH_2026",
-            "_storm_name_cn": "科羅旺",
-            "_max_wind_ms": 18,
-            "_cwa_fc_mws_map": {
-              "22.3,132.1": 18,
-              "22.4,132.4": 18,
-              "22.6,132.6": 20,
-              "22.9,132.5": 20,
-              "23.7,131.9": 20,
-              "24.5,131.1": 20,
-              "25.7,130.1": 23,
-              "26.5,130.7": 23,
-              "27.2,131.6": 23
-            },
-            "_cwa_fc_mws_map_by_tau": {
-              "6": 18,
-              "12": 18,
-              "18": 20,
-              "24": 20,
-              "36": 20,
-              "48": 20,
-              "72": 23,
-              "96": 23,
-              "120": 23
-            },
-            "_cwa_fc_radius7_map": {
-              "22.3,132.1": 80,
-              "22.4,132.4": 80,
-              "22.6,132.6": 100,
-              "22.9,132.5": 100,
-              "23.7,131.9": 100,
-              "24.5,131.1": 100,
-              "25.7,130.1": 120,
-              "26.5,130.7": 150,
-              "27.2,131.6": 150
-            },
-            "_cwa_fc_radius7_map_by_tau": {
-              "6": 80,
-              "12": 80,
-              "18": 100,
-              "24": 100,
-              "36": 100,
-              "48": 100,
-              "72": 120,
-              "96": 150,
-              "120": 150
-            },
-            "_cwa_fc_radius10_map": {},
-            "_cwa_fc_radius10_map_by_tau": {},
-            "_cwa_an_radius7_map": {
-              "22.3,131.8": 80
-            },
-            "_cwa_an_radius10_map": {},
-            "_cwa_an_radius7_quad_map": {
-              "22.3,131.8": {
-                "NE": 80,
-                "SE": 80,
-                "SW": 80,
-                "NW": 80
-              }
-            },
-            "_cwa_an_radius10_quad_map": {},
-            "_cwa_an_radius7_quad_latest": {
-              "NE": 80,
-              "SE": 80,
-              "SW": 80,
-              "NW": 80
-            },
-            "_cwa_an_radius10_quad_latest": null,
-            "_is_td": false,
-            "_td_no": "27",
-            "_td_state_map": {},
-            "_source": "txt"
+            ]
           }
         }
       ]
