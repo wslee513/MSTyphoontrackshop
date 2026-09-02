@@ -10784,6 +10784,135 @@
               }
             ]
           }
+        },
+        {
+          "index": 59,
+          "data": {
+            "storm_name": "SAUDEL",
+            "forecast_time_utc": "2026-09-02 18:00:00 UTC",
+            "agencies": [
+              {
+                "agency": "HKO",
+                "forecasts": [
+                  {
+                    "tau": 0,
+                    "datetime_z": "021800",
+                    "lat": 23.2,
+                    "lon": 118.0,
+                    "wind_kt": 40
+                  },
+                  {
+                    "tau": 24,
+                    "lat": 23.4,
+                    "lon": 115.6,
+                    "wind_kt": 30
+                  },
+                  {
+                    "tau": 48,
+                    "lat": 22.4,
+                    "lon": 112.8,
+                    "wind_kt": 24
+                  },
+                  {
+                    "tau": 72,
+                    "lat": 21.9,
+                    "lon": 112.1,
+                    "wind_kt": 22
+                  }
+                ]
+              },
+              {
+                "agency": "JTWC",
+                "forecasts": [
+                  {
+                    "tau": 0,
+                    "datetime_z": "021800",
+                    "lat": 23.4,
+                    "lon": 118.4,
+                    "wind_kt": 35
+                  },
+                  {
+                    "tau": 24,
+                    "lat": 23.9,
+                    "lon": 116.5,
+                    "wind_kt": 25
+                  }
+                ]
+              },
+              {
+                "agency": "JMA",
+                "forecasts": [
+                  {
+                    "tau": 0,
+                    "datetime_z": "021800",
+                    "lat": 23.2,
+                    "lon": 118.2,
+                    "wind_kt": 35
+                  },
+                  {
+                    "tau": 24,
+                    "lat": 23.2,
+                    "lon": 116.2,
+                    "wind_kt": null
+                  }
+                ]
+              },
+              {
+                "agency": "NMC",
+                "forecasts": [
+                  {
+                    "tau": 0,
+                    "datetime_z": "021800",
+                    "lat": 23.2,
+                    "lon": 118.3,
+                    "wind_kt": 45
+                  },
+                  {
+                    "tau": 24,
+                    "lat": 23.5,
+                    "lon": 115.3,
+                    "wind_kt": 29
+                  }
+                ]
+              },
+              {
+                "agency": "CWA",
+                "forecasts": [
+                  {
+                    "tau": 0,
+                    "datetime_z": "021800",
+                    "lat": 23.1,
+                    "lon": 117.5,
+                    "wind_kt": 35
+                  },
+                  {
+                    "tau": 24,
+                    "lat": 23.6,
+                    "lon": 115.7,
+                    "wind_kt": 19
+                  }
+                ]
+              },
+              {
+                "agency": "KMA",
+                "forecasts": [
+                  {
+                    "tau": 0,
+                    "datetime_z": "021800",
+                    "lat": 23.4,
+                    "lon": 118.0,
+                    "wind_kt": 47
+                  },
+                  {
+                    "tau": 24,
+                    "lat": 23.3,
+                    "lon": 115.8,
+                    "wind_kt": 29
+                  }
+                ]
+              }
+            ]
+          }
         }
       ]
     },
