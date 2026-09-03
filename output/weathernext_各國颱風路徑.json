@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-03 06:20:05 UTC",
+ "generated_at": "2026-09-03 07:20:07 UTC",
  "source": "Open-Meteo Google WeatherNext 2 Ensemble Mean (free API)",
  "api": "https://ensemble-api.open-meteo.com/v1/ensemble",
  "model": "google_weathernext2_ensemble_mean",
