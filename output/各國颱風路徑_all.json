@@ -5219,6 +5219,141 @@
               }
             ]
           }
+        },
+        {
+          "index": 24,
+          "data": {
+            "storm_name": "KROVANH",
+            "forecast_time_utc": "2026-09-06 18:00:00 UTC",
+            "agencies": [
+              {
+                "agency": "HKO",
+                "forecasts": [
+                  {
+                    "tau": 0,
+                    "datetime_z": "061800",
+                    "lat": 26.0,
+                    "lon": 131.5,
+                    "wind_kt": 35
+                  },
+                  {
+                    "tau": 24,
+                    "lat": 29.0,
+                    "lon": 132.7,
+                    "wind_kt": 30
+                  },
+                  {
+                    "tau": 48,
+                    "lat": 32.4,
+                    "lon": 133.1,
+                    "wind_kt": 24
+                  },
+                  {
+                    "tau": 72,
+                    "lat": 34.6,
+                    "lon": 137.3,
+                    "wind_kt": null
+                  }
+                ]
+              },
+              {
+                "agency": "JTWC",
+                "forecasts": [
+                  {
+                    "tau": 0,
+                    "datetime_z": "061800",
+                    "lat": 25.8,
+                    "lon": 131.6,
+                    "wind_kt": 30
+                  },
+                  {
+                    "tau": 24,
+                    "lat": 28.7,
+                    "lon": 132.8,
+                    "wind_kt": 30
+                  },
+                  {
+                    "tau": 48,
+                    "lat": 31.9,
+                    "lon": 133.5,
+                    "wind_kt": 25
+                  }
+                ]
+              },
+              {
+                "agency": "JMA",
+                "forecasts": [
+                  {
+                    "tau": 0,
+                    "datetime_z": "061800",
+                    "lat": 25.9,
+                    "lon": 131.4,
+                    "wind_kt": 35
+                  },
+                  {
+                    "tau": 24,
+                    "lat": 28.6,
+                    "lon": 132.6,
+                    "wind_kt": null
+                  }
+                ]
+              },
+              {
+                "agency": "NMC",
+                "forecasts": [
+                  {
+                    "tau": 0,
+                    "datetime_z": "061800",
+                    "lat": 26.0,
+                    "lon": 131.5,
+                    "wind_kt": 35
+                  },
+                  {
+                    "tau": 24,
+                    "lat": 28.4,
+                    "lon": 132.7,
+                    "wind_kt": 29
+                  }
+                ]
+              },
+              {
+                "agency": "CWA",
+                "forecasts": [
+                  {
+                    "tau": 0,
+                    "datetime_z": "061800",
+                    "lat": 26.0,
+                    "lon": 131.5,
+                    "wind_kt": 35
+                  },
+                  {
+                    "tau": 24,
+                    "lat": 28.9,
+                    "lon": 132.6,
+                    "wind_kt": 29
+                  },
+                  {
+                    "tau": 48,
+                    "lat": 32.1,
+                    "lon": 133.2,
+                    "wind_kt": 19
+                  }
+                ]
+              },
+              {
+                "agency": "KMA",
+                "forecasts": [
+                  {
+                    "tau": 0,
+                    "datetime_z": "061800",
+                    "lat": 25.8,
+                    "lon": 131.4,
+                    "wind_kt": 39
+                  }
+                ]
+              }
+            ]
+          }
         }
       ]
     }
