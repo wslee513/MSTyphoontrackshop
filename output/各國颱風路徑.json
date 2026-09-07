@@ -2,34 +2,28 @@
   "typhoons": [
     {
       "storm_name": "KROVANH",
-      "forecast_time_utc": "2026-09-06 18:00:00 UTC",
+      "forecast_time_utc": "2026-09-07 00:00:00 UTC",
       "agencies": [
         {
           "agency": "HKO",
           "forecasts": [
             {
               "tau": 0,
-              "datetime_z": "061800",
-              "lat": 26.0,
-              "lon": 131.5,
-              "wind_kt": 35
+              "datetime_z": "070000",
+              "lat": 26.3,
+              "lon": 132.1,
+              "wind_kt": 30
             },
             {
               "tau": 24,
-              "lat": 29.0,
-              "lon": 132.7,
+              "lat": 29.9,
+              "lon": 132.6,
               "wind_kt": 30
             },
             {
               "tau": 48,
-              "lat": 32.4,
-              "lon": 133.1,
-              "wind_kt": 24
-            },
-            {
-              "tau": 72,
-              "lat": 34.6,
-              "lon": 137.3,
+              "lat": 33.3,
+              "lon": 133.9,
               "wind_kt": null
             }
           ]
@@ -39,21 +33,21 @@
           "forecasts": [
             {
               "tau": 0,
-              "datetime_z": "061800",
-              "lat": 25.8,
-              "lon": 131.6,
+              "datetime_z": "070000",
+              "lat": 26.2,
+              "lon": 132.1,
               "wind_kt": 30
             },
             {
               "tau": 24,
-              "lat": 28.7,
-              "lon": 132.8,
+              "lat": 29.5,
+              "lon": 132.7,
               "wind_kt": 30
             },
             {
               "tau": 48,
-              "lat": 31.9,
-              "lon": 133.5,
+              "lat": 32.8,
+              "lon": 134.0,
               "wind_kt": 25
             }
           ]
@@ -81,15 +75,9 @@
           "forecasts": [
             {
               "tau": 0,
-              "datetime_z": "061800",
-              "lat": 26.0,
-              "lon": 131.5,
-              "wind_kt": 35
-            },
-            {
-              "tau": 24,
-              "lat": 28.4,
-              "lon": 132.7,
+              "datetime_z": "070000",
+              "lat": 26.5,
+              "lon": 132.1,
               "wind_kt": 29
             }
           ]
@@ -99,22 +87,10 @@
           "forecasts": [
             {
               "tau": 0,
-              "datetime_z": "061800",
-              "lat": 26.0,
-              "lon": 131.5,
-              "wind_kt": 35
-            },
-            {
-              "tau": 24,
-              "lat": 28.9,
-              "lon": 132.6,
+              "datetime_z": "070000",
+              "lat": 26.2,
+              "lon": 132.1,
               "wind_kt": 29
-            },
-            {
-              "tau": 48,
-              "lat": 32.1,
-              "lon": 133.2,
-              "wind_kt": 19
             }
           ]
         },
@@ -123,10 +99,10 @@
           "forecasts": [
             {
               "tau": 0,
-              "datetime_z": "061800",
-              "lat": 25.8,
-              "lon": 131.4,
-              "wind_kt": 39
+              "datetime_z": "070000",
+              "lat": 26.2,
+              "lon": 132.0,
+              "wind_kt": 29
             }
           ]
         }
