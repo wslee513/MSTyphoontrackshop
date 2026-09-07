@@ -2,28 +2,28 @@
   "typhoons": [
     {
       "storm_name": "KROVANH",
-      "forecast_time_utc": "2026-09-07 00:00:00 UTC",
+      "forecast_time_utc": "2026-09-07 06:00:00 UTC",
       "agencies": [
         {
           "agency": "HKO",
           "forecasts": [
             {
               "tau": 0,
-              "datetime_z": "070000",
-              "lat": 26.3,
-              "lon": 132.1,
-              "wind_kt": 30
-            },
-            {
-              "tau": 24,
-              "lat": 29.9,
+              "datetime_z": "070600",
+              "lat": 27.1,
               "lon": 132.6,
               "wind_kt": 30
             },
             {
+              "tau": 24,
+              "lat": 31.2,
+              "lon": 132.7,
+              "wind_kt": 24
+            },
+            {
               "tau": 48,
-              "lat": 33.3,
-              "lon": 133.9,
+              "lat": 34.4,
+              "lon": 136.0,
               "wind_kt": null
             }
           ]
@@ -33,22 +33,22 @@
           "forecasts": [
             {
               "tau": 0,
-              "datetime_z": "070000",
-              "lat": 26.2,
-              "lon": 132.1,
+              "datetime_z": "070600",
+              "lat": 27.1,
+              "lon": 132.6,
               "wind_kt": 30
             },
             {
               "tau": 24,
-              "lat": 29.5,
-              "lon": 132.7,
+              "lat": 30.9,
+              "lon": 133.0,
               "wind_kt": 30
             },
             {
               "tau": 48,
-              "lat": 32.8,
-              "lon": 134.0,
-              "wind_kt": 25
+              "lat": 34.0,
+              "lon": 136.2,
+              "wind_kt": 20
             }
           ]
         },
@@ -87,10 +87,10 @@
           "forecasts": [
             {
               "tau": 0,
-              "datetime_z": "070000",
-              "lat": 26.2,
-              "lon": 132.1,
-              "wind_kt": 29
+              "datetime_z": "070600",
+              "lat": 27.2,
+              "lon": 132.7,
+              "wind_kt": 23
             }
           ]
         },
