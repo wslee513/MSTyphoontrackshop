@@ -111,10 +111,12 @@
       "_storm_name_cn": "科羅旺",
       "_max_wind_ms": 12,
       "_cwa_fc_mws_map": {
-        "28.0,132.9": 10
+        "29.2,132.8": 12,
+        "30.2,132.6": 10
       },
       "_cwa_fc_mws_map_by_tau": {
-        "6": 10
+        "6": 12,
+        "12": 10
       },
       "_cwa_fc_radius7_map": {},
       "_cwa_fc_radius7_map_by_tau": {},
@@ -299,7 +301,7 @@
       "_is_td": false,
       "_td_no": "27",
       "_td_state_map": {
-        "6": "減弱為低氣壓"
+        "12": "減弱為低氣壓"
       }
     }
   ]
