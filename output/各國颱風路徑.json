@@ -2,29 +2,23 @@
   "typhoons": [
     {
       "storm_name": "KROVANH",
-      "forecast_time_utc": "2026-09-07 06:00:00 UTC",
+      "forecast_time_utc": "2026-09-07 12:00:00 UTC",
       "agencies": [
         {
           "agency": "HKO",
           "forecasts": [
             {
               "tau": 0,
-              "datetime_z": "070600",
-              "lat": 27.1,
-              "lon": 132.6,
+              "datetime_z": "071200",
+              "lat": 28.2,
+              "lon": 133.1,
               "wind_kt": 30
             },
             {
               "tau": 24,
-              "lat": 31.2,
-              "lon": 132.7,
+              "lat": 31.9,
+              "lon": 132.8,
               "wind_kt": 24
-            },
-            {
-              "tau": 48,
-              "lat": 34.4,
-              "lon": 136.0,
-              "wind_kt": null
             }
           ]
         },
@@ -33,21 +27,21 @@
           "forecasts": [
             {
               "tau": 0,
-              "datetime_z": "070600",
-              "lat": 27.1,
-              "lon": 132.6,
+              "datetime_z": "071200",
+              "lat": 28.2,
+              "lon": 132.9,
               "wind_kt": 30
             },
             {
               "tau": 24,
-              "lat": 30.9,
-              "lon": 133.0,
+              "lat": 31.8,
+              "lon": 133.2,
               "wind_kt": 30
             },
             {
               "tau": 48,
-              "lat": 34.0,
-              "lon": 136.2,
+              "lat": 34.9,
+              "lon": 137.5,
               "wind_kt": 20
             }
           ]
@@ -87,9 +81,9 @@
           "forecasts": [
             {
               "tau": 0,
-              "datetime_z": "070600",
-              "lat": 27.2,
-              "lon": 132.7,
+              "datetime_z": "071200",
+              "lat": 28.2,
+              "lon": 133.1,
               "wind_kt": 23
             }
           ]
