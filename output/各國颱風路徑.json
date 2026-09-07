@@ -133,31 +133,17 @@
       ],
       "_fetch_name": "KROVANH_2026",
       "_storm_name_cn": "科羅旺",
-      "_max_wind_ms": 18,
+      "_max_wind_ms": 15,
       "_cwa_fc_mws_map": {
-        "26.5,132.2": 18,
-        "27.3,132.5": 18,
-        "28.1,132.7": 15,
-        "28.9,132.6": 15,
-        "30.5,132.5": 12,
-        "32.1,133.2": 10
+        "27.3,132.5": 12,
+        "28.1,132.8": 10
       },
       "_cwa_fc_mws_map_by_tau": {
-        "6": 18,
-        "12": 18,
-        "18": 15,
-        "24": 15,
-        "36": 12,
-        "48": 10
+        "6": 12,
+        "12": 10
       },
-      "_cwa_fc_radius7_map": {
-        "26.5,132.2": 100,
-        "27.3,132.5": 100
-      },
-      "_cwa_fc_radius7_map_by_tau": {
-        "6": 100,
-        "12": 100
-      },
+      "_cwa_fc_radius7_map": {},
+      "_cwa_fc_radius7_map_by_tau": {},
       "_cwa_fc_radius10_map": {},
       "_cwa_fc_radius10_map_by_tau": {},
       "_cwa_an_radius7_map": {
@@ -334,17 +320,12 @@
         }
       },
       "_cwa_an_radius10_quad_map": {},
-      "_cwa_an_radius7_quad_latest": {
-        "NE": 100,
-        "SE": 70,
-        "SW": 70,
-        "NW": 140
-      },
+      "_cwa_an_radius7_quad_latest": null,
       "_cwa_an_radius10_quad_latest": null,
       "_is_td": false,
       "_td_no": "27",
       "_td_state_map": {
-        "18": "減弱為熱帶性低氣壓"
+        "12": "減弱為低氣壓"
       }
     }
   ]
