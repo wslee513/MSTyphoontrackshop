@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-21 03:20:04 UTC",
+ "generated_at": "2026-09-21 04:20:04 UTC",
  "source": "Open-Meteo Google WeatherNext 2 Ensemble Mean (free API)",
  "api": "https://ensemble-api.open-meteo.com/v1/ensemble",
  "model": "google_weathernext2_ensemble_mean",
@@ -7,37 +7,37 @@
  "typhoons": [
   {
    "storm_name": "DUJUAN",
-   "forecast_time_utc": "2026-09-20 18:00:00 UTC",
+   "forecast_time_utc": "2026-09-21 00:00:00 UTC",
    "points": [
     {
      "tau": 0,
-     "lat": 31.5,
-     "lon": 137.8,
+     "lat": 32.5,
+     "lon": 138.6,
      "time_utc": "2026-09-21T00:00",
-     "wind_kt_10m": 38.3,
-     "wind_kt_100m": 48.5,
-     "pressure_hpa": 988.5,
-     "temp_c": 27.6
+     "wind_kt_10m": 11.4,
+     "wind_kt_100m": 14.5,
+     "pressure_hpa": 976.7,
+     "temp_c": 27.8
     },
     {
      "tau": 24,
-     "lat": 36.2,
-     "lon": 143.7,
-     "time_utc": "2026-09-21T18:00",
-     "wind_kt_10m": 10.9,
-     "wind_kt_100m": 13.6,
-     "pressure_hpa": 980.6,
-     "temp_c": 26.8
+     "lat": 37.6,
+     "lon": 146.9,
+     "time_utc": "2026-09-22T00:00",
+     "wind_kt_10m": 20.6,
+     "wind_kt_100m": 27.0,
+     "pressure_hpa": 984.0,
+     "temp_c": 25.8
     },
     {
      "tau": 48,
-     "lat": 40.2,
-     "lon": 156.3,
-     "time_utc": "2026-09-22T18:00",
-     "wind_kt_10m": 11.7,
-     "wind_kt_100m": 14.8,
-     "pressure_hpa": 990.8,
-     "temp_c": 23.8
+     "lat": 41.0,
+     "lon": 160.5,
+     "time_utc": "2026-09-23T00:00",
+     "wind_kt_10m": 10.1,
+     "wind_kt_100m": 13.2,
+     "pressure_hpa": 993.5,
+     "temp_c": 22.3
     }
    ]
   }
