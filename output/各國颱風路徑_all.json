@@ -4136,6 +4136,111 @@
               }
             ]
           }
+        },
+        {
+          "index": 23,
+          "data": {
+            "storm_name": "DUJUAN",
+            "forecast_time_utc": "2026-09-22 00:00:00 UTC",
+            "agencies": [
+              {
+                "agency": "HKO",
+                "forecasts": [
+                  {
+                    "tau": 0,
+                    "datetime_z": "210600",
+                    "lat": 33.8,
+                    "lon": 140.0,
+                    "wind_kt": 70
+                  },
+                  {
+                    "tau": 24,
+                    "lat": 38.8,
+                    "lon": 149.9,
+                    "wind_kt": 70
+                  },
+                  {
+                    "tau": 48,
+                    "lat": 41.8,
+                    "lon": 164.5,
+                    "wind_kt": null
+                  }
+                ]
+              },
+              {
+                "agency": "JTWC",
+                "forecasts": [
+                  {
+                    "tau": 0,
+                    "datetime_z": "220000",
+                    "lat": 38.1,
+                    "lon": 147.4,
+                    "wind_kt": 65
+                  },
+                  {
+                    "tau": 24,
+                    "lat": 41.9,
+                    "lon": 161.7,
+                    "wind_kt": 45
+                  }
+                ]
+              },
+              {
+                "agency": "JMA",
+                "forecasts": [
+                  {
+                    "tau": 0,
+                    "datetime_z": "220000",
+                    "lat": 38.3,
+                    "lon": 147.7,
+                    "wind_kt": 65
+                  },
+                  {
+                    "tau": 24,
+                    "lat": 42.0,
+                    "lon": 161.7,
+                    "wind_kt": 40
+                  }
+                ]
+              },
+              {
+                "agency": "NMC",
+                "forecasts": [
+                  {
+                    "tau": 0,
+                    "datetime_z": "220000",
+                    "lat": 38.2,
+                    "lon": 147.4,
+                    "wind_kt": 49
+                  }
+                ]
+              },
+              {
+                "agency": "CWA",
+                "forecasts": [
+                  {
+                    "tau": 0,
+                    "datetime_z": "220000",
+                    "lat": 38.1,
+                    "lon": 147.2,
+                    "wind_kt": 58
+                  }
+                ]
+              },
+              {
+                "agency": "KMA",
+                "forecasts": [
+                  {
+                    "tau": 0,
+                    "datetime_z": "220000",
+                    "lat": 38.3,
+                    "lon": 147.5,
+                    "wind_kt": 62
+                  }
+                ]
+              }
+            ]
+          }
         }
       ]
     },
@@ -4235,7 +4340,7 @@
                 ]
               }
             ],
-            "forecast_time_utc": "2026-09-21 18:00:00 UTC",
+            "forecast_time_utc": "2026-09-22 00:00:00 UTC",
             "_fetch_name": "TD29_2026",
             "_storm_name_cn": "TD29",
             "_max_wind_ms": 12,
