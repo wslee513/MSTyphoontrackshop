@@ -82,6 +82,66 @@
                 ]
               },
               {
+                "agency": "JTWC",
+                "forecasts": [
+                  {
+                    "tau": 0,
+                    "datetime_z": "231200",
+                    "lat": 16.5,
+                    "lon": 137.6,
+                    "wind_kt": 30
+                  },
+                  {
+                    "tau": 12,
+                    "lat": 17.3,
+                    "lon": 135.4,
+                    "wind_kt": 35
+                  },
+                  {
+                    "tau": 24,
+                    "lat": 18.2,
+                    "lon": 133.1,
+                    "wind_kt": 40
+                  },
+                  {
+                    "tau": 36,
+                    "lat": 19.3,
+                    "lon": 130.9,
+                    "wind_kt": 45
+                  },
+                  {
+                    "tau": 48,
+                    "lat": 20.1,
+                    "lon": 129.3,
+                    "wind_kt": 50
+                  },
+                  {
+                    "tau": 60,
+                    "lat": 21.0,
+                    "lon": 128.0,
+                    "wind_kt": 65
+                  },
+                  {
+                    "tau": 72,
+                    "lat": 21.8,
+                    "lon": 127.3,
+                    "wind_kt": 85
+                  },
+                  {
+                    "tau": 96,
+                    "lat": 22.6,
+                    "lon": 127.1,
+                    "wind_kt": 105
+                  },
+                  {
+                    "tau": 120,
+                    "lat": 23.7,
+                    "lon": 127.4,
+                    "wind_kt": 110
+                  }
+                ]
+              },
+              {
                 "agency": "JMA",
                 "forecasts": [
                   {
