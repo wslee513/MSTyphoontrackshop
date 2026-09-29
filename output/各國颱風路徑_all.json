@@ -6020,6 +6020,147 @@
               }
             ]
           }
+        },
+        {
+          "index": 25,
+          "data": {
+            "storm_name": "SURIGAE",
+            "forecast_time_utc": "2026-09-29 12:00:00 UTC",
+            "agencies": [
+              {
+                "agency": "HKO",
+                "forecasts": [
+                  {
+                    "tau": 0,
+                    "datetime_z": "291200",
+                    "lat": 29.4,
+                    "lon": 136.0,
+                    "wind_kt": 46
+                  },
+                  {
+                    "tau": 24,
+                    "lat": 32.1,
+                    "lon": 139.6,
+                    "wind_kt": 40
+                  }
+                ]
+              },
+              {
+                "agency": "JTWC",
+                "forecasts": [
+                  {
+                    "tau": 0,
+                    "datetime_z": "291200",
+                    "lat": 29.2,
+                    "lon": 136.3,
+                    "wind_kt": 45
+                  },
+                  {
+                    "tau": 24,
+                    "lat": 32.1,
+                    "lon": 140.3,
+                    "wind_kt": 40
+                  },
+                  {
+                    "tau": 48,
+                    "lat": 36.8,
+                    "lon": 147.3,
+                    "wind_kt": 45
+                  }
+                ]
+              },
+              {
+                "agency": "JMA",
+                "forecasts": [
+                  {
+                    "tau": 0,
+                    "datetime_z": "291200",
+                    "lat": 29.1,
+                    "lon": 136.1,
+                    "wind_kt": 45
+                  },
+                  {
+                    "tau": 24,
+                    "lat": 31.7,
+                    "lon": 139.1,
+                    "wind_kt": 40
+                  },
+                  {
+                    "tau": 48,
+                    "lat": 36.7,
+                    "lon": 144.7,
+                    "wind_kt": 40
+                  },
+                  {
+                    "tau": 72,
+                    "lat": 45.6,
+                    "lon": 163.7,
+                    "wind_kt": 45
+                  }
+                ]
+              },
+              {
+                "agency": "NMC",
+                "forecasts": [
+                  {
+                    "tau": 0,
+                    "datetime_z": "291200",
+                    "lat": 29.3,
+                    "lon": 135.7,
+                    "wind_kt": 45
+                  }
+                ]
+              },
+              {
+                "agency": "CWA",
+                "forecasts": [
+                  {
+                    "tau": 0,
+                    "datetime_z": "291200",
+                    "lat": 29.2,
+                    "lon": 136.0,
+                    "wind_kt": 45
+                  },
+                  {
+                    "tau": 24,
+                    "lat": 32.1,
+                    "lon": 139.6,
+                    "wind_kt": 39
+                  },
+                  {
+                    "tau": 48,
+                    "lat": 36.4,
+                    "lon": 145.5,
+                    "wind_kt": null
+                  }
+                ]
+              },
+              {
+                "agency": "KMA",
+                "forecasts": [
+                  {
+                    "tau": 0,
+                    "datetime_z": "291200",
+                    "lat": 29.2,
+                    "lon": 136.0,
+                    "wind_kt": 47
+                  },
+                  {
+                    "tau": 24,
+                    "lat": 31.9,
+                    "lon": 139.3,
+                    "wind_kt": 45
+                  },
+                  {
+                    "tau": 48,
+                    "lat": 36.9,
+                    "lon": 145.1,
+                    "wind_kt": 41
+                  }
+                ]
+              }
+            ]
+          }
         }
       ]
     }
