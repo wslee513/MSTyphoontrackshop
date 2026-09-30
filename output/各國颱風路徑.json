@@ -2,22 +2,22 @@
   "typhoons": [
     {
       "storm_name": "SURIGAE",
-      "forecast_time_utc": "2026-09-30 00:00:00 UTC",
+      "forecast_time_utc": "2026-09-30 06:00:00 UTC",
       "agencies": [
         {
           "agency": "HKO",
           "forecasts": [
             {
               "tau": 0,
-              "datetime_z": "300000",
-              "lat": 30.3,
-              "lon": 137.5,
+              "datetime_z": "300600",
+              "lat": 31.3,
+              "lon": 138.4,
               "wind_kt": 35
             },
             {
               "tau": 24,
-              "lat": 33.7,
-              "lon": 141.3,
+              "lat": 34.7,
+              "lon": 142.3,
               "wind_kt": null
             }
           ]
@@ -27,15 +27,15 @@
           "forecasts": [
             {
               "tau": 0,
-              "datetime_z": "300000",
-              "lat": 30.2,
-              "lon": 137.3,
+              "datetime_z": "300600",
+              "lat": 31.2,
+              "lon": 138.3,
               "wind_kt": 35
             },
             {
               "tau": 24,
-              "lat": 33.5,
-              "lon": 141.1,
+              "lat": 35.0,
+              "lon": 143.1,
               "wind_kt": 35
             }
           ]
@@ -45,21 +45,21 @@
           "forecasts": [
             {
               "tau": 0,
-              "datetime_z": "300000",
-              "lat": 30.1,
-              "lon": 137.3,
+              "datetime_z": "300600",
+              "lat": 31.1,
+              "lon": 138.4,
               "wind_kt": 35
             },
             {
               "tau": 24,
-              "lat": 33.3,
-              "lon": 140.7,
+              "lat": 34.8,
+              "lon": 142.0,
               "wind_kt": 35
             },
             {
               "tau": 48,
-              "lat": 39.3,
-              "lon": 152.1,
+              "lat": 40.9,
+              "lon": 156.4,
               "wind_kt": 40
             }
           ]
@@ -81,16 +81,16 @@
           "forecasts": [
             {
               "tau": 0,
-              "datetime_z": "300000",
-              "lat": 30.2,
-              "lon": 137.5,
+              "datetime_z": "300600",
+              "lat": 31.4,
+              "lon": 138.4,
               "wind_kt": 29
             },
             {
               "tau": 24,
-              "lat": 33.9,
-              "lon": 141.8,
-              "wind_kt": 23
+              "lat": 34.8,
+              "lon": 142.6,
+              "wind_kt": null
             }
           ]
         },
@@ -99,15 +99,15 @@
           "forecasts": [
             {
               "tau": 0,
-              "datetime_z": "300000",
-              "lat": 30.2,
-              "lon": 137.4,
-              "wind_kt": 41
+              "datetime_z": "300600",
+              "lat": 31.2,
+              "lon": 138.3,
+              "wind_kt": 39
             },
             {
               "tau": 24,
-              "lat": 33.9,
-              "lon": 141.8,
+              "lat": 35.1,
+              "lon": 143.2,
               "wind_kt": 39
             }
           ]
@@ -505,7 +505,7 @@
           ]
         }
       ],
-      "forecast_time_utc": "2026-09-30 00:00:00 UTC",
+      "forecast_time_utc": "2026-09-30 06:00:00 UTC",
       "_fetch_name": "TD30_2026",
       "_storm_name_cn": "TD30",
       "_max_wind_ms": 12,

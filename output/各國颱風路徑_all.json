@@ -6407,6 +6407,123 @@
               }
             ]
           }
+        },
+        {
+          "index": 28,
+          "data": {
+            "storm_name": "SURIGAE",
+            "forecast_time_utc": "2026-09-30 06:00:00 UTC",
+            "agencies": [
+              {
+                "agency": "HKO",
+                "forecasts": [
+                  {
+                    "tau": 0,
+                    "datetime_z": "300600",
+                    "lat": 31.3,
+                    "lon": 138.4,
+                    "wind_kt": 35
+                  },
+                  {
+                    "tau": 24,
+                    "lat": 34.7,
+                    "lon": 142.3,
+                    "wind_kt": null
+                  }
+                ]
+              },
+              {
+                "agency": "JTWC",
+                "forecasts": [
+                  {
+                    "tau": 0,
+                    "datetime_z": "300600",
+                    "lat": 31.2,
+                    "lon": 138.3,
+                    "wind_kt": 35
+                  },
+                  {
+                    "tau": 24,
+                    "lat": 35.0,
+                    "lon": 143.1,
+                    "wind_kt": 35
+                  }
+                ]
+              },
+              {
+                "agency": "JMA",
+                "forecasts": [
+                  {
+                    "tau": 0,
+                    "datetime_z": "300600",
+                    "lat": 31.1,
+                    "lon": 138.4,
+                    "wind_kt": 35
+                  },
+                  {
+                    "tau": 24,
+                    "lat": 34.8,
+                    "lon": 142.0,
+                    "wind_kt": 35
+                  },
+                  {
+                    "tau": 48,
+                    "lat": 40.9,
+                    "lon": 156.4,
+                    "wind_kt": 40
+                  }
+                ]
+              },
+              {
+                "agency": "NMC",
+                "forecasts": [
+                  {
+                    "tau": 0,
+                    "datetime_z": "291200",
+                    "lat": 29.3,
+                    "lon": 135.7,
+                    "wind_kt": 45
+                  }
+                ]
+              },
+              {
+                "agency": "CWA",
+                "forecasts": [
+                  {
+                    "tau": 0,
+                    "datetime_z": "300600",
+                    "lat": 31.4,
+                    "lon": 138.4,
+                    "wind_kt": 29
+                  },
+                  {
+                    "tau": 24,
+                    "lat": 34.8,
+                    "lon": 142.6,
+                    "wind_kt": null
+                  }
+                ]
+              },
+              {
+                "agency": "KMA",
+                "forecasts": [
+                  {
+                    "tau": 0,
+                    "datetime_z": "300600",
+                    "lat": 31.2,
+                    "lon": 138.3,
+                    "wind_kt": 39
+                  },
+                  {
+                    "tau": 24,
+                    "lat": 35.1,
+                    "lon": 143.2,
+                    "wind_kt": 39
+                  }
+                ]
+              }
+            ]
+          }
         }
       ]
     },
@@ -6506,7 +6623,7 @@
                 ]
               }
             ],
-            "forecast_time_utc": "2026-09-30 00:00:00 UTC",
+            "forecast_time_utc": "2026-09-30 06:00:00 UTC",
             "_fetch_name": "TD30_2026",
             "_storm_name_cn": "TD30",
             "_max_wind_ms": 12,
