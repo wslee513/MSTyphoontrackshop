@@ -2,23 +2,17 @@
   "typhoons": [
     {
       "storm_name": "SURIGAE",
-      "forecast_time_utc": "2026-09-30 12:00:00 UTC",
+      "forecast_time_utc": "2026-09-30 18:00:00 UTC",
       "agencies": [
         {
           "agency": "HKO",
           "forecasts": [
             {
               "tau": 0,
-              "datetime_z": "301200",
-              "lat": 31.8,
-              "lon": 138.9,
+              "datetime_z": "301800",
+              "lat": 32.2,
+              "lon": 139.7,
               "wind_kt": 35
-            },
-            {
-              "tau": 24,
-              "lat": 35.8,
-              "lon": 143.7,
-              "wind_kt": null
             }
           ]
         },
@@ -45,22 +39,16 @@
           "forecasts": [
             {
               "tau": 0,
-              "datetime_z": "301200",
-              "lat": 31.8,
-              "lon": 138.9,
+              "datetime_z": "301800",
+              "lat": 32.3,
+              "lon": 139.7,
               "wind_kt": 35
             },
             {
               "tau": 24,
-              "lat": 35.8,
-              "lon": 144.2,
-              "wind_kt": 35
-            },
-            {
-              "tau": 48,
-              "lat": 43.1,
-              "lon": 163.1,
-              "wind_kt": 35
+              "lat": 38.8,
+              "lon": 149.0,
+              "wind_kt": 45
             }
           ]
         },
@@ -81,15 +69,15 @@
           "forecasts": [
             {
               "tau": 0,
-              "datetime_z": "301200",
-              "lat": 31.9,
-              "lon": 139.0,
+              "datetime_z": "301800",
+              "lat": 32.2,
+              "lon": 139.8,
               "wind_kt": 29
             },
             {
               "tau": 24,
-              "lat": 36.1,
-              "lon": 144.7,
+              "lat": 38.2,
+              "lon": 148.2,
               "wind_kt": null
             }
           ]
@@ -99,15 +87,9 @@
           "forecasts": [
             {
               "tau": 0,
-              "datetime_z": "301200",
-              "lat": 31.9,
-              "lon": 138.9,
-              "wind_kt": 39
-            },
-            {
-              "tau": 24,
-              "lat": 36.3,
-              "lon": 145.0,
+              "datetime_z": "301800",
+              "lat": 32.2,
+              "lon": 139.6,
               "wind_kt": 37
             }
           ]
@@ -429,34 +411,16 @@
               "wind_kt": 35
             },
             {
-              "tau": 12,
-              "lat": 16.5,
-              "lon": 148.0,
-              "wind_kt": 45
-            },
-            {
               "tau": 24,
               "lat": 16.8,
               "lon": 146.5,
               "wind_kt": 55
             },
             {
-              "tau": 36,
-              "lat": 17.3,
-              "lon": 145.8,
-              "wind_kt": 70
-            },
-            {
               "tau": 48,
               "lat": 18.2,
               "lon": 145.8,
               "wind_kt": 85
-            },
-            {
-              "tau": 60,
-              "lat": 19.4,
-              "lon": 146.3,
-              "wind_kt": 100
             },
             {
               "tau": 72,
@@ -531,34 +495,16 @@
               "wind_kt": 35
             },
             {
-              "tau": 12,
-              "lat": 16.7,
-              "lon": 147.1,
-              "wind_kt": 45
-            },
-            {
               "tau": 24,
               "lat": 16.9,
               "lon": 146.1,
               "wind_kt": 54
             },
             {
-              "tau": 36,
-              "lat": 17.5,
-              "lon": 145.5,
-              "wind_kt": 64
-            },
-            {
               "tau": 48,
               "lat": 18.2,
               "lon": 145.6,
               "wind_kt": 68
-            },
-            {
-              "tau": 60,
-              "lat": 19.5,
-              "lon": 146.1,
-              "wind_kt": 78
             },
             {
               "tau": 72,
@@ -591,22 +537,10 @@
               "wind_kt": 35
             },
             {
-              "tau": 12,
-              "lat": 16.6,
-              "lon": 147.0,
-              "wind_kt": 39
-            },
-            {
               "tau": 24,
               "lat": 16.9,
               "lon": 145.6,
               "wind_kt": 49
-            },
-            {
-              "tau": 36,
-              "lat": 17.5,
-              "lon": 145.0,
-              "wind_kt": 58
             },
             {
               "tau": 48,
@@ -645,22 +579,10 @@
               "wind_kt": 37
             },
             {
-              "tau": 12,
-              "lat": 16.8,
-              "lon": 147.1,
-              "wind_kt": 41
-            },
-            {
               "tau": 24,
               "lat": 17.2,
               "lon": 145.7,
               "wind_kt": 45
-            },
-            {
-              "tau": 36,
-              "lat": 17.6,
-              "lon": 145.2,
-              "wind_kt": 47
             },
             {
               "tau": 48,
@@ -772,8 +694,7 @@
       "_cwa_an_radius10_quad_latest": null,
       "_is_td": false,
       "_td_no": "30",
-      "_td_state_map": {},
-      "_source": "txt"
+      "_td_state_map": {}
     }
   ]
 }
