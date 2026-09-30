@@ -6292,6 +6292,172 @@
           }
         }
       ]
+    },
+    {
+      "storm_name": "TD30_2026",
+      "entries": [
+        {
+          "index": 0,
+          "data": {
+            "name": "TD30",
+            "agencies": [
+              {
+                "agency": "CWA",
+                "source": "CWA OpenData",
+                "is_forecast": true,
+                "forecasts": [
+                  {
+                    "tau": 0,
+                    "lat": 15.5,
+                    "lon": 152.0,
+                    "wind_kt": 23,
+                    "wind_ms": 12,
+                    "pressure_hpa": 1006
+                  },
+                  {
+                    "tau": 6,
+                    "lat": 16.2,
+                    "lon": 150.7,
+                    "wind_kt": 29,
+                    "wind_ms": 15,
+                    "pressure_hpa": 1004
+                  },
+                  {
+                    "tau": 12,
+                    "lat": 16.4,
+                    "lon": 149.8,
+                    "wind_kt": 29,
+                    "wind_ms": 15,
+                    "pressure_hpa": 1004
+                  },
+                  {
+                    "tau": 18,
+                    "lat": 16.5,
+                    "lon": 148.8,
+                    "wind_kt": 29,
+                    "wind_ms": 15,
+                    "pressure_hpa": 1004
+                  },
+                  {
+                    "tau": 24,
+                    "lat": 16.7,
+                    "lon": 147.7,
+                    "wind_kt": 35,
+                    "wind_ms": 18,
+                    "pressure_hpa": 1000
+                  },
+                  {
+                    "tau": 36,
+                    "lat": 16.7,
+                    "lon": 145.9,
+                    "wind_kt": 49,
+                    "wind_ms": 25,
+                    "pressure_hpa": 985
+                  },
+                  {
+                    "tau": 48,
+                    "lat": 17.0,
+                    "lon": 144.8,
+                    "wind_kt": 68,
+                    "wind_ms": 35,
+                    "pressure_hpa": 965
+                  },
+                  {
+                    "tau": 72,
+                    "lat": 18.5,
+                    "lon": 144.4,
+                    "wind_kt": 93,
+                    "wind_ms": 48,
+                    "pressure_hpa": 930
+                  },
+                  {
+                    "tau": 96,
+                    "lat": 21.2,
+                    "lon": 145.3,
+                    "wind_kt": 99,
+                    "wind_ms": 51,
+                    "pressure_hpa": 925
+                  },
+                  {
+                    "tau": 120,
+                    "lat": 24.7,
+                    "lon": 144.8,
+                    "wind_kt": 99,
+                    "wind_ms": 51,
+                    "pressure_hpa": 925
+                  }
+                ]
+              }
+            ],
+            "forecast_time_utc": "2026-09-29 18:00:00 UTC",
+            "_fetch_name": "TD30_2026",
+            "_storm_name_cn": "TD30",
+            "_max_wind_ms": 12,
+            "_cwa_fc_mws_map": {
+              "16.2,150.7": 15,
+              "16.4,149.8": 15,
+              "16.5,148.8": 15,
+              "16.7,147.7": 18,
+              "16.7,145.9": 25,
+              "17.0,144.8": 35,
+              "18.5,144.4": 48,
+              "21.2,145.3": 51,
+              "24.7,144.8": 51
+            },
+            "_cwa_fc_mws_map_by_tau": {
+              "6": 15,
+              "12": 15,
+              "18": 15,
+              "24": 18,
+              "36": 25,
+              "48": 35,
+              "72": 48,
+              "96": 51,
+              "120": 51
+            },
+            "_cwa_fc_radius7_map": {
+              "16.7,147.7": 80,
+              "16.7,145.9": 120,
+              "17.0,144.8": 180,
+              "18.5,144.4": 220,
+              "21.2,145.3": 250,
+              "24.7,144.8": 250
+            },
+            "_cwa_fc_radius7_map_by_tau": {
+              "24": 80,
+              "36": 120,
+              "48": 180,
+              "72": 220,
+              "96": 250,
+              "120": 250
+            },
+            "_cwa_fc_radius10_map": {
+              "17.0,144.8": 60,
+              "18.5,144.4": 70,
+              "21.2,145.3": 80,
+              "24.7,144.8": 80
+            },
+            "_cwa_fc_radius10_map_by_tau": {
+              "48": 60,
+              "72": 70,
+              "96": 80,
+              "120": 80
+            },
+            "_cwa_an_radius7_map": {},
+            "_cwa_an_radius10_map": {},
+            "_cwa_an_radius7_quad_map": {},
+            "_cwa_an_radius10_quad_map": {},
+            "_cwa_an_radius7_quad_latest": null,
+            "_cwa_an_radius10_quad_latest": null,
+            "_is_td": true,
+            "_td_no": "30",
+            "_td_state_map": {
+              "24": "有發展為輕度颱風的趨勢"
+            },
+            "_source": "cwa_only"
+          }
+        }
+      ]
     }
   ]
 }
