@@ -3218,6 +3218,165 @@
               }
             ]
           }
+        },
+        {
+          "index": 17,
+          "data": {
+            "storm_name": "CHOI-WAN",
+            "forecast_time_utc": "2026-10-04 18:00:00 UTC",
+            "agencies": [
+              {
+                "agency": "JTWC",
+                "forecasts": [
+                  {
+                    "tau": 0,
+                    "datetime_z": "041800",
+                    "lat": 24.4,
+                    "lon": 147.1,
+                    "wind_kt": 135
+                  },
+                  {
+                    "tau": 24,
+                    "lat": 28.7,
+                    "lon": 146.3,
+                    "wind_kt": 115
+                  },
+                  {
+                    "tau": 48,
+                    "lat": 36.7,
+                    "lon": 150.7,
+                    "wind_kt": 95
+                  },
+                  {
+                    "tau": 72,
+                    "lat": 49.8,
+                    "lon": 166.0,
+                    "wind_kt": 60
+                  }
+                ]
+              },
+              {
+                "agency": "JMA",
+                "forecasts": [
+                  {
+                    "tau": 0,
+                    "datetime_z": "041800",
+                    "lat": 24.3,
+                    "lon": 147.1,
+                    "wind_kt": 95
+                  },
+                  {
+                    "tau": 24,
+                    "lat": 28.5,
+                    "lon": 145.7,
+                    "wind_kt": 90
+                  },
+                  {
+                    "tau": 48,
+                    "lat": 36.5,
+                    "lon": 149.7,
+                    "wind_kt": 80
+                  },
+                  {
+                    "tau": 72,
+                    "lat": 50.4,
+                    "lon": 167.5,
+                    "wind_kt": 60
+                  }
+                ]
+              },
+              {
+                "agency": "NMC",
+                "forecasts": [
+                  {
+                    "tau": 0,
+                    "datetime_z": "041800",
+                    "lat": 24.3,
+                    "lon": 147.1,
+                    "wind_kt": 113
+                  },
+                  {
+                    "tau": 24,
+                    "lat": 28.3,
+                    "lon": 145.8,
+                    "wind_kt": 107
+                  },
+                  {
+                    "tau": 48,
+                    "lat": 36.2,
+                    "lon": 149.8,
+                    "wind_kt": 82
+                  },
+                  {
+                    "tau": 72,
+                    "lat": 50.3,
+                    "lon": 165.7,
+                    "wind_kt": 49
+                  }
+                ]
+              },
+              {
+                "agency": "CWA",
+                "forecasts": [
+                  {
+                    "tau": 0,
+                    "datetime_z": "041800",
+                    "lat": 24.3,
+                    "lon": 147.2,
+                    "wind_kt": 107
+                  },
+                  {
+                    "tau": 24,
+                    "lat": 28.4,
+                    "lon": 145.7,
+                    "wind_kt": 103
+                  },
+                  {
+                    "tau": 48,
+                    "lat": 36.6,
+                    "lon": 150.0,
+                    "wind_kt": 84
+                  },
+                  {
+                    "tau": 72,
+                    "lat": 51.4,
+                    "lon": 167.3,
+                    "wind_kt": null
+                  }
+                ]
+              },
+              {
+                "agency": "KMA",
+                "forecasts": [
+                  {
+                    "tau": 0,
+                    "datetime_z": "041800",
+                    "lat": 24.3,
+                    "lon": 147.1,
+                    "wind_kt": 103
+                  },
+                  {
+                    "tau": 24,
+                    "lat": 28.3,
+                    "lon": 145.9,
+                    "wind_kt": 95
+                  },
+                  {
+                    "tau": 48,
+                    "lat": 36.6,
+                    "lon": 150.6,
+                    "wind_kt": 78
+                  },
+                  {
+                    "tau": 72,
+                    "lat": 49.2,
+                    "lon": 166.9,
+                    "wind_kt": 68
+                  }
+                ]
+              }
+            ]
+          }
         }
       ]
     },
@@ -3317,7 +3476,7 @@
                 ]
               }
             ],
-            "forecast_time_utc": "2026-10-04 12:00:00 UTC",
+            "forecast_time_utc": "2026-10-04 18:00:00 UTC",
             "_fetch_name": "TD31_2026",
             "_storm_name_cn": "TD31",
             "_max_wind_ms": 15,
