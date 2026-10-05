@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-05 16:20:11 UTC",
+ "generated_at": "2026-10-05 17:20:10 UTC",
  "source": "Open-Meteo Google WeatherNext 2 Ensemble Mean (free API)",
  "api": "https://ensemble-api.open-meteo.com/v1/ensemble",
  "model": "google_weathernext2_ensemble_mean",
@@ -38,6 +38,72 @@
      "wind_kt_100m": 24.9,
      "pressure_hpa": 978.0,
      "temp_c": 16.1
+    }
+   ]
+  },
+  {
+   "storm_name": "NOLO",
+   "forecast_time_utc": "2026-10-05 12:00:00 UTC",
+   "points": [
+    {
+     "tau": 0,
+     "lat": 25.6,
+     "lon": 176.3,
+     "time_utc": "2026-10-05T12:00",
+     "wind_kt_10m": 8.0,
+     "wind_kt_100m": 9.2,
+     "pressure_hpa": 985.1,
+     "temp_c": 27.4
+    },
+    {
+     "tau": 24,
+     "lat": 25.5,
+     "lon": 169.1,
+     "time_utc": "2026-10-06T12:00",
+     "wind_kt_10m": 19.1,
+     "wind_kt_100m": 24.5,
+     "pressure_hpa": 995.1,
+     "temp_c": 27.5
+    },
+    {
+     "tau": 48,
+     "lat": 26.3,
+     "lon": 160.0,
+     "time_utc": "2026-10-07T12:00",
+     "wind_kt_10m": 3.5,
+     "wind_kt_100m": 4.4,
+     "pressure_hpa": 1003.0,
+     "temp_c": 27.9
+    },
+    {
+     "tau": 72,
+     "lat": 28.3,
+     "lon": 153.4,
+     "time_utc": "2026-10-08T12:00",
+     "wind_kt_10m": 9.1,
+     "wind_kt_100m": 10.3,
+     "pressure_hpa": 1008.8,
+     "temp_c": 27.4
+    },
+    {
+     "tau": 96,
+     "lat": 29.9,
+     "lon": 151.0,
+     "time_utc": "2026-10-09T12:00",
+     "wind_kt_10m": 13.5,
+     "wind_kt_100m": 15.2,
+     "pressure_hpa": 1014.6,
+     "temp_c": 25.9
+    },
+    {
+     "tau": 120,
+     "lat": 31.2,
+     "lon": 150.6,
+     "time_utc": "2026-10-10T12:00",
+     "wind_kt_10m": 16.2,
+     "wind_kt_100m": 18.9,
+     "pressure_hpa": 1017.7,
+     "temp_c": 25.9
     }
    ]
   },
