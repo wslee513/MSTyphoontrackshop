@@ -4121,6 +4121,99 @@
               }
             ]
           }
+        },
+        {
+          "index": 24,
+          "data": {
+            "storm_name": "CHOI-WAN",
+            "forecast_time_utc": "2026-10-06 12:00:00 UTC",
+            "agencies": [
+              {
+                "agency": "JTWC",
+                "forecasts": [
+                  {
+                    "tau": 0,
+                    "datetime_z": "061200",
+                    "lat": 33.7,
+                    "lon": 147.6,
+                    "wind_kt": 80
+                  },
+                  {
+                    "tau": 24,
+                    "lat": 46.0,
+                    "lon": 161.5,
+                    "wind_kt": 65
+                  }
+                ]
+              },
+              {
+                "agency": "JMA",
+                "forecasts": [
+                  {
+                    "tau": 0,
+                    "datetime_z": "061200",
+                    "lat": 33.7,
+                    "lon": 147.7,
+                    "wind_kt": 70
+                  },
+                  {
+                    "tau": 24,
+                    "lat": 46.1,
+                    "lon": 161.6,
+                    "wind_kt": 55
+                  }
+                ]
+              },
+              {
+                "agency": "NMC",
+                "forecasts": [
+                  {
+                    "tau": 0,
+                    "datetime_z": "061500",
+                    "lat": 34.9,
+                    "lon": 148.8,
+                    "wind_kt": 74
+                  }
+                ]
+              },
+              {
+                "agency": "CWA",
+                "forecasts": [
+                  {
+                    "tau": 0,
+                    "datetime_z": "061200",
+                    "lat": 33.7,
+                    "lon": 147.6,
+                    "wind_kt": 68
+                  },
+                  {
+                    "tau": 24,
+                    "lat": 46.6,
+                    "lon": 161.8,
+                    "wind_kt": null
+                  }
+                ]
+              },
+              {
+                "agency": "KMA",
+                "forecasts": [
+                  {
+                    "tau": 0,
+                    "datetime_z": "061200",
+                    "lat": 33.5,
+                    "lon": 147.5,
+                    "wind_kt": 76
+                  },
+                  {
+                    "tau": 24,
+                    "lat": 46.2,
+                    "lon": 161.7,
+                    "wind_kt": 62
+                  }
+                ]
+              }
+            ]
+          }
         }
       ]
     },

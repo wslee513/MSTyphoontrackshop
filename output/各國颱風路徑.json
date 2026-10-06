@@ -2,23 +2,23 @@
   "typhoons": [
     {
       "storm_name": "CHOI-WAN",
-      "forecast_time_utc": "2026-10-06 06:00:00 UTC",
+      "forecast_time_utc": "2026-10-06 12:00:00 UTC",
       "agencies": [
         {
           "agency": "JTWC",
           "forecasts": [
             {
               "tau": 0,
-              "datetime_z": "060600",
-              "lat": 31.6,
-              "lon": 146.4,
-              "wind_kt": 85
+              "datetime_z": "061200",
+              "lat": 33.7,
+              "lon": 147.6,
+              "wind_kt": 80
             },
             {
               "tau": 24,
-              "lat": 42.4,
-              "lon": 157.0,
-              "wind_kt": 70
+              "lat": 46.0,
+              "lon": 161.5,
+              "wind_kt": 65
             }
           ]
         },
@@ -27,16 +27,16 @@
           "forecasts": [
             {
               "tau": 0,
-              "datetime_z": "060600",
-              "lat": 31.4,
-              "lon": 146.3,
-              "wind_kt": 75
+              "datetime_z": "061200",
+              "lat": 33.7,
+              "lon": 147.7,
+              "wind_kt": 70
             },
             {
               "tau": 24,
-              "lat": 42.4,
-              "lon": 156.5,
-              "wind_kt": 65
+              "lat": 46.1,
+              "lon": 161.6,
+              "wind_kt": 55
             }
           ]
         },
@@ -45,16 +45,10 @@
           "forecasts": [
             {
               "tau": 0,
-              "datetime_z": "060600",
-              "lat": 31.5,
-              "lon": 146.3,
-              "wind_kt": 87
-            },
-            {
-              "tau": 24,
-              "lat": 42.8,
-              "lon": 156.8,
-              "wind_kt": 64
+              "datetime_z": "061500",
+              "lat": 34.9,
+              "lon": 148.8,
+              "wind_kt": 74
             }
           ]
         },
@@ -63,15 +57,15 @@
           "forecasts": [
             {
               "tau": 0,
-              "datetime_z": "060600",
-              "lat": 31.7,
-              "lon": 146.4,
+              "datetime_z": "061200",
+              "lat": 33.7,
+              "lon": 147.6,
               "wind_kt": 68
             },
             {
               "tau": 24,
-              "lat": 43.0,
-              "lon": 157.2,
+              "lat": 46.6,
+              "lon": 161.8,
               "wind_kt": null
             }
           ]
@@ -81,16 +75,16 @@
           "forecasts": [
             {
               "tau": 0,
-              "datetime_z": "060600",
-              "lat": 31.5,
-              "lon": 146.3,
-              "wind_kt": 78
+              "datetime_z": "061200",
+              "lat": 33.5,
+              "lon": 147.5,
+              "wind_kt": 76
             },
             {
               "tau": 24,
-              "lat": 42.9,
-              "lon": 156.9,
-              "wind_kt": 68
+              "lat": 46.2,
+              "lon": 161.7,
+              "wind_kt": 62
             }
           ]
         }

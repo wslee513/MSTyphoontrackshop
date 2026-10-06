@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-06 16:20:08 UTC",
+ "generated_at": "2026-10-06 17:20:06 UTC",
  "source": "Open-Meteo Google WeatherNext 2 Ensemble Mean (free API)",
  "api": "https://ensemble-api.open-meteo.com/v1/ensemble",
  "model": "google_weathernext2_ensemble_mean",
@@ -7,27 +7,27 @@
  "typhoons": [
   {
    "storm_name": "CHOI-WAN",
-   "forecast_time_utc": "2026-10-06 06:00:00 UTC",
+   "forecast_time_utc": "2026-10-06 12:00:00 UTC",
    "points": [
     {
      "tau": 0,
-     "lat": 31.7,
-     "lon": 146.4,
-     "time_utc": "2026-10-06T06:00",
-     "wind_kt_10m": 32.8,
-     "wind_kt_100m": 42.9,
-     "pressure_hpa": 962.8,
-     "temp_c": 27.6
+     "lat": 33.7,
+     "lon": 147.6,
+     "time_utc": "2026-10-06T12:00",
+     "wind_kt_10m": 17.4,
+     "wind_kt_100m": 22.2,
+     "pressure_hpa": 965.8,
+     "temp_c": 26.7
     },
     {
      "tau": 24,
-     "lat": 43.0,
-     "lon": 157.2,
-     "time_utc": "2026-10-07T06:00",
-     "wind_kt_10m": 28.1,
-     "wind_kt_100m": 37.2,
-     "pressure_hpa": 975.4,
-     "temp_c": 20.2
+     "lat": 46.6,
+     "lon": 161.8,
+     "time_utc": "2026-10-07T12:00",
+     "wind_kt_10m": 22.2,
+     "wind_kt_100m": 29.1,
+     "pressure_hpa": 976.7,
+     "temp_c": 17.1
     }
    ]
   },
