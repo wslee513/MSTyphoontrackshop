@@ -1,77 +1,8 @@
 {
- "generated_at": "2026-10-07 07:20:27 UTC",
+ "generated_at": "2026-10-07 08:20:19 UTC",
  "source": "ECMWF Open Data TC-track BUFR (CC-BY-4.0)",
  "run": "20261007/00z (step=360)",
  "typhoons": [
-  {
-   "storm_name": "CHOI-WAN",
-   "hres": [
-    {
-     "tau": 0,
-     "lat": 39.3,
-     "lon": 152.1,
-     "pmsl_hpa": 966.0,
-     "wind_ms": 30.4
-    },
-    {
-     "tau": 12,
-     "lat": 42.7,
-     "lon": 156.7,
-     "pmsl_hpa": 967.0,
-     "wind_ms": 30.4
-    }
-   ],
-   "ens_mean": [
-    {
-     "tau": 0,
-     "lat": 39.33,
-     "lon": 152.11,
-     "pmsl_hpa": 966.2,
-     "wind_ms": 34.2,
-     "n": 51
-    },
-    {
-     "tau": 12,
-     "lat": 42.69,
-     "lon": 156.59,
-     "pmsl_hpa": 966.6,
-     "wind_ms": 29.3,
-     "n": 51
-    },
-    {
-     "tau": 18,
-     "lat": 46.46,
-     "lon": 161.54,
-     "pmsl_hpa": 966.3,
-     "wind_ms": 29.4,
-     "n": 50
-    }
-   ],
-   "ens_control": [
-    {
-     "tau": 0,
-     "lat": 39.3,
-     "lon": 152.1,
-     "pmsl_hpa": 966.0,
-     "wind_ms": 30.4
-    },
-    {
-     "tau": 12,
-     "lat": 42.7,
-     "lon": 156.7,
-     "pmsl_hpa": 967.0,
-     "wind_ms": 30.4
-    },
-    {
-     "tau": 18,
-     "lat": 46.6,
-     "lon": 161.6,
-     "pmsl_hpa": 967.0,
-     "wind_ms": 30.9
-    }
-   ],
-   "ens_members": 51
-  },
   {
    "storm_name": "NOLO",
    "hres": [
