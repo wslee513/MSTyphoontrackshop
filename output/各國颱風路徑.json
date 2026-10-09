@@ -2,28 +2,28 @@
   "typhoons": [
     {
       "storm_name": "NOLO",
-      "forecast_time_utc": "2026-10-09 12:00:00 UTC",
+      "forecast_time_utc": "2026-10-09 18:00:00 UTC",
       "agencies": [
         {
           "agency": "JTWC",
           "forecasts": [
             {
               "tau": 0,
-              "datetime_z": "091200",
-              "lat": 29.4,
-              "lon": 147.8,
+              "datetime_z": "091800",
+              "lat": 30.0,
+              "lon": 147.2,
               "wind_kt": 50
             },
             {
               "tau": 24,
-              "lat": 32.5,
-              "lon": 147.1,
-              "wind_kt": 45
+              "lat": 32.8,
+              "lon": 147.0,
+              "wind_kt": 35
             },
             {
               "tau": 48,
               "lat": 35.8,
-              "lon": 151.9,
+              "lon": 150.9,
               "wind_kt": 30
             }
           ]
@@ -33,21 +33,21 @@
           "forecasts": [
             {
               "tau": 0,
-              "datetime_z": "091200",
-              "lat": 29.5,
-              "lon": 147.8,
+              "datetime_z": "091800",
+              "lat": 29.9,
+              "lon": 147.0,
               "wind_kt": 45
             },
             {
               "tau": 24,
-              "lat": 32.5,
-              "lon": 146.8,
-              "wind_kt": 45
+              "lat": 33.2,
+              "lon": 146.9,
+              "wind_kt": 40
             },
             {
               "tau": 48,
-              "lat": 35.9,
-              "lon": 150.7,
+              "lat": 36.2,
+              "lon": 151.7,
               "wind_kt": 40
             }
           ]
@@ -57,21 +57,21 @@
           "forecasts": [
             {
               "tau": 0,
-              "datetime_z": "091500",
-              "lat": 29.6,
-              "lon": 147.7,
+              "datetime_z": "091800",
+              "lat": 29.9,
+              "lon": 147.4,
               "wind_kt": 49
             },
             {
               "tau": 24,
-              "lat": 32.9,
-              "lon": 147.3,
+              "lat": 33.3,
+              "lon": 147.7,
               "wind_kt": 45
             },
             {
               "tau": 48,
-              "lat": 35.9,
-              "lon": 152.6,
+              "lat": 36.2,
+              "lon": 153.5,
               "wind_kt": 35
             }
           ]
@@ -81,20 +81,20 @@
           "forecasts": [
             {
               "tau": 0,
-              "datetime_z": "091200",
-              "lat": 29.4,
-              "lon": 147.9,
+              "datetime_z": "091800",
+              "lat": 29.9,
+              "lon": 147.3,
               "wind_kt": 45
             },
             {
               "tau": 24,
-              "lat": 32.7,
-              "lon": 147.5,
+              "lat": 33.2,
+              "lon": 147.3,
               "wind_kt": 35
             },
             {
               "tau": 48,
-              "lat": 36.1,
+              "lat": 36.3,
               "lon": 152.4,
               "wind_kt": null
             }
@@ -105,22 +105,16 @@
           "forecasts": [
             {
               "tau": 0,
-              "datetime_z": "091200",
-              "lat": 29.5,
-              "lon": 147.9,
-              "wind_kt": 47
-            },
-            {
-              "tau": 24,
-              "lat": 32.5,
+              "datetime_z": "091800",
+              "lat": 29.9,
               "lon": 147.2,
               "wind_kt": 47
             },
             {
-              "tau": 48,
-              "lat": 35.8,
-              "lon": 151.1,
-              "wind_kt": 41
+              "tau": 24,
+              "lat": 33.3,
+              "lon": 147.4,
+              "wind_kt": 45
             }
           ]
         }

@@ -3167,6 +3167,129 @@
               }
             ]
           }
+        },
+        {
+          "index": 18,
+          "data": {
+            "storm_name": "NOLO",
+            "forecast_time_utc": "2026-10-09 18:00:00 UTC",
+            "agencies": [
+              {
+                "agency": "JTWC",
+                "forecasts": [
+                  {
+                    "tau": 0,
+                    "datetime_z": "091800",
+                    "lat": 30.0,
+                    "lon": 147.2,
+                    "wind_kt": 50
+                  },
+                  {
+                    "tau": 24,
+                    "lat": 32.8,
+                    "lon": 147.0,
+                    "wind_kt": 35
+                  },
+                  {
+                    "tau": 48,
+                    "lat": 35.8,
+                    "lon": 150.9,
+                    "wind_kt": 30
+                  }
+                ]
+              },
+              {
+                "agency": "JMA",
+                "forecasts": [
+                  {
+                    "tau": 0,
+                    "datetime_z": "091800",
+                    "lat": 29.9,
+                    "lon": 147.0,
+                    "wind_kt": 45
+                  },
+                  {
+                    "tau": 24,
+                    "lat": 33.2,
+                    "lon": 146.9,
+                    "wind_kt": 40
+                  },
+                  {
+                    "tau": 48,
+                    "lat": 36.2,
+                    "lon": 151.7,
+                    "wind_kt": 40
+                  }
+                ]
+              },
+              {
+                "agency": "NMC",
+                "forecasts": [
+                  {
+                    "tau": 0,
+                    "datetime_z": "091800",
+                    "lat": 29.9,
+                    "lon": 147.4,
+                    "wind_kt": 49
+                  },
+                  {
+                    "tau": 24,
+                    "lat": 33.3,
+                    "lon": 147.7,
+                    "wind_kt": 45
+                  },
+                  {
+                    "tau": 48,
+                    "lat": 36.2,
+                    "lon": 153.5,
+                    "wind_kt": 35
+                  }
+                ]
+              },
+              {
+                "agency": "CWA",
+                "forecasts": [
+                  {
+                    "tau": 0,
+                    "datetime_z": "091800",
+                    "lat": 29.9,
+                    "lon": 147.3,
+                    "wind_kt": 45
+                  },
+                  {
+                    "tau": 24,
+                    "lat": 33.2,
+                    "lon": 147.3,
+                    "wind_kt": 35
+                  },
+                  {
+                    "tau": 48,
+                    "lat": 36.3,
+                    "lon": 152.4,
+                    "wind_kt": null
+                  }
+                ]
+              },
+              {
+                "agency": "KMA",
+                "forecasts": [
+                  {
+                    "tau": 0,
+                    "datetime_z": "091800",
+                    "lat": 29.9,
+                    "lon": 147.2,
+                    "wind_kt": 47
+                  },
+                  {
+                    "tau": 24,
+                    "lat": 33.3,
+                    "lon": 147.4,
+                    "wind_kt": 45
+                  }
+                ]
+              }
+            ]
+          }
         }
       ]
     },
