@@ -2,29 +2,29 @@
   "typhoons": [
     {
       "storm_name": "KOGUMA",
-      "forecast_time_utc": "2026-10-12 12:00:00 UTC",
+      "forecast_time_utc": "2026-10-12 18:00:00 UTC",
       "agencies": [
         {
           "agency": "JTWC",
           "forecasts": [
             {
               "tau": 0,
-              "datetime_z": "121200",
-              "lat": 31.4,
-              "lon": 148.6,
-              "wind_kt": 80
+              "datetime_z": "121800",
+              "lat": 32.2,
+              "lon": 149.6,
+              "wind_kt": 75
             },
             {
               "tau": 24,
-              "lat": 36.9,
-              "lon": 154.7,
+              "lat": 37.6,
+              "lon": 156.3,
               "wind_kt": 55
             },
             {
               "tau": 48,
-              "lat": 41.6,
-              "lon": 162.7,
-              "wind_kt": 45
+              "lat": 41.9,
+              "lon": 164.8,
+              "wind_kt": 40
             }
           ]
         },
@@ -33,21 +33,21 @@
           "forecasts": [
             {
               "tau": 0,
-              "datetime_z": "121200",
-              "lat": 31.4,
-              "lon": 148.5,
-              "wind_kt": 80
+              "datetime_z": "121800",
+              "lat": 32.6,
+              "lon": 149.5,
+              "wind_kt": 70
             },
             {
               "tau": 24,
-              "lat": 36.8,
-              "lon": 154.6,
-              "wind_kt": 60
+              "lat": 38.2,
+              "lon": 156.0,
+              "wind_kt": 55
             },
             {
               "tau": 48,
-              "lat": 41.7,
-              "lon": 162.4,
+              "lat": 42.7,
+              "lon": 164.6,
               "wind_kt": 45
             }
           ]
@@ -57,21 +57,21 @@
           "forecasts": [
             {
               "tau": 0,
-              "datetime_z": "121200",
-              "lat": 31.2,
-              "lon": 148.3,
-              "wind_kt": 78
+              "datetime_z": "121800",
+              "lat": 32.7,
+              "lon": 149.8,
+              "wind_kt": 74
             },
             {
               "tau": 24,
-              "lat": 36.9,
-              "lon": 154.2,
+              "lat": 38.3,
+              "lon": 156.3,
               "wind_kt": 58
             },
             {
               "tau": 48,
-              "lat": 41.8,
-              "lon": 162.7,
+              "lat": 42.7,
+              "lon": 165.0,
               "wind_kt": 49
             }
           ]
@@ -81,21 +81,21 @@
           "forecasts": [
             {
               "tau": 0,
-              "datetime_z": "121200",
-              "lat": 31.1,
-              "lon": 148.5,
-              "wind_kt": 68
+              "datetime_z": "121800",
+              "lat": 32.6,
+              "lon": 149.8,
+              "wind_kt": 64
             },
             {
               "tau": 24,
-              "lat": 36.6,
-              "lon": 154.8,
+              "lat": 38.3,
+              "lon": 156.7,
               "wind_kt": 54
             },
             {
               "tau": 48,
-              "lat": 41.6,
-              "lon": 162.8,
+              "lat": 42.6,
+              "lon": 165.2,
               "wind_kt": null
             }
           ]
@@ -105,22 +105,22 @@
           "forecasts": [
             {
               "tau": 0,
-              "datetime_z": "121200",
-              "lat": 31.3,
-              "lon": 148.5,
-              "wind_kt": 76
+              "datetime_z": "121800",
+              "lat": 32.5,
+              "lon": 149.6,
+              "wind_kt": 72
             },
             {
               "tau": 24,
-              "lat": 36.7,
-              "lon": 154.3,
+              "lat": 38.0,
+              "lon": 155.8,
               "wind_kt": 56
             },
             {
               "tau": 48,
-              "lat": 41.6,
-              "lon": 162.4,
-              "wind_kt": 52
+              "lat": 42.6,
+              "lon": 165.0,
+              "wind_kt": 47
             }
           ]
         }
