@@ -2,35 +2,35 @@
   "typhoons": [
     {
       "storm_name": "KOGUMA",
-      "forecast_time_utc": "2026-10-12 00:00:00 UTC",
+      "forecast_time_utc": "2026-10-12 06:00:00 UTC",
       "agencies": [
         {
           "agency": "JTWC",
           "forecasts": [
             {
               "tau": 0,
-              "datetime_z": "120000",
-              "lat": 28.3,
-              "lon": 147.3,
-              "wind_kt": 100
+              "datetime_z": "120600",
+              "lat": 29.8,
+              "lon": 147.7,
+              "wind_kt": 90
             },
             {
               "tau": 24,
-              "lat": 33.6,
-              "lon": 151.0,
-              "wind_kt": 75
+              "lat": 35.3,
+              "lon": 152.9,
+              "wind_kt": 65
             },
             {
               "tau": 48,
-              "lat": 38.6,
-              "lon": 157.9,
-              "wind_kt": 55
+              "lat": 40.4,
+              "lon": 160.5,
+              "wind_kt": 50
             },
             {
               "tau": 72,
-              "lat": 41.9,
-              "lon": 167.4,
-              "wind_kt": 45
+              "lat": 42.9,
+              "lon": 170.3,
+              "wind_kt": 40
             }
           ]
         },
@@ -39,22 +39,22 @@
           "forecasts": [
             {
               "tau": 0,
-              "datetime_z": "120000",
-              "lat": 28.4,
-              "lon": 147.3,
+              "datetime_z": "120600",
+              "lat": 29.9,
+              "lon": 147.8,
               "wind_kt": 85
             },
             {
               "tau": 24,
-              "lat": 33.9,
-              "lon": 151.2,
+              "lat": 35.5,
+              "lon": 153.1,
               "wind_kt": 65
             },
             {
               "tau": 48,
-              "lat": 39.7,
-              "lon": 158.4,
-              "wind_kt": 55
+              "lat": 40.7,
+              "lon": 160.4,
+              "wind_kt": 50
             }
           ]
         },
@@ -63,21 +63,21 @@
           "forecasts": [
             {
               "tau": 0,
-              "datetime_z": "120000",
-              "lat": 28.3,
-              "lon": 147.4,
-              "wind_kt": 87
+              "datetime_z": "120600",
+              "lat": 29.8,
+              "lon": 147.8,
+              "wind_kt": 82
             },
             {
               "tau": 24,
-              "lat": 34.0,
-              "lon": 151.3,
+              "lat": 35.5,
+              "lon": 153.0,
               "wind_kt": 68
             },
             {
               "tau": 48,
-              "lat": 39.8,
-              "lon": 159.3,
+              "lat": 40.7,
+              "lon": 160.2,
               "wind_kt": 49
             }
           ]
@@ -87,27 +87,21 @@
           "forecasts": [
             {
               "tau": 0,
-              "datetime_z": "120000",
-              "lat": 28.4,
-              "lon": 147.3,
-              "wind_kt": 78
+              "datetime_z": "120600",
+              "lat": 29.9,
+              "lon": 147.8,
+              "wind_kt": 74
             },
             {
               "tau": 24,
-              "lat": 33.9,
-              "lon": 151.5,
-              "wind_kt": 64
+              "lat": 35.3,
+              "lon": 153.5,
+              "wind_kt": 58
             },
             {
               "tau": 48,
-              "lat": 39.4,
-              "lon": 158.9,
-              "wind_kt": 49
-            },
-            {
-              "tau": 72,
-              "lat": 42.1,
-              "lon": 167.6,
+              "lat": 40.4,
+              "lon": 160.9,
               "wind_kt": null
             }
           ]
@@ -117,28 +111,22 @@
           "forecasts": [
             {
               "tau": 0,
-              "datetime_z": "120000",
-              "lat": 28.3,
-              "lon": 147.3,
-              "wind_kt": 87
+              "datetime_z": "120600",
+              "lat": 29.7,
+              "lon": 147.6,
+              "wind_kt": 84
             },
             {
               "tau": 24,
-              "lat": 33.9,
-              "lon": 151.2,
+              "lat": 35.5,
+              "lon": 153.0,
               "wind_kt": 68
             },
             {
               "tau": 48,
-              "lat": 39.5,
-              "lon": 158.4,
+              "lat": 40.7,
+              "lon": 160.7,
               "wind_kt": 56
-            },
-            {
-              "tau": 72,
-              "lat": 43.3,
-              "lon": 167.8,
-              "wind_kt": 47
             }
           ]
         }
