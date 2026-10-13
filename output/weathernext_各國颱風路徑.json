@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-13 15:20:04 UTC",
+ "generated_at": "2026-10-13 16:20:08 UTC",
  "source": "Open-Meteo Google WeatherNext 2 Ensemble Mean (free API)",
  "api": "https://ensemble-api.open-meteo.com/v1/ensemble",
  "model": "google_weathernext2_ensemble_mean",
@@ -7,36 +7,36 @@
  "typhoons": [
   {
    "storm_name": "KOGUMA",
-   "forecast_time_utc": "2026-10-13 06:00:00 UTC",
+   "forecast_time_utc": "2026-10-13 12:00:00 UTC",
    "points": [
     {
      "tau": 0,
-     "lat": 35.3,
-     "lon": 153.6,
-     "time_utc": "2026-10-13T06:00",
-     "wind_kt_10m": 38.0,
-     "wind_kt_100m": 50.1,
-     "pressure_hpa": 987.6,
-     "temp_c": 25.0
+     "lat": 36.9,
+     "lon": 155.5,
+     "time_utc": "2026-10-13T12:00",
+     "wind_kt_10m": 35.7,
+     "wind_kt_100m": 47.0,
+     "pressure_hpa": 989.4,
+     "temp_c": 24.5
     },
     {
      "tau": 24,
-     "lat": 40.8,
-     "lon": 160.9,
-     "time_utc": "2026-10-14T06:00",
-     "wind_kt_10m": 23.2,
-     "wind_kt_100m": 30.9,
-     "pressure_hpa": 985.2,
-     "temp_c": 20.5
+     "lat": 41.23,
+     "lon": 162.4,
+     "time_utc": "2026-10-14T12:00",
+     "wind_kt_10m": 29.7,
+     "wind_kt_100m": 37.9,
+     "pressure_hpa": 989.6,
+     "temp_c": 19.8
     },
     {
      "tau": 48,
-     "lat": 43.2,
-     "lon": 171.2,
-     "time_utc": "2026-10-15T06:00",
-     "wind_kt_10m": 13.0,
-     "wind_kt_100m": 17.1,
-     "pressure_hpa": 997.1,
+     "lat": 43.0,
+     "lon": 173.7,
+     "time_utc": "2026-10-15T12:00",
+     "wind_kt_10m": 17.1,
+     "wind_kt_100m": 22.0,
+     "pressure_hpa": 999.8,
      "temp_c": 17.1
     }
    ]
