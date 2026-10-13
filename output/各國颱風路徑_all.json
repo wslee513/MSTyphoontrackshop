@@ -6503,6 +6503,111 @@
               }
             ]
           }
+        },
+        {
+          "index": 34,
+          "data": {
+            "storm_name": "KOGUMA",
+            "forecast_time_utc": "2026-10-13 06:00:00 UTC",
+            "agencies": [
+              {
+                "agency": "JTWC",
+                "forecasts": [
+                  {
+                    "tau": 0,
+                    "datetime_z": "130600",
+                    "lat": 35.4,
+                    "lon": 153.7,
+                    "wind_kt": 70
+                  },
+                  {
+                    "tau": 24,
+                    "lat": 40.6,
+                    "lon": 161.2,
+                    "wind_kt": 55
+                  },
+                  {
+                    "tau": 48,
+                    "lat": 43.2,
+                    "lon": 171.2,
+                    "wind_kt": 45
+                  }
+                ]
+              },
+              {
+                "agency": "JMA",
+                "forecasts": [
+                  {
+                    "tau": 0,
+                    "datetime_z": "130600",
+                    "lat": 35.5,
+                    "lon": 153.8,
+                    "wind_kt": 55
+                  },
+                  {
+                    "tau": 24,
+                    "lat": 40.8,
+                    "lon": 160.2,
+                    "wind_kt": 50
+                  }
+                ]
+              },
+              {
+                "agency": "NMC",
+                "forecasts": [
+                  {
+                    "tau": 0,
+                    "datetime_z": "130600",
+                    "lat": 35.4,
+                    "lon": 153.7,
+                    "wind_kt": 49
+                  },
+                  {
+                    "tau": 24,
+                    "lat": 40.9,
+                    "lon": 160.7,
+                    "wind_kt": 39
+                  }
+                ]
+              },
+              {
+                "agency": "CWA",
+                "forecasts": [
+                  {
+                    "tau": 0,
+                    "datetime_z": "130600",
+                    "lat": 35.3,
+                    "lon": 153.6,
+                    "wind_kt": 58
+                  },
+                  {
+                    "tau": 24,
+                    "lat": 40.8,
+                    "lon": 160.9,
+                    "wind_kt": 49
+                  }
+                ]
+              },
+              {
+                "agency": "KMA",
+                "forecasts": [
+                  {
+                    "tau": 0,
+                    "datetime_z": "130600",
+                    "lat": 35.6,
+                    "lon": 154.2,
+                    "wind_kt": 62
+                  },
+                  {
+                    "tau": 24,
+                    "lat": 40.8,
+                    "lon": 160.4,
+                    "wind_kt": 52
+                  }
+                ]
+              }
+            ]
+          }
         }
       ]
     }
