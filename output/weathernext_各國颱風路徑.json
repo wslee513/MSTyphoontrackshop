@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-15 11:20:04 UTC",
+ "generated_at": "2026-10-15 12:20:04 UTC",
  "source": "Open-Meteo Google WeatherNext 2 Ensemble Mean (free API)",
  "api": "https://ensemble-api.open-meteo.com/v1/ensemble",
  "model": "google_weathernext2_ensemble_mean",
@@ -14,60 +14,60 @@
      "lat": 11.0,
      "lon": 158.6,
      "time_utc": "2026-10-15T06:00",
-     "wind_kt_10m": 14.9,
-     "wind_kt_100m": 17.3,
-     "pressure_hpa": 1001.9,
-     "temp_c": 27.8
+     "wind_kt_10m": 11.9,
+     "wind_kt_100m": 14.0,
+     "pressure_hpa": 1001.2,
+     "temp_c": 28.3
     },
     {
      "tau": 24,
      "lat": 11.5,
      "lon": 153.1,
      "time_utc": "2026-10-16T06:00",
-     "wind_kt_10m": 11.9,
-     "wind_kt_100m": 14.2,
-     "pressure_hpa": 998.3,
-     "temp_c": 27.6
+     "wind_kt_10m": 7.4,
+     "wind_kt_100m": 9.3,
+     "pressure_hpa": 997.2,
+     "temp_c": 27.7
     },
     {
      "tau": 48,
      "lat": 12.6,
      "lon": 147.8,
      "time_utc": "2026-10-17T06:00",
-     "wind_kt_10m": 14.8,
-     "wind_kt_100m": 17.7,
-     "pressure_hpa": 993.1,
-     "temp_c": 27.7
+     "wind_kt_10m": 15.7,
+     "wind_kt_100m": 20.3,
+     "pressure_hpa": 991.8,
+     "temp_c": 27.8
     },
     {
      "tau": 72,
      "lat": 13.4,
      "lon": 142.9,
      "time_utc": "2026-10-18T06:00",
-     "wind_kt_10m": 5.1,
-     "wind_kt_100m": 6.0,
-     "pressure_hpa": 988.9,
-     "temp_c": 28.1
+     "wind_kt_10m": 25.3,
+     "wind_kt_100m": 32.9,
+     "pressure_hpa": 990.4,
+     "temp_c": 27.9
     },
     {
      "tau": 96,
      "lat": 14.9,
      "lon": 138.3,
      "time_utc": "2026-10-19T06:00",
-     "wind_kt_10m": 2.4,
-     "wind_kt_100m": 4.0,
-     "pressure_hpa": 988.2,
-     "temp_c": 28.3
+     "wind_kt_10m": 27.6,
+     "wind_kt_100m": 36.1,
+     "pressure_hpa": 989.4,
+     "temp_c": 27.9
     },
     {
      "tau": 120,
      "lat": 16.9,
      "lon": 133.5,
      "time_utc": "2026-10-20T06:00",
-     "wind_kt_10m": 3.6,
-     "wind_kt_100m": 5.4,
-     "pressure_hpa": 987.6,
-     "temp_c": 28.3
+     "wind_kt_10m": 27.5,
+     "wind_kt_100m": 35.7,
+     "pressure_hpa": 987.9,
+     "temp_c": 28.1
     }
    ]
   }
