@@ -15,34 +15,16 @@
               "wind_kt": 30
             },
             {
-              "tau": 12,
-              "lat": 11.3,
-              "lon": 156.0,
-              "wind_kt": 35
-            },
-            {
               "tau": 24,
               "lat": 11.8,
               "lon": 153.4,
               "wind_kt": 45
             },
             {
-              "tau": 36,
-              "lat": 12.2,
-              "lon": 150.9,
-              "wind_kt": 55
-            },
-            {
               "tau": 48,
               "lat": 12.8,
               "lon": 148.3,
               "wind_kt": 65
-            },
-            {
-              "tau": 60,
-              "lat": 13.3,
-              "lon": 145.7,
-              "wind_kt": 80
             },
             {
               "tau": 72,
@@ -73,12 +55,6 @@
               "lat": 11.1,
               "lon": 158.4,
               "wind_kt": 35
-            },
-            {
-              "tau": 12,
-              "lat": 11.4,
-              "lon": 156.6,
-              "wind_kt": 40
             },
             {
               "tau": 24,
@@ -123,34 +99,16 @@
               "wind_kt": 35
             },
             {
-              "tau": 12,
-              "lat": 11.2,
-              "lon": 156.3,
-              "wind_kt": 45
-            },
-            {
               "tau": 24,
               "lat": 11.6,
               "lon": 153.7,
               "wind_kt": 54
             },
             {
-              "tau": 36,
-              "lat": 12.1,
-              "lon": 151.1,
-              "wind_kt": 64
-            },
-            {
               "tau": 48,
               "lat": 12.7,
               "lon": 148.8,
               "wind_kt": 74
-            },
-            {
-              "tau": 60,
-              "lat": 13.3,
-              "lon": 146.6,
-              "wind_kt": 87
             },
             {
               "tau": 72,
@@ -183,22 +141,10 @@
               "wind_kt": 35
             },
             {
-              "tau": 12,
-              "lat": 11.2,
-              "lon": 156.0,
-              "wind_kt": 39
-            },
-            {
               "tau": 24,
               "lat": 11.5,
               "lon": 153.1,
               "wind_kt": 49
-            },
-            {
-              "tau": 36,
-              "lat": 12.0,
-              "lon": 150.4,
-              "wind_kt": 58
             },
             {
               "tau": 48,
@@ -237,22 +183,10 @@
               "wind_kt": 35
             },
             {
-              "tau": 12,
-              "lat": 11.3,
-              "lon": 156.2,
-              "wind_kt": 37
-            },
-            {
               "tau": 24,
               "lat": 11.7,
               "lon": 154.1,
               "wind_kt": 41
-            },
-            {
-              "tau": 36,
-              "lat": 12.4,
-              "lon": 151.5,
-              "wind_kt": 47
             },
             {
               "tau": 48,
@@ -364,8 +298,7 @@
       "_cwa_an_radius10_quad_latest": null,
       "_is_td": false,
       "_td_no": "33",
-      "_td_state_map": {},
-      "_source": "txt"
+      "_td_state_map": {}
     }
   ]
 }
