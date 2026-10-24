@@ -8579,6 +8579,201 @@
               }
             ]
           }
+        },
+        {
+          "index": 36,
+          "data": {
+            "storm_name": "CHAMPI",
+            "forecast_time_utc": "2026-10-24 00:00:00 UTC",
+            "agencies": [
+              {
+                "agency": "HKO",
+                "forecasts": [
+                  {
+                    "tau": 0,
+                    "datetime_z": "240000",
+                    "lat": 24.8,
+                    "lon": 123.2,
+                    "wind_kt": 59
+                  },
+                  {
+                    "tau": 24,
+                    "lat": 29.6,
+                    "lon": 124.8,
+                    "wind_kt": 46
+                  },
+                  {
+                    "tau": 48,
+                    "lat": 32.4,
+                    "lon": 130.3,
+                    "wind_kt": 35
+                  },
+                  {
+                    "tau": 72,
+                    "lat": 33.6,
+                    "lon": 140.5,
+                    "wind_kt": null
+                  }
+                ]
+              },
+              {
+                "agency": "JTWC",
+                "forecasts": [
+                  {
+                    "tau": 0,
+                    "datetime_z": "240000",
+                    "lat": 24.8,
+                    "lon": 123.3,
+                    "wind_kt": 65
+                  },
+                  {
+                    "tau": 24,
+                    "lat": 28.4,
+                    "lon": 124.5,
+                    "wind_kt": 40
+                  },
+                  {
+                    "tau": 48,
+                    "lat": 31.4,
+                    "lon": 129.2,
+                    "wind_kt": 30
+                  },
+                  {
+                    "tau": 72,
+                    "lat": 33.4,
+                    "lon": 138.0,
+                    "wind_kt": 30
+                  }
+                ]
+              },
+              {
+                "agency": "JMA",
+                "forecasts": [
+                  {
+                    "tau": 0,
+                    "datetime_z": "240000",
+                    "lat": 24.9,
+                    "lon": 123.3,
+                    "wind_kt": 60
+                  },
+                  {
+                    "tau": 24,
+                    "lat": 29.2,
+                    "lon": 124.4,
+                    "wind_kt": 45
+                  },
+                  {
+                    "tau": 48,
+                    "lat": 32.3,
+                    "lon": 128.4,
+                    "wind_kt": 40
+                  },
+                  {
+                    "tau": 72,
+                    "lat": 33.4,
+                    "lon": 139.6,
+                    "wind_kt": null
+                  }
+                ]
+              },
+              {
+                "agency": "NMC",
+                "forecasts": [
+                  {
+                    "tau": 0,
+                    "datetime_z": "240000",
+                    "lat": 25.1,
+                    "lon": 123.0,
+                    "wind_kt": 68
+                  },
+                  {
+                    "tau": 24,
+                    "lat": 29.2,
+                    "lon": 124.4,
+                    "wind_kt": 49
+                  },
+                  {
+                    "tau": 48,
+                    "lat": 31.7,
+                    "lon": 128.3,
+                    "wind_kt": 39
+                  }
+                ]
+              },
+              {
+                "agency": "CWA",
+                "forecasts": [
+                  {
+                    "tau": 0,
+                    "datetime_z": "240000",
+                    "lat": 24.8,
+                    "lon": 123.2,
+                    "wind_kt": 68
+                  },
+                  {
+                    "tau": 24,
+                    "lat": 29.3,
+                    "lon": 124.4,
+                    "wind_kt": 45
+                  },
+                  {
+                    "tau": 48,
+                    "lat": 32.2,
+                    "lon": 129.8,
+                    "wind_kt": 35
+                  },
+                  {
+                    "tau": 72,
+                    "lat": 34.5,
+                    "lon": 138.5,
+                    "wind_kt": null
+                  }
+                ]
+              },
+              {
+                "agency": "KMA",
+                "forecasts": [
+                  {
+                    "tau": 0,
+                    "datetime_z": "240000",
+                    "lat": 24.8,
+                    "lon": 123.2,
+                    "wind_kt": 66
+                  },
+                  {
+                    "tau": 24,
+                    "lat": 29.0,
+                    "lon": 124.2,
+                    "wind_kt": 52
+                  },
+                  {
+                    "tau": 48,
+                    "lat": 31.9,
+                    "lon": 128.8,
+                    "wind_kt": 37
+                  },
+                  {
+                    "tau": 72,
+                    "lat": 33.1,
+                    "lon": 138.6,
+                    "wind_kt": 33
+                  }
+                ]
+              },
+              {
+                "agency": "PAGASA",
+                "forecasts": [
+                  {
+                    "tau": 0,
+                    "datetime_z": "240000",
+                    "lat": 24.8,
+                    "lon": 123.3,
+                    "wind_kt": 65
+                  }
+                ]
+              }
+            ]
+          }
         }
       ]
     }

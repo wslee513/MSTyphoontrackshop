@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24 03:20:11 UTC",
+ "generated_at": "2026-10-24 04:20:05 UTC",
  "source": "Open-Meteo Google WeatherNext 2 Ensemble Mean (free API)",
  "api": "https://ensemble-api.open-meteo.com/v1/ensemble",
  "model": "google_weathernext2_ensemble_mean",
@@ -7,57 +7,47 @@
  "typhoons": [
   {
    "storm_name": "CHAMPI",
-   "forecast_time_utc": "2026-10-23 18:00:00 UTC",
+   "forecast_time_utc": "2026-10-24 00:00:00 UTC",
    "points": [
     {
      "tau": 0,
-     "lat": 24.3,
-     "lon": 122.2,
+     "lat": 24.8,
+     "lon": 123.2,
      "time_utc": "2026-10-24T00:00",
-     "wind_kt_10m": 5.4,
-     "wind_kt_100m": 6.5,
-     "pressure_hpa": 991.4,
-     "temp_c": 28.4
+     "wind_kt_10m": 34.4,
+     "wind_kt_100m": 42.4,
+     "pressure_hpa": 989.2,
+     "temp_c": 27.9
     },
     {
      "tau": 24,
-     "lat": 28.3,
-     "lon": 123.8,
-     "time_utc": "2026-10-24T18:00",
-     "wind_kt_10m": 17.9,
-     "wind_kt_100m": 22.3,
-     "pressure_hpa": 997.1,
-     "temp_c": 25.8
-    },
-    {
-     "tau": 48,
-     "lat": 31.2,
-     "lon": 127.7,
-     "time_utc": "2026-10-25T18:00",
-     "wind_kt_10m": 16.5,
-     "wind_kt_100m": 20.8,
-     "pressure_hpa": 1007.5,
+     "lat": 29.3,
+     "lon": 124.4,
+     "time_utc": "2026-10-25T00:00",
+     "wind_kt_10m": 19.1,
+     "wind_kt_100m": 24.1,
+     "pressure_hpa": 1002.4,
      "temp_c": 26.0
     },
     {
-     "tau": 72,
-     "lat": 32.5,
-     "lon": 133.3,
-     "time_utc": "2026-10-26T18:00",
-     "wind_kt_10m": 12.1,
-     "wind_kt_100m": 13.8,
-     "pressure_hpa": 1007.0,
-     "temp_c": 24.9
+     "tau": 48,
+     "lat": 32.2,
+     "lon": 129.8,
+     "time_utc": "2026-10-26T00:00",
+     "wind_kt_10m": 12.9,
+     "wind_kt_100m": 16.8,
+     "pressure_hpa": 1010.4,
+     "temp_c": 25.1
     },
     {
-     "tau": 96,
-     "lat": 38.4,
-     "lon": 149.5,
-     "time_utc": "2026-10-27T18:00",
-     "wind_kt_10m": 23.4,
-     "wind_kt_100m": 27.2,
-     "pressure_hpa": 997.4,
-     "temp_c": 18.2
+     "tau": 72,
+     "lat": 34.5,
+     "lon": 138.5,
+     "time_utc": "2026-10-27T00:00",
+     "wind_kt_10m": 3.5,
+     "wind_kt_100m": 3.7,
+     "pressure_hpa": 1005.7,
+     "temp_c": 22.0
     }
    ]
   }
