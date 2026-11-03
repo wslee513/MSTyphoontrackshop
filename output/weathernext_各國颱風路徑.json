@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-03 21:20:06 UTC",
+ "generated_at": "2026-11-03 22:20:03 UTC",
  "source": "Open-Meteo Google WeatherNext 2 Ensemble Mean (free API)",
  "api": "https://ensemble-api.open-meteo.com/v1/ensemble",
  "model": "google_weathernext2_ensemble_mean",
@@ -7,47 +7,47 @@
  "typhoons": [
   {
    "storm_name": "IN-FA",
-   "forecast_time_utc": "2026-11-03 12:00:00 UTC",
+   "forecast_time_utc": "2026-11-03 18:00:00 UTC",
    "points": [
     {
      "tau": 0,
-     "lat": 23.3,
-     "lon": 138.9,
-     "time_utc": "2026-11-03T12:00",
-     "wind_kt_10m": 22.4,
-     "wind_kt_100m": 29.7,
-     "pressure_hpa": 988.8,
-     "temp_c": 27.2
+     "lat": 23.8,
+     "lon": 138.6,
+     "time_utc": "2026-11-03T18:00",
+     "wind_kt_10m": 1.4,
+     "wind_kt_100m": 1.7,
+     "pressure_hpa": 988.0,
+     "temp_c": 26.8
     },
     {
      "tau": 24,
-     "lat": 25.7,
-     "lon": 138.5,
-     "time_utc": "2026-11-04T12:00",
-     "wind_kt_10m": 28.3,
-     "wind_kt_100m": 37.3,
-     "pressure_hpa": 997.7,
-     "temp_c": 26.4
+     "lat": 26.7,
+     "lon": 138.7,
+     "time_utc": "2026-11-04T18:00",
+     "wind_kt_10m": 27.3,
+     "wind_kt_100m": 35.8,
+     "pressure_hpa": 997.5,
+     "temp_c": 26.2
     },
     {
      "tau": 48,
-     "lat": 31.2,
-     "lon": 142.9,
-     "time_utc": "2026-11-05T12:00",
-     "wind_kt_10m": 27.3,
-     "wind_kt_100m": 35.3,
-     "pressure_hpa": 1001.1,
-     "temp_c": 25.3
+     "lat": 33.9,
+     "lon": 145.7,
+     "time_utc": "2026-11-05T18:00",
+     "wind_kt_10m": 24.7,
+     "wind_kt_100m": 31.7,
+     "pressure_hpa": 998.6,
+     "temp_c": 23.9
     },
     {
      "tau": 72,
-     "lat": 44.1,
-     "lon": 160.9,
-     "time_utc": "2026-11-06T12:00",
-     "wind_kt_10m": 35.7,
-     "wind_kt_100m": 47.7,
-     "pressure_hpa": 989.0,
-     "temp_c": 15.5
+     "lat": 48.6,
+     "lon": 164.7,
+     "time_utc": "2026-11-06T18:00",
+     "wind_kt_10m": 31.7,
+     "wind_kt_100m": 41.0,
+     "pressure_hpa": 985.3,
+     "temp_c": 5.1
     }
    ]
   }
