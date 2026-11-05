@@ -45,28 +45,16 @@
           "forecasts": [
             {
               "tau": 0,
-              "datetime_z": "050600",
-              "lat": 29.4,
-              "lon": 141.4,
-              "wind_kt": 55
+              "datetime_z": "051200",
+              "lat": 31.3,
+              "lon": 144.2,
+              "wind_kt": 50
             },
             {
               "tau": 24,
-              "lat": 42.7,
-              "lon": 157.9,
-              "wind_kt": 60
-            }
-          ]
-        },
-        {
-          "agency": "NMC",
-          "forecasts": [
-            {
-              "tau": 0,
-              "datetime_z": "050300",
-              "lat": 28.8,
-              "lon": 140.4,
-              "wind_kt": 54
+              "lat": 45.4,
+              "lon": 163.4,
+              "wind_kt": 50
             }
           ]
         },
@@ -87,15 +75,9 @@
           "forecasts": [
             {
               "tau": 0,
-              "datetime_z": "050600",
-              "lat": 29.3,
-              "lon": 141.4,
-              "wind_kt": 56
-            },
-            {
-              "tau": 24,
-              "lat": 42.2,
-              "lon": 157.8,
+              "datetime_z": "051200",
+              "lat": 31.4,
+              "lon": 144.0,
               "wind_kt": 56
             }
           ]
