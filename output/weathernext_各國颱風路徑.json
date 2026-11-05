@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-05 03:20:04 UTC",
+ "generated_at": "2026-11-05 04:20:03 UTC",
  "source": "Open-Meteo Google WeatherNext 2 Ensemble Mean (free API)",
  "api": "https://ensemble-api.open-meteo.com/v1/ensemble",
  "model": "google_weathernext2_ensemble_mean",
@@ -7,36 +7,36 @@
  "typhoons": [
   {
    "storm_name": "IN-FA",
-   "forecast_time_utc": "2026-11-04 18:00:00 UTC",
+   "forecast_time_utc": "2026-11-05 00:00:00 UTC",
    "points": [
     {
      "tau": 0,
-     "lat": 27.0,
-     "lon": 138.6,
+     "lat": 28.0,
+     "lon": 139.9,
      "time_utc": "2026-11-05T00:00",
-     "wind_kt_10m": 24.4,
-     "wind_kt_100m": 30.0,
-     "pressure_hpa": 1009.0,
-     "temp_c": 26.6
+     "wind_kt_10m": 37.0,
+     "wind_kt_100m": 48.9,
+     "pressure_hpa": 995.4,
+     "temp_c": 26.7
     },
     {
      "tau": 24,
-     "lat": 35.1,
-     "lon": 147.6,
-     "time_utc": "2026-11-05T18:00",
-     "wind_kt_10m": 9.5,
-     "wind_kt_100m": 12.0,
-     "pressure_hpa": 991.9,
-     "temp_c": 23.3
+     "lat": 38.8,
+     "lon": 152.9,
+     "time_utc": "2026-11-06T00:00",
+     "wind_kt_10m": 28.6,
+     "wind_kt_100m": 38.6,
+     "pressure_hpa": 989.3,
+     "temp_c": 21.5
     },
     {
      "tau": 48,
-     "lat": 48.0,
-     "lon": 165.7,
-     "time_utc": "2026-11-06T18:00",
-     "wind_kt_10m": 22.7,
-     "wind_kt_100m": 28.8,
-     "pressure_hpa": 986.4,
+     "lat": 48.4,
+     "lon": 168.1,
+     "time_utc": "2026-11-07T00:00",
+     "wind_kt_10m": 16.2,
+     "wind_kt_100m": 20.2,
+     "pressure_hpa": 988.1,
      "temp_c": 7.0
     }
    ]

@@ -10235,6 +10235,123 @@
               }
             ]
           }
+        },
+        {
+          "index": 50,
+          "data": {
+            "storm_name": "IN-FA",
+            "forecast_time_utc": "2026-11-05 00:00:00 UTC",
+            "agencies": [
+              {
+                "agency": "HKO",
+                "forecasts": [
+                  {
+                    "tau": 0,
+                    "datetime_z": "050000",
+                    "lat": 27.9,
+                    "lon": 139.9,
+                    "wind_kt": 59
+                  },
+                  {
+                    "tau": 24,
+                    "lat": 38.5,
+                    "lon": 152.2,
+                    "wind_kt": 57
+                  }
+                ]
+              },
+              {
+                "agency": "JTWC",
+                "forecasts": [
+                  {
+                    "tau": 0,
+                    "datetime_z": "050000",
+                    "lat": 28.1,
+                    "lon": 140.0,
+                    "wind_kt": 75
+                  },
+                  {
+                    "tau": 24,
+                    "lat": 38.2,
+                    "lon": 152.1,
+                    "wind_kt": 65
+                  }
+                ]
+              },
+              {
+                "agency": "JMA",
+                "forecasts": [
+                  {
+                    "tau": 0,
+                    "datetime_z": "050000",
+                    "lat": 28.0,
+                    "lon": 139.4,
+                    "wind_kt": 60
+                  },
+                  {
+                    "tau": 24,
+                    "lat": 38.5,
+                    "lon": 152.0,
+                    "wind_kt": 60
+                  },
+                  {
+                    "tau": 48,
+                    "lat": 48.4,
+                    "lon": 168.1,
+                    "wind_kt": 45
+                  }
+                ]
+              },
+              {
+                "agency": "NMC",
+                "forecasts": [
+                  {
+                    "tau": 0,
+                    "datetime_z": "050000",
+                    "lat": 28.0,
+                    "lon": 139.6,
+                    "wind_kt": 54
+                  }
+                ]
+              },
+              {
+                "agency": "CWA",
+                "forecasts": [
+                  {
+                    "tau": 0,
+                    "datetime_z": "050000",
+                    "lat": 28.0,
+                    "lon": 139.9,
+                    "wind_kt": 54
+                  },
+                  {
+                    "tau": 24,
+                    "lat": 38.8,
+                    "lon": 152.9,
+                    "wind_kt": null
+                  }
+                ]
+              },
+              {
+                "agency": "KMA",
+                "forecasts": [
+                  {
+                    "tau": 0,
+                    "datetime_z": "050000",
+                    "lat": 27.9,
+                    "lon": 139.8,
+                    "wind_kt": 56
+                  },
+                  {
+                    "tau": 24,
+                    "lat": 38.8,
+                    "lon": 152.4,
+                    "wind_kt": 56
+                  }
+                ]
+              }
+            ]
+          }
         }
       ]
     }
