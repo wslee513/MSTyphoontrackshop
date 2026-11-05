@@ -45,15 +45,15 @@
           "forecasts": [
             {
               "tau": 0,
-              "datetime_z": "051200",
-              "lat": 31.3,
-              "lon": 144.2,
+              "datetime_z": "051800",
+              "lat": 33.9,
+              "lon": 147.8,
               "wind_kt": 50
             },
             {
               "tau": 24,
-              "lat": 45.4,
-              "lon": 163.4,
+              "lat": 47.4,
+              "lon": 166.9,
               "wind_kt": 50
             }
           ]
@@ -75,9 +75,9 @@
           "forecasts": [
             {
               "tau": 0,
-              "datetime_z": "051200",
-              "lat": 31.4,
-              "lon": 144.0,
+              "datetime_z": "051800",
+              "lat": 33.8,
+              "lon": 147.8,
               "wind_kt": 56
             }
           ]
