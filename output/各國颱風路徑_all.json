@@ -2738,6 +2738,147 @@
               }
             ]
           }
+        },
+        {
+          "index": 15,
+          "data": {
+            "storm_name": "CEMPAKA",
+            "forecast_time_utc": "2026-11-10 12:00:00 UTC",
+            "agencies": [
+              {
+                "agency": "HKO",
+                "forecasts": [
+                  {
+                    "tau": 0,
+                    "datetime_z": "100600",
+                    "lat": 25.5,
+                    "lon": 139.9,
+                    "wind_kt": 84
+                  },
+                  {
+                    "tau": 24,
+                    "lat": 28.1,
+                    "lon": 148.7,
+                    "wind_kt": 65
+                  },
+                  {
+                    "tau": 48,
+                    "lat": 32.3,
+                    "lon": 163.1,
+                    "wind_kt": 49
+                  },
+                  {
+                    "tau": 72,
+                    "lat": 37.5,
+                    "lon": 176.2,
+                    "wind_kt": null
+                  }
+                ]
+              },
+              {
+                "agency": "JTWC",
+                "forecasts": [
+                  {
+                    "tau": 0,
+                    "datetime_z": "101200",
+                    "lat": 26.1,
+                    "lon": 142.1,
+                    "wind_kt": 85
+                  },
+                  {
+                    "tau": 24,
+                    "lat": 29.0,
+                    "lon": 152.2,
+                    "wind_kt": 65
+                  },
+                  {
+                    "tau": 48,
+                    "lat": 32.2,
+                    "lon": 164.1,
+                    "wind_kt": 40
+                  }
+                ]
+              },
+              {
+                "agency": "JMA",
+                "forecasts": [
+                  {
+                    "tau": 0,
+                    "datetime_z": "101200",
+                    "lat": 26.3,
+                    "lon": 142.0,
+                    "wind_kt": 85
+                  },
+                  {
+                    "tau": 24,
+                    "lat": 28.7,
+                    "lon": 151.8,
+                    "wind_kt": 65
+                  },
+                  {
+                    "tau": 48,
+                    "lat": 31.7,
+                    "lon": 165.0,
+                    "wind_kt": 40
+                  }
+                ]
+              },
+              {
+                "agency": "NMC",
+                "forecasts": [
+                  {
+                    "tau": 0,
+                    "datetime_z": "101200",
+                    "lat": 26.0,
+                    "lon": 141.8,
+                    "wind_kt": 74
+                  },
+                  {
+                    "tau": 24,
+                    "lat": 28.9,
+                    "lon": 152.0,
+                    "wind_kt": 58
+                  }
+                ]
+              },
+              {
+                "agency": "CWA",
+                "forecasts": [
+                  {
+                    "tau": 0,
+                    "datetime_z": "101200",
+                    "lat": 26.0,
+                    "lon": 141.7,
+                    "wind_kt": 74
+                  },
+                  {
+                    "tau": 24,
+                    "lat": 29.2,
+                    "lon": 152.4,
+                    "wind_kt": 54
+                  }
+                ]
+              },
+              {
+                "agency": "KMA",
+                "forecasts": [
+                  {
+                    "tau": 0,
+                    "datetime_z": "101200",
+                    "lat": 26.1,
+                    "lon": 141.8,
+                    "wind_kt": 76
+                  },
+                  {
+                    "tau": 24,
+                    "lat": 29.0,
+                    "lon": 152.3,
+                    "wind_kt": 56
+                  }
+                ]
+              }
+            ]
+          }
         }
       ]
     }
