@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-10 21:20:05 UTC",
+ "generated_at": "2026-11-10 22:20:05 UTC",
  "source": "Open-Meteo Google WeatherNext 2 Ensemble Mean (free API)",
  "api": "https://ensemble-api.open-meteo.com/v1/ensemble",
  "model": "google_weathernext2_ensemble_mean",
@@ -7,47 +7,47 @@
  "typhoons": [
   {
    "storm_name": "CEMPAKA",
-   "forecast_time_utc": "2026-11-10 12:00:00 UTC",
+   "forecast_time_utc": "2026-11-10 18:00:00 UTC",
    "points": [
     {
      "tau": 0,
-     "lat": 26.0,
-     "lon": 141.7,
-     "time_utc": "2026-11-10T12:00",
-     "wind_kt_10m": 10.1,
-     "wind_kt_100m": 12.6,
-     "pressure_hpa": 995.7,
-     "temp_c": 26.0
+     "lat": 26.8,
+     "lon": 144.3,
+     "time_utc": "2026-11-10T18:00",
+     "wind_kt_10m": 23.7,
+     "wind_kt_100m": 30.9,
+     "pressure_hpa": 993.2,
+     "temp_c": 25.7
     },
     {
      "tau": 24,
-     "lat": 29.2,
-     "lon": 152.4,
-     "time_utc": "2026-11-11T12:00",
-     "wind_kt_10m": 3.3,
-     "wind_kt_100m": 5.0,
-     "pressure_hpa": 1006.8,
-     "temp_c": 24.2
+     "lat": 30.4,
+     "lon": 156.3,
+     "time_utc": "2026-11-11T18:00",
+     "wind_kt_10m": 22.7,
+     "wind_kt_100m": 27.0,
+     "pressure_hpa": 1007.0,
+     "temp_c": 22.4
     },
     {
      "tau": 48,
-     "lat": 32.07,
-     "lon": 164.07,
-     "time_utc": "2026-11-12T12:00",
-     "wind_kt_10m": 23.1,
-     "wind_kt_100m": 25.6,
-     "pressure_hpa": 1018.2,
-     "temp_c": 20.9
+     "lat": 32.25,
+     "lon": 163.6,
+     "time_utc": "2026-11-12T18:00",
+     "wind_kt_10m": 22.1,
+     "wind_kt_100m": 24.2,
+     "pressure_hpa": 1021.8,
+     "temp_c": 19.5
     },
     {
      "tau": 72,
      "lat": 37.5,
      "lon": 176.2,
-     "time_utc": "2026-11-13T12:00",
-     "wind_kt_10m": 15.9,
-     "wind_kt_100m": 16.7,
-     "pressure_hpa": 1029.0,
-     "temp_c": 14.9
+     "time_utc": "2026-11-13T18:00",
+     "wind_kt_10m": 10.6,
+     "wind_kt_100m": 11.0,
+     "pressure_hpa": 1030.9,
+     "temp_c": 14.6
     }
    ]
   }
