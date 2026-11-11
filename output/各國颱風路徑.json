@@ -2,38 +2,8 @@
   "typhoons": [
     {
       "storm_name": "CEMPAKA",
-      "forecast_time_utc": "2026-11-11 00:00:00 UTC",
+      "forecast_time_utc": "2026-11-11 06:00:00 UTC",
       "agencies": [
-        {
-          "agency": "HKO",
-          "forecasts": [
-            {
-              "tau": 0,
-              "datetime_z": "100600",
-              "lat": 25.5,
-              "lon": 139.9,
-              "wind_kt": 84
-            },
-            {
-              "tau": 24,
-              "lat": 28.1,
-              "lon": 148.7,
-              "wind_kt": 65
-            },
-            {
-              "tau": 48,
-              "lat": 32.3,
-              "lon": 163.1,
-              "wind_kt": 49
-            },
-            {
-              "tau": 72,
-              "lat": 37.5,
-              "lon": 176.2,
-              "wind_kt": null
-            }
-          ]
-        },
         {
           "agency": "JTWC",
           "forecasts": [
@@ -57,15 +27,15 @@
           "forecasts": [
             {
               "tau": 0,
-              "datetime_z": "110000",
-              "lat": 27.7,
-              "lon": 146.6,
+              "datetime_z": "110600",
+              "lat": 28.8,
+              "lon": 149.5,
               "wind_kt": 65
             },
             {
               "tau": 24,
-              "lat": 31.4,
-              "lon": 159.7,
+              "lat": 36.2,
+              "lon": 166.0,
               "wind_kt": 55
             }
           ]
@@ -75,16 +45,10 @@
           "forecasts": [
             {
               "tau": 0,
-              "datetime_z": "110000",
-              "lat": 28.0,
-              "lon": 147.5,
-              "wind_kt": 68
-            },
-            {
-              "tau": 24,
-              "lat": 31.1,
-              "lon": 159.0,
-              "wind_kt": 49
+              "datetime_z": "110600",
+              "lat": 28.7,
+              "lon": 149.9,
+              "wind_kt": 64
             }
           ]
         },
@@ -93,10 +57,10 @@
           "forecasts": [
             {
               "tau": 0,
-              "datetime_z": "110000",
-              "lat": 27.7,
-              "lon": 146.9,
-              "wind_kt": 64
+              "datetime_z": "110600",
+              "lat": 28.9,
+              "lon": 149.9,
+              "wind_kt": 58
             }
           ]
         },
@@ -105,16 +69,10 @@
           "forecasts": [
             {
               "tau": 0,
-              "datetime_z": "110000",
-              "lat": 27.9,
-              "lon": 147.3,
-              "wind_kt": 62
-            },
-            {
-              "tau": 24,
-              "lat": 31.8,
-              "lon": 160.5,
-              "wind_kt": 47
+              "datetime_z": "110600",
+              "lat": 28.8,
+              "lon": 149.6,
+              "wind_kt": 56
             }
           ]
         }
