@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-11 22:20:03 UTC",
+ "generated_at": "2026-11-11 23:20:04 UTC",
  "source": "Open-Meteo Google WeatherNext 2 Ensemble Mean (free API)",
  "api": "https://ensemble-api.open-meteo.com/v1/ensemble",
  "model": "google_weathernext2_ensemble_mean",
@@ -24,10 +24,10 @@
      "lat": 36.45,
      "lon": 168.2,
      "time_utc": "2026-11-12T06:00",
-     "wind_kt_10m": 25.3,
-     "wind_kt_100m": 30.2,
-     "pressure_hpa": 1008.6,
-     "temp_c": 17.3
+     "wind_kt_10m": 27.2,
+     "wind_kt_100m": 33.0,
+     "pressure_hpa": 1007.0,
+     "temp_c": 17.4
     }
    ]
   }
