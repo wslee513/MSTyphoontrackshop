@@ -9,16 +9,16 @@
           "forecasts": [
             {
               "tau": 0,
-              "datetime_z": "110000",
-              "lat": 27.7,
-              "lon": 146.7,
-              "wind_kt": 70
+              "datetime_z": "111200",
+              "lat": 30.2,
+              "lon": 154.1,
+              "wind_kt": 65
             },
             {
               "tau": 24,
-              "lat": 32.1,
-              "lon": 159.8,
-              "wind_kt": 50
+              "lat": 36.7,
+              "lon": 170.4,
+              "wind_kt": 45
             }
           ]
         },
@@ -45,9 +45,9 @@
           "forecasts": [
             {
               "tau": 0,
-              "datetime_z": "110600",
-              "lat": 28.7,
-              "lon": 149.9,
+              "datetime_z": "110900",
+              "lat": 29.2,
+              "lon": 151.4,
               "wind_kt": 64
             }
           ]
@@ -69,10 +69,10 @@
           "forecasts": [
             {
               "tau": 0,
-              "datetime_z": "110600",
-              "lat": 28.8,
-              "lon": 149.6,
-              "wind_kt": 56
+              "datetime_z": "111200",
+              "lat": 30.4,
+              "lon": 154.0,
+              "wind_kt": 52
             }
           ]
         }
