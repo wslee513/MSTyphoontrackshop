@@ -41,18 +41,6 @@
           ]
         },
         {
-          "agency": "NMC",
-          "forecasts": [
-            {
-              "tau": 0,
-              "datetime_z": "110900",
-              "lat": 29.2,
-              "lon": 151.4,
-              "wind_kt": 64
-            }
-          ]
-        },
-        {
           "agency": "CWA",
           "forecasts": [
             {
