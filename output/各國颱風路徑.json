@@ -51,18 +51,6 @@
               "wind_kt": 58
             }
           ]
-        },
-        {
-          "agency": "KMA",
-          "forecasts": [
-            {
-              "tau": 0,
-              "datetime_z": "111200",
-              "lat": 30.4,
-              "lon": 154.0,
-              "wind_kt": 52
-            }
-          ]
         }
       ],
       "_fetch_name": "CEMPAKA_2026",

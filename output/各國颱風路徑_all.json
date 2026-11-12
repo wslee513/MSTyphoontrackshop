@@ -3518,6 +3518,63 @@
               }
             ]
           }
+        },
+        {
+          "index": 23,
+          "data": {
+            "storm_name": "CEMPAKA",
+            "forecast_time_utc": "2026-11-11 06:00:00 UTC",
+            "agencies": [
+              {
+                "agency": "JTWC",
+                "forecasts": [
+                  {
+                    "tau": 0,
+                    "datetime_z": "111200",
+                    "lat": 30.2,
+                    "lon": 154.1,
+                    "wind_kt": 65
+                  },
+                  {
+                    "tau": 24,
+                    "lat": 36.7,
+                    "lon": 170.4,
+                    "wind_kt": 45
+                  }
+                ]
+              },
+              {
+                "agency": "JMA",
+                "forecasts": [
+                  {
+                    "tau": 0,
+                    "datetime_z": "110600",
+                    "lat": 28.8,
+                    "lon": 149.5,
+                    "wind_kt": 65
+                  },
+                  {
+                    "tau": 24,
+                    "lat": 36.2,
+                    "lon": 166.0,
+                    "wind_kt": 55
+                  }
+                ]
+              },
+              {
+                "agency": "CWA",
+                "forecasts": [
+                  {
+                    "tau": 0,
+                    "datetime_z": "110600",
+                    "lat": 28.9,
+                    "lon": 149.9,
+                    "wind_kt": 58
+                  }
+                ]
+              }
+            ]
+          }
         }
       ]
     }
